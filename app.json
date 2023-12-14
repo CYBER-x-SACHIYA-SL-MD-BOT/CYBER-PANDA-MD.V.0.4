@@ -1,0 +1,24 @@
+{
+  "name": "A17-MD",
+  "description": "A WhatsApp bot based on Baileysjs library (Ts+Js) with Multi Device support",
+  "repository": "https://github.com/Kai0071/A17",
+  "logo": "https://wallpapercave.com/wp/wp6471201.jpg",
+  "keywords": ["nodejs", "bot", "whatsapp bot", "whatsapp automation", "multi device"],
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    },
+    {
+      "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
+    },
+    {
+      "url": "https://github.com/clhuang/heroku-buildpack-webp-binaries.git"
+    }
+  ],
+  "formation": {
+    "worker": {
+      "quantity": 1,
+      "size": "eco"
+    }
+  }
+}
