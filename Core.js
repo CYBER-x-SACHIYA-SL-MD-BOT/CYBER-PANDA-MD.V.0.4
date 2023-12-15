@@ -698,17 +698,29 @@ Typed *surrender* to surrender and admited defeat`
     const responses = {
 
 
-      hello: `Hello ${pushname}, I am ${BotName}. My current prefix is "${prefix}". How can I help you?`,
-      kai: `My Boss is lost in another Multiverse, and I lost connection with him...`,
-      runtime: `Hey ${pushname}\n${nowtime}\n\nMy runtime:${runtime(process.uptime())}\n\nPrefix is: *${prefix}*\n\nTime: ${kaitime}\n\nDate: ${kaidate}\n\nToday is ${currentDay}`,
-      konichiwa: `Konichiwa ${pushname}, I am ${BotName}. How can I help you?`,
-      sasha: 'Only you...🫶🏻',
-      ping: `Hey ${pushname}, Pong ${latensie.toFixed(4)} ms`,
-      'good morning': `Good morning to you too ${pushname} ☺️. Have a great day 😇.`,
-      ohayo: `Good morning to you too ${pushname} ☺️. Have a great day 😇.`,
-      'good afternoon': `Good afternoon to you too ${pushname} ✨. Wishing you an enjoyable afternoon too 😇🤞🏻.`,
-      konnichiwa: `Good afternoon to you too ${pushname} ✨. Wishing you an enjoyable afternoon too 😇🤞🏻.`,
-      'good night': `Good night to you too ${pushname} 😇. Sleep well and sweet dreams.`,
+      hello: `HELLO💞 ${pushname},මොකද කරන්නෙ`,
+      mk: `මොනවත් නැ.අනෙ.ඔයා මොකද කරන්නෙ ?`,
+      runtime: `𝘏𝘐💞 ${pushname}\n${nowtime}\n\n🦋 𝘔𝘺 𝘙𝘶𝘯𝘵𝘪𝘮𝘦:${runtime(process.uptime())}\n\n🦋 𝘗𝘦𝘳𝘧𝘪𝘹 𝘐𝘴: *${prefix}*\n\n🦋 𝘛𝘪𝘮𝘦: ${kaitime}\n\n🦋 𝘋𝘢𝘵𝘦: ${kaidate}\n\n𝘛𝘰𝘥𝘢𝘺 𝘪𝘴 ${currentDay}`,
+      .alive: `𝘐.𝘮 𝘈𝘭𝘪𝘷𝘦\n\n${pushname}\n\n🦋 │𝐂𝐘𝐁𝜩𝐑│𝐏𝜟𝐍𝐃𝐀│𝐌𝐃│𝐕➂ 🦋\n\n${BotName}\n\nLoading: [████████████████████] 100%`,
+      .menu: '
+┌─❊
+│ *🦋 │𝐂𝐘𝐁𝜩𝐑│𝐏𝜟𝐍𝐃𝐀│𝐌𝐃│𝐕➂ 🦋*
+└┬❊ 
+┌┤❊  *Thanks for all*
+┏━━━━━━━━━━━━━    
+│©2023 *CYBER PANDA MD*
+ ━━━━━━━━━━━━━ •
+│*𝘉𝘰𝘵 𝘊𝘳𝘦𝘢𝘵𝘦𝘥 𝘉y 𝘚𝘢𝘤𝘩𝘪𝘵𝘩 𝘊𝘩𝘢𝘯𝘥𝘳𝘢*
+┗━━━━━━━━━━━━━
+🦋 *𝘎𝘐𝘏𝘜𝘉-𝘓𝘐𝘕𝘒* *https://github.com/CYBER-x-SACHIYA-SL-MD-BOT/CYBER-PANDA-MD.V.0.3*
+
+🦋 *𝘞𝘏𝘈𝘛𝘚𝘈𝘈𝘗𝘗 𝘎𝘙𝘖𝘜𝘗 :* *https://chat.whatsapp.com/FiVM7anDmin0qnLqWwkgev*',
+      ping: `Hey🛡️ ${pushname}, Pong ${latensie.toFixed(4)} ms`,
+      'Gm': `𝘎𝘖𝘖𝘋 𝘔𝘖𝘙𝘕𝘐𝘕𝘎 🦋💞.`,
+        පුක සුදුද: `පුක සුදු උනාත් කලු උනාත් දෙකෙන්ම වෙන්නෙ එකම දේ.😂`,
+      'හුත්තො': `ඇයි කැරි හුත්තිගෙ පුතො තොගෙ අම්මට හුකා ගන්නෙ නැතුව හිටපන් නවක පොන්නයා 😂..`,
+      පකයො: `ඇයි කැරි වෙස පකයො ගොන් හුත්තිගෙ පුතා අම්මට නිදි වද්ද ගන්නෙ නැතුව හිටපන් පොන්න පකයා..😂`,
+      'Gn': `𝘎𝘖𝘖𝘋 𝘕𝘐𝘎𝘏𝘛 🦋💞`,
 
     };
 
@@ -5008,7 +5020,7 @@ _Click the button below to download_`
       case 'music': {
         if (isBan) return reply(mess.banned);
         if (isBanChat) return reply(mess.bangc);
-        A17.sendMessage(from, { react: { text: "📥", key: m.key } });
+        A17.sendMessage(from, { react: { text: "🎧", key: m.key } });
 
         const YT = require('./lib/ytdl-core');
         const yts = require('youtube-yts');
@@ -5025,19 +5037,24 @@ _Click the button below to download_`
           from,
           {
             image: { url: thumbnailUrl }, // Include the thumbnail image in the response
-            caption: `\n*Downloading:* *${anu.title}*
-━━━━━━━━━━━━━━━━ •            
-  💬 *Duration :* ${anu.timestamp}
-━━━━━━━━━━━━━━━━ •
-  📈 *Viewers :* ${anu.views}
-━━━━━━━━━━━━━━━━ •
-  🎐 *Channel :* ${anu.author.name}
-━━━━━━━━━━━━━━━━ •
-  🏮 *Video Uploaded:* ${anu.ago}
-━━━━━━━━━━━━━━━━ •
-  🔗 *Url :* ${anu.url}\n
-━━━━━━━━━━━━━━━━ •
- `,
+            caption: `
+┏━━━━━━━━━━━━━━━━ •          
+│\n📥*𝘋𝘖𝘞𝘕𝘓𝘖𝘈𝘋𝘐𝘕𝘎*📥 
+│━━━━━━━━━━━━━━━━ •          
+│*${anu.title}*
+│━━━━━━━━━━━━━━━━ •            
+│🗓️*𝘋𝘜𝘙𝘈𝘛𝘐𝘖𝘕 :* ${anu.timestamp}
+│━━━━━━━━━━━━━━━━ •
+│🔦*𝘝𝘐𝘌𝘞𝘌𝘙𝘚 :* ${anu.views}
+│━━━━━━━━━━━━━━━━ •
+│📽️*𝘊𝘏𝘈𝘕𝘕𝘌𝘓 :* ${anu.author.name}
+│━━━━━━━━━━━━━━━━ •
+│🎬*𝘝𝘐𝘋𝘌𝘖 𝘜𝘗𝘓𝘖𝘈𝘋𝘌𝘋:* ${anu.ago}
+│━━━━━━━━━━━━━━━━ •
+│📂*𝘜𝘙𝘓 :* ${anu.url}\n
+│━━━━━━━━━━━━━━━━ •          
+│🦋│𝐂𝐘𝐁𝜩𝐑│𝐏𝜟𝐍𝐃𝐀│𝐌𝐃│𝐕➂🦋
+┗━━━━━━━━━━━━━━━━ •`,
 
           },
           { quoted: m }
@@ -5095,13 +5112,13 @@ _Click the button below to download_`
       case 'ytvd': case 'video': case 'ytvideo': case 'ytmp4': {
         if (isBan) return reply(mess.banned);
         if (isBanChat) return reply(mess.bangc);
-        A17.sendMessage(from, { react: { text: "📥", key: m.key } })
+        A17.sendMessage(from, { react: { text: "📂", key: m.key } })
         const YT = require('./lib/ytdl-core')
         let yts = require("youtube-yts")
         let search = await yts(text)
         let anu = search.videos[0]
         const ytmp4play = await YT.mp4(anu.url)
-        A17.sendMessage(from, { video: { url: ytmp4play.videoUrl }, mimetype: "video/mp4", caption: anu.title + ' By *🦋 │𝐂𝐘𝐁𝜩𝐑│𝐏𝜟𝐍𝐃𝐀│𝐌𝐃│𝐕➂ 🦋*', }, { quoted: m })
+        A17.sendMessage(from, { video: { url: ytmp4play.videoUrl }, mimetype: "video/mp4", caption: anu.title + '━━━❬❬🦋 *𝘠𝘛-𝘝𝘐𝘋𝘌𝘖* 🦋❭❭ ━━━', }, { quoted: m })
       }
 
         break;
@@ -5153,7 +5170,7 @@ _Click the button below to download_`
         const YT = require('./lib/ytdl-core')
         const ytmp3play2 = await YT.mp3(text)
 
-        await A17.sendMessage(from, { document: fs.readFileSync(ytmp3play2.path), fileName: 'A17_YTmp3_Downloader.mp3', mimetype: 'audio/mpeg', }, { quoted: m })
+        await A17.sendMessage(from, { document: fs.readFileSync(ytmp3play2.path), fileName: 'CYBER-PANDA-MD_YTmp3_Downloader.mp3', mimetype: 'audio/mpeg', }, { quoted: m })
       }
         break;
 
@@ -5164,7 +5181,7 @@ _Click the button below to download_`
         A17.sendMessage(from, { react: { text: "🍁", key: m.key } })
         const YT = require('./lib/ytdl-core')
         const ytmp4play2 = await YT.mp4(text)
-        A17.sendMessage(from, { video: { url: ytmp4play2.videoUrl }, mimetype: "video/mp4", caption: 'Downloaded by *A17 MD*', }, { quoted: m })
+        A17.sendMessage(from, { video: { url: ytmp4play2.videoUrl }, mimetype: "video/mp4", caption: '━━━❬❬🦋 *CYBER-PANDA-MD* 🦋❭❭ ━━━*', }, { quoted: m })
       }
         break;
 
@@ -5411,7 +5428,7 @@ _Click the button below to download_`
       case 'sgif': case 'sticker': case 's': {
         if (isBan) return reply(mess.banned);
         if (isBanChat) return reply(mess.bangc);
-        A17.sendMessage(from, { react: { text: "🌝", key: m.key } })
+        A17.sendMessage(from, { react: { text: "🛡️", key: m.key } })
         if (/image/.test(mime)) {
           let media = await quoted.download()
           let encmedia = await A17.sendImageAsSticker(m.chat, media, m, { packname: global.packname, author: global.author })
@@ -5764,8 +5781,7 @@ _Click the button below to download_`
         if (!isUrl(args[0]) && !args[0].includes('mediafire.com')) return reply(`The link you provided is invalid`)
         const baby1 = await mediafireDl(text)
         if (baby1[0].size.split('MB')[0] >= 999) return reply('*File Over Limit* ' + util.format(baby1))
-        const result4 = `「  *Mediafire Downloader*  」
-      
+        const result4 = `━━━❬❬🦋 *Mediafire Downloader* 🦋❭❭━━━   
 *Name* : ${baby1[0].nama}
 *Size* : ${baby1[0].size}
 *Mime* : ${baby1[0].mime}
@@ -6395,7 +6411,7 @@ _Click the button below to download_`
         if (isBan) return reply(mess.banned);
         if (isBanChat) return reply(mess.bangc);
         if (!m.isGroup) return reply(mess.grouponly);
-        A17.sendMessage(from, { react: { text: "✨", key: m.key } })
+        A17.sendMessage(from, { react: { text: "🤤", key: m.key } })
 
         reply(mess.waiting)
         waifudd = await axios.get(`https://waifu.pics/api/sfw/awoo`)
@@ -6404,7 +6420,7 @@ _Click the button below to download_`
           ] */
         let button1Messages = {
           image: { url: waifudd.data.url },
-          caption: `Here it is...`,
+          caption: `පොඩ්ඩක් හිටපන්කො🤤....`,
           /*  footer: `${global.BotName}`,
           buttons: wbuttsss,
           headerType: 2 */
@@ -6975,13 +6991,42 @@ _Click the button below to download_`
         break;
 
 
-      case '':
+      case 'alive':
         if (isCmd) {
           if (isBan) return reply(mess.banned);
           if (isBanChat) return reply(mess.bangc);
-          A17.sendMessage(from, { react: { text: "✨", key: m.key } })
+          A17.sendMessage(from, { react: { text: "🗓️", key: m.key } })
 
-          reply(`Do you need any help ${pushname} ? Type *${prefix}help* to get my full command list.`)
+          reply(`
+┍━━━━━━━━━━━━━━━━━━ •
+┃ 🦋 │𝐂𝐘𝐁𝜩𝐑│𝐏𝜟𝐍𝐃𝐀│𝐌𝐃│𝐕➂ 🦋
+┗━━━━━━━━━━━━━━━━━━ •
+┍━━━━━━━━━━━━━━━━━━ •
+┃ *𝘛𝘐𝘔𝘌* : ${kaitime}
+┗━━━━━━━━━━━━━━━━━━ •
+┍━━━━━━━━━━━━━━━━━━ •
+┃ *𝘋𝘈𝘛𝘌* : ${kaidate}
+┗━━━━━━━━━━━━━━━━━━ •
+┍━━━━━━━━━━━━━━━━━━ •
+┃*𝘉𝘖𝘛 𝘜𝘚𝘙 𝘕𝘈𝘔𝘌 :* ${pushname} 
+┃*𝘔𝘠 𝘗𝘙𝘌𝘍𝘐𝘟 𝘐𝘚 :*  ${prefix}
+┃*𝘖𝘞𝘕𝘌𝘙 𝘕𝘈𝘔𝘌 :* ${global.OwnerName} 
+┃*𝘉𝘖𝘛 𝘙𝘜𝘕𝘛𝘐𝘔𝘌 :* ${runtime(process.uptime())} 
+┃*𝘗𝘓𝘈𝘛𝘍𝘖𝘙𝘔 :* Linux
+┗━━━━━━━━━━━━━━━━━━ °
+ ━━━❬❬🦋 *Thank* 🦋❭❭━━━
+┍━━━━━━━━━━━━━━━━━━ •
+┃ 🦋 │𝐂𝐘𝐁𝜩𝐑│𝐏𝜟𝐍𝐃𝐀│𝐌𝐃│𝐕➂ 🦋
+┗━━━━━━━━━━━━━━━━━━ •
+┍━━━━━━━━━━━━━━━━━━ •
+┃ *_💞THANK SENESH💞_* 
+┗━━━━━━━━━━━━━━━━━━ •
+┍━━━━━━━━━━━━━━━━━━ •
+┃ 🦋𝘚𝘈𝘊𝘏𝘐𝘛𝘏-𝘊𝘏𝘈𝘕𝘋𝘙𝘈
+┗━━━━━━━━━━━━━━━━━━ •
+┍━━━━━━━━━━━━━━━━━━ •
+┃ 🦋 │𝐂𝐘𝐁𝜩𝐑│𝐱│𝐒𝜟𝐂𝐇𝐈𝐘𝐀│ 🦋
+┗━━━━━━━━━━━━━━━━━━ •`)
         }
 
         break;
