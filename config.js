@@ -44,7 +44,7 @@ global.openAiAPI = "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";
 global.location = "Tata City, India";
 global.reactmoji = "💞";
 global.themeemoji = "😂";
-global.vidmenu = { url: 'https://telegra.ph/%F0%9D%90%82%F0%9D%90%98%F0%9D%90%81%F0%9D%9C%A9%F0%9D%90%91%F0%9D%90%8F%F0%9D%9C%9F%F0%9D%90%8D%F0%9D%90%83%F0%9D%90%80%F0%9D%90%8C%F0%9D%90%83%F0%9D%90%95-12-14' };
+global.vidmenu = { url: 'https://tenor.com/en-CA/view/anonymous-hacker-smooth-gif-10171911193797826570%9D%90%95-12-14' };
 global.websitex = "https://github.com/CYBER-x-SACHIYA-SL-MD-BOT/CYBER-PANDA-MD.V.0.4";
 global.lolhuman = "KaysaS";
 
