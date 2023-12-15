@@ -9,9 +9,9 @@ global.antitags = true;
 
 
 //auto functioner
-global.autoTyping = false;                //auto tying by default off.
-global.autoRecord = false;                //auto recording by default off.
-global.groupevent = false;                //This is the new variable for controlling group event handling.
+global.autoTyping = true;                //auto tying by default off.
+global.autoRecord = true;                //auto recording by default off.
+global.groupevent = true;                //This is the new variable for controlling group event handling.
 global.statusseen = true;                 //This is the new variable for controlling status seen.
 global.autoreadgc = true;
 
@@ -24,11 +24,11 @@ global.prefa = ["."];                                    //Default prefix here. 
 global.Owner = ["+94704274987", "+94704274987"];         //If you want singal number so global.Owner = ['916297175943'] Change into your number.
 global.OwnerNumber = ["+94704274987", "+94704274987"];   //If you want singal number so global.Owner = ['916297175943'] Change into your number.
 global.ownertag = ["+94704274987"];
-global.OwnerName = "Kai";
-global.BotName = "A17";
-global.packname = "A17 Bot";                             //Do not change.
-global.author = "By: Kai";                               //Do not change.
-global.BotSourceCode = "https://github.com/Kai0071/A17"; //Do not change.
+global.OwnerName = "SACHITH";
+global.BotName = "SACHITH";
+global.packname = "🦋 │𝐂𝐘𝐁𝜩𝐑│𝐏𝜟𝐍𝐃𝐀│𝐌𝐃│𝐕➂ 🦋";                             //Do not change.
+global.author = "By: SACHITH";                               //Do not change.
+global.BotSourceCode = "https://github.com/Kai00"; //Do not change.
 global.SupportGroupLink = "https://chat.whatsapp.com/GhRGdwfaMVDCoeAdzILfl";
 
 
@@ -42,10 +42,10 @@ global.openAiAPI = "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";
 
 //
 global.location = "Tata City, India";
-global.reactmoji = "❤️";
-global.themeemoji = "💖";
-global.vidmenu = { url: 'https://media.tenor.com/Jdu0Ov8X2sIAAAAC/A17-Bot.mp4' };
-global.websitex = "https://github.com/Kai0071";
+global.reactmoji = "💞";
+global.themeemoji = "😂";
+global.vidmenu = { url: 'https://telegra.ph/%F0%9D%90%82%F0%9D%90%98%F0%9D%90%81%F0%9D%9C%A9%F0%9D%90%91%F0%9D%90%8F%F0%9D%9C%9F%F0%9D%90%8D%F0%9D%90%83%F0%9D%90%80%F0%9D%90%8C%F0%9D%90%83%F0%9D%90%95-12-14' };
+global.websitex = "https://github.com/CYBER-x-SACHIYA-SL-MD-BOT/CYBER-PANDA-MD.V.0.4";
 global.lolhuman = "KaysaS";
 
 
