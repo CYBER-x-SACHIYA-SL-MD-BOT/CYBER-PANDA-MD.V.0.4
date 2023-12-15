@@ -698,29 +698,17 @@ Typed *surrender* to surrender and admited defeat`
     const responses = {
 
 
-      hello: `HELLO💞 ${pushname},මොකද කරන්නෙ`,
-      mk: `මොනවත් නැ.අනෙ.ඔයා මොකද කරන්නෙ ?`,
-      runtime: `𝘏𝘐💞 ${pushname}\n${nowtime}\n\n🦋 𝘔𝘺 𝘙𝘶𝘯𝘵𝘪𝘮𝘦:${runtime(process.uptime())}\n\n🦋 𝘗𝘦𝘳𝘧𝘪𝘹 𝘐𝘴: *${prefix}*\n\n🦋 𝘛𝘪𝘮𝘦: ${kaitime}\n\n🦋 𝘋𝘢𝘵𝘦: ${kaidate}\n\n𝘛𝘰𝘥𝘢𝘺 𝘪𝘴 ${currentDay}`,
-      .alive: `𝘐.𝘮 𝘈𝘭𝘪𝘷𝘦\n\n${pushname}\n\n🦋 │𝐂𝐘𝐁𝜩𝐑│𝐏𝜟𝐍𝐃𝐀│𝐌𝐃│𝐕➂ 🦋\n\n${BotName}\n\nLoading: [████████████████████] 100%`,
-      .menu: '
-┌─❊
-│ *🦋 │𝐂𝐘𝐁𝜩𝐑│𝐏𝜟𝐍𝐃𝐀│𝐌𝐃│𝐕➂ 🦋*
-└┬❊ 
-┌┤❊  *Thanks for all*
-┏━━━━━━━━━━━━━    
-│©2023 *CYBER PANDA MD*
- ━━━━━━━━━━━━━ •
-│*𝘉𝘰𝘵 𝘊𝘳𝘦𝘢𝘵𝘦𝘥 𝘉y 𝘚𝘢𝘤𝘩𝘪𝘵𝘩 𝘊𝘩𝘢𝘯𝘥𝘳𝘢*
-┗━━━━━━━━━━━━━
-🦋 *𝘎𝘐𝘏𝘜𝘉-𝘓𝘐𝘕𝘒* *https://github.com/CYBER-x-SACHIYA-SL-MD-BOT/CYBER-PANDA-MD.V.0.3*
-
-🦋 *𝘞𝘏𝘈𝘛𝘚𝘈𝘈𝘗𝘗 𝘎𝘙𝘖𝘜𝘗 :* *https://chat.whatsapp.com/FiVM7anDmin0qnLqWwkgev*',
-      ping: `Hey🛡️ ${pushname}, Pong ${latensie.toFixed(4)} ms`,
-      'Gm': `𝘎𝘖𝘖𝘋 𝘔𝘖𝘙𝘕𝘐𝘕𝘎 🦋💞.`,
-        පුක සුදුද: `පුක සුදු උනාත් කලු උනාත් දෙකෙන්ම වෙන්නෙ එකම දේ.😂`,
-      'හුත්තො': `ඇයි කැරි හුත්තිගෙ පුතො තොගෙ අම්මට හුකා ගන්නෙ නැතුව හිටපන් නවක පොන්නයා 😂..`,
-      පකයො: `ඇයි කැරි වෙස පකයො ගොන් හුත්තිගෙ පුතා අම්මට නිදි වද්ද ගන්නෙ නැතුව හිටපන් පොන්න පකයා..😂`,
-      'Gn': `𝘎𝘖𝘖𝘋 𝘕𝘐𝘎𝘏𝘛 🦋💞`,
+      hello: `Hello ${pushname}, I am ${BotName}. My current prefix is "${prefix}". How can I help you?`,
+      kai: `My Boss is lost in another Multiverse, and I lost connection with him...`,
+      runtime: `🦋𝘏𝘐 ${pushname}\n${nowtime}\n\n🦋𝘙𝘜𝘕𝘛𝘐𝘔𝘌:${runtime(process.uptime())}\n\n🦋𝘗𝘙𝘌𝘍𝘐𝘟: *${prefix}*\n\n🦋𝘛𝘐𝘔𝘌: ${kaitime}\n\n🦋𝘋𝘈𝘛𝘌: ${kaidate}\n\n🦋𝘛𝘰𝘥𝘢𝘺 𝘪𝘴 ${currentDay}`,
+      konichiwa: `Konichiwa ${pushname}, I am ${BotName}. How can I help you?`,
+      alive: '🦋 │𝐂𝐘𝐁𝜩𝐑│𝐏𝜟𝐍𝐃𝐀│𝐌𝐃│𝐕➂ 🦋',
+      ping: `Hi🛡️ ${pushname}, Pong ${latensie.toFixed(4)} ms`,
+      'good morning': `Good morning💞🦋.`,
+      ohayo: `Good morning to you too ${pushname} ☺️. Have a great day 😇.`,
+      'good afternoon': `Good afternoon💞🦋.`,
+      konnichiwa: `Good afternoon to you too ${pushname} ✨. Wishing you an enjoyable afternoon too 😇🤞🏻.`,
+      'good night': `Good night💞🦋`,
 
     };
 
@@ -6700,7 +6688,7 @@ _Click the button below to download_`
       case 'help': case 'h': case 'menu': case 'allmenu': case 'listmenu': {
         if (isBan) return reply(mess.banned);
         if (isBanChat) return reply(mess.bangc);
-        A17.sendMessage(from, { react: { text: "🦋", key: m.key } })
+        A17.sendMessage(from, { react: { text: "📂", key: m.key } })
         const helpmenu = `
 ┍━━━━━━━━━━━━━━━━━━ •
 ┃  *${pushname}*
