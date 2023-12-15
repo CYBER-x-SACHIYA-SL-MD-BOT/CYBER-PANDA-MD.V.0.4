@@ -51,7 +51,7 @@ const store = makeInMemoryStore({
 async function startA17() {
   console.log(
     color(
-      figlet.textSync("A17 Bot MD", {
+      figlet.textSync("CYBER-PANDA-MD", {
         font: "Standard",
         horizontalLayout: "default",
         vertivalLayout: "default",
@@ -69,7 +69,7 @@ async function startA17() {
   const A17 = A17Connect({
     logger: pino({ level: "silent" }),
     printQRInTerminal: true,
-    browser: ["A17 Bot", "Safari", "3.O"],
+    browser: ["CYBER-PANDA-MD", "Safari", "3.O"],
     auth: state,
   });
 
@@ -275,7 +275,7 @@ async function startA17() {
             A17text = `
 Hello @${WAuserName.split("@")[0]},
 
-I am *A17 Bot*, Welcome to ${metadata.subject}.
+I am *🦋 │𝐂𝐘𝐁𝜩𝐑│𝐏𝜟𝐍𝐃𝐀│𝐌𝐃│𝐕➂ 🦋*, Welcome to ${metadata.subject}.
 
 *Group Description:*
 ${metadata.desc}
