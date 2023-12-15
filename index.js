@@ -65,7 +65,7 @@ async function startA17() {
   console.log(color('\nHello, I am Kai, the main Developer of this bot.\n\nThanks for using: A17 Bot.', 'aqua'))
   console.log(color('\nYou can follow me on GitHub: Kai0071', 'aqua'))
 
-  const { state, saveCreds } = await useMultiFileAuthState("./A17-SESSION");
+  const { state, saveCreds } = await useMultiFileAuthState("./SESSION");
   const A17 = A17Connect({
     logger: pino({ level: "silent" }),
     printQRInTerminal: true,
