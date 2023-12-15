@@ -9,11 +9,11 @@ global.antitags = true;
 
 
 //auto functioner
-global.autoTyping = true;                //auto tying by default off.
-global.autoRecord = true;                //auto recording by default off.
-global.groupevent = true;                //This is the new variable for controlling group event handling.
-global.statusseen = true;                 //This is the new variable for controlling status seen.
-global.autoreadgc = true;
+global.autoTyping = false;                //auto tying by default off.
+global.autoRecord = false;                //auto recording by default off.
+global.groupevent = false;                //This is the new variable for controlling group event handling.
+global.statusseen = false;                 //This is the new variable for controlling status seen.
+global.autoreadgc = false;
 
 
 //
