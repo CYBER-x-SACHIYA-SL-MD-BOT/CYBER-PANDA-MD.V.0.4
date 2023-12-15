@@ -51,17 +51,17 @@ const { MessageType } = require('@whiskeysockets/baileys');
 let nowtime = '';
 
 if (time2 < "05:00:00") {
-  nowtime = 'Good night 🏙';
+  nowtime = '𝘎𝘖𝘖𝘋 𝘕𝘐𝘎𝘏𝘛 🦋💞';
 } else if (time2 < "11:00:00") {
-  nowtime = 'Good morning 🌅';
+  nowtime = '𝘎𝘖𝘖𝘋 𝘔𝘖𝘙𝘕𝘐𝘕𝘎 💞🦋';
 } else if (time2 < "15:00:00") {
-  nowtime = 'Good afternoon 🏞';
+  nowtime = '𝘎𝘖𝘖𝘋 𝘈𝘍𝘛𝘌𝘙𝘕𝘖𝘖𝘕 💞🦋';
 } else if (time2 < "18:00:00") {
-  nowtime = 'Good evening 🌇';
+  nowtime = '𝘎𝘖𝘖𝘋 𝘌𝘝𝘌𝘕𝘐𝘕𝘎 💞🦋';
 } else if (time2 < "19:00:00") {
-  nowtime = 'Good evening 🌆';
+  nowtime = '𝘎𝘖𝘖𝘋 𝘌𝘝𝘌𝘕𝘐𝘕𝘎 💞🦋';
 } else {
-  nowtime = 'Good night 🌌';
+  nowtime = '𝘎𝘖𝘖𝘋 𝘕𝘐𝘎𝘏𝘛 💞🦋';
 }
 
 
@@ -720,13 +720,13 @@ Typed *surrender* to surrender and admited defeat`
 
 
       //
-      case 'sc': case 'script': case 'sourcecode': {
+      case 'sc': case 'script': case 'git': {
         if (isBan) return reply(mess.banned);
         if (isBanChat) return reply(mess.bangc);
-        A17.sendMessage(from, { react: { text: "❤", key: m.key } })
+        A17.sendMessage(from, { react: { text: "✅", key: m.key } })
 
-        let { data } = await axios.get('https://api.github.com/repos/Kai0071/A17');
-        teks = `*A17 Script*\n\n*Total Stars*: ${data.stargazers_count}⭐\n*Total Forks*: ${data.forks_count} forks\n*GitHub*: https://github.com/Kai0071/A17\n\nDont forget to follow me on *GitHub* and give a ⭐️ to my projects. `
+        let { data } = await axios.get('https://github.com/CYBER-x-SACHIYA-SL-MD-BOT/CYBER-PANDA-MD.V.0.4');
+        teks = `*CYBER-PANDA-MD-GITHUB*\n\n*Total Stars*: ${data.stargazers_count}🦋\n*Total Forks*: ${data.forks_count} forks\n*GitHub*: https://github.com/CYBER-x-SACHIYA-SL-MD-BOT/CYBER-PANDA-MD.V.0.4\n\nDont forget to follow me on *GitHub* and give a 💞 to my projects. `
         /*  let buttons = [
           {buttonId: `${prefix}owner`, buttonText: {displayText: '🍁 DEVELOPER 🍁'}, type: 1}
           ] */
@@ -745,8 +745,8 @@ Typed *surrender* to surrender and admited defeat`
               mediaType: 1,
               //mediaUrl: 'https://wallpapercave.com/wp/wp10524580.jpg',
               //sourceUrl: "https://wallpapercave.com/wp/wp10524580.jpg"
-              mediaUrl: 'github.com/Kai0071/A17',
-              sourceUrl: "github.com/Kai0071/A17"
+              mediaUrl: 'github.com/CYBER-x-SACHIYA-SL-MD-BOT/CYBER-PANDA-MD.V.0.4',
+              sourceUrl: "github.com/CYBER-x-SACHIYA-SL-MD-BOT/CYBER-PANDA-MD.V.0.4"
             }
           }
 
@@ -830,7 +830,7 @@ Typed *surrender* to surrender and admited defeat`
         if (isBanChat) return reply(mess.bangc);
 
         A17.sendMessage(from, { react: { text: "💫", key: m.key } })
-        reply(`⚙ My Source Code is </> - https://github.com/Kai0071/A17`)
+        reply(`⚙ My Source Code is </> - https://github.com/CYBER-x-SACHIYA-SL-MD-BOT/CYBER-PANDA-MD.V.0.4`)
       }
         break;
 
@@ -2740,10 +2740,12 @@ Typed *surrender* to surrender and admited defeat`
         if (isBan) return reply(mess.banned);
         if (isBanChat) return reply(mess.bangc);
 
-        A17.sendMessage(from, { react: { text: "💫", key: m.key } });
+        A17.sendMessage(from, { react: { text: "💞", key: m.key } });
 
         if (!args[0]) {
-          return reply(`Please provide the GitHub repository link.\nExample:\n${prefix}${command} https://github.com/Kai0071/A17`);
+          return reply(`Please provide the GitHub repository link.\nExample:\n${prefix}${command} https://github.com/CYBER-x-SACHIYA-SL-MD-BOT/CYBER-PANDA-MD.V.0.4
+🦋 │𝐂𝐘𝐁𝜩𝐑│𝐏𝜟𝐍𝐃𝐀│𝐌𝐃│𝐕➂ 🦋
+          `);
         }
 
         if (!isUrl(args[0]) || !args[0].includes('github.com')) {
@@ -2779,7 +2781,7 @@ Typed *surrender* to surrender and admited defeat`
         A17.sendMessage(from, { react: { text: "🫡", key: m.key } })
 
         let anu = await store.chats.all().filter(v => v.id.endsWith('.net')).map(v => v)
-        let teks = ` 「  A17's pm user list  」\n\nTotal ${anu.length} users are using A17 in personal chat.`
+        let teks = ` 「  🦋 │𝐂𝐘𝐁𝜩𝐑│𝐏𝜟𝐍𝐃𝐀│𝐌𝐃│𝐕➂ 🦋 user list  」\n\nTotal ${anu.length} users are using A17 in personal chat.`
         for (let i of anu) {
           teks += `\n\nProfile : @${i.id.split('@')[0]}\nChat : ${i.unreadCount}\nLastchat : ${moment(i.conversationTimestamp * 1000).tz("Asia/Kolkata").format("DD/MM/YYYY HH:mm:ss")}`
         }
@@ -2794,7 +2796,7 @@ Typed *surrender* to surrender and admited defeat`
         A17.sendMessage(from, { react: { text: "🫡", key: m.key } })
 
         let anu = await store.chats.all().filter(v => v.id.endsWith('@g.us')).map(v => v.id)
-        let teks = ` 「  A17's group user list  」\n\nTotal ${anu.length} users are using bot in Groups.`
+        let teks = ` 「  🦋 │𝐂𝐘𝐁𝜩𝐑│𝐏𝜟𝐍𝐃𝐀│𝐌𝐃│𝐕➂ 🦋 group user list  」\n\nTotal ${anu.length} users are using bot in Groups.`
         for (let i of anu) {
           let metadata = await A17.groupMetadata(i)
           if (metadata.owner === "undefined") {
@@ -2863,7 +2865,7 @@ Typed *surrender* to surrender and admited defeat`
 
 
 
-      case 'afk': {
+      case 'app': {
         if (isBan) return reply(mess.banned);
         if (isBanChat) return reply(mess.bangc);
         A17.sendMessage(from, { react: { text: "🫡", key: m.key } })
@@ -3529,8 +3531,8 @@ Typed *surrender* to surrender and admited defeat`
         if (isBanChat) return reply(mess.bangc);
         if (!m.isGroup) return reply(mess.grouponly);
         if (!isAdmins && !isCreator) return reply(mess.useradmin)
-        A17.sendMessage(from, { react: { text: "✨", key: m.key } })
-        A17.sendMessage(m.chat, { text: args.join(" ") ? args.join(" ") : '', mentions: participants.map(a => a.id) }, { quoted: m })
+        A17.sendMessage(from, { react: { text: "💬", key: m.key } })
+        A17.sendMessage(m.chat, { text: args.join("🦋 │𝐂𝐘𝐁𝜩𝐑│𝐏𝜟𝐍𝐃𝐀│𝐌𝐃│𝐕➂ 🦋") ? args.join("🦋 │𝐂𝐘𝐁𝜩𝐑│𝐏𝜟𝐍𝐃𝐀│𝐌𝐃│𝐕➂ 🦋") : '', mentions: participants.map(a => a.id) }, { quoted: m })
       }
         break;
 
@@ -3540,12 +3542,12 @@ Typed *surrender* to surrender and admited defeat`
         if (isBanChat) return reply(mess.bangc);
         if (!m.isGroup) return reply(mess.grouponly);
         A17.sendMessage(from, { react: { text: "🗿", key: m.key } })
-        if (!text) return reply(`*Please quote or write a meaningful message to tag admins to*`)
+        if (!text) return reply(`*🦋 │𝐂𝐘𝐁𝜩𝐑│𝐏𝜟𝐍𝐃𝐀│𝐌𝐃│𝐕➂ 🦋*`)
         let teks = `*「 Tag Admins 」*
 
 *Message : ${text}*\n\n`
         for (let mem of groupAdmins) {
-          teks += `🍁 @${mem.split('@')[0]}\n`
+          teks += `✅ @${mem.split('@')[0]}\n`
         }
         A17.sendMessage(m.chat, { text: teks, mentions: groupAdmins }, { quoted: m })
       }
@@ -4420,7 +4422,7 @@ Typed *surrender* to surrender and admited defeat`
       case 'google': case 'search': {
         if (isBan) return reply(mess.banned);
         if (isBanChat) return reply(mess.bangc);
-        A17.sendMessage(from, { react: { text: "✨", key: m.key } })
+        A17.sendMessage(from, { react: { text: "😿", key: m.key } })
 
         if (!args[0]) return reply(`Example: ${prefix + command} <query>\nUses : ${prefix + command} anything...`)
         let google = require('google-it')
@@ -4917,13 +4919,13 @@ _Click the button below to download_`
         if (isBanChat) return reply(mess.bangc);
         A17.sendMessage(from, { react: { text: "📍", key: m.key } })
 
-        if (!args.join(" ")) return reply(`Example : -yts Heat waves`)
+        if (!args.join(" ")) return reply(`Example : -yts Cyber panda md 2023`)
         let yts = require("youtube-yts")
         let search = await yts(args.join(" "))
         let teks = '```「 YouTube search Engine 」```\n\n Search Term: ' + text + '\n\n'
         let no = 1
         for (let i of search.all) {
-          teks += `Result No : ${no++}\n\nTitle : ${i.title}\n\nViews : ${i.views}\n\nDuration : ${i.timestamp}\n\nUploaded : ${i.ago}\n\nAuthor : ${i.author.name}\n\nUrl : ${i.url}\n\n\n-----------------------------------------------------------------------------\n\n\n`
+          teks += `Result No : ${no++}\n\nTitle : ${i.title}\n\nViews : ${i.views}\n\nDuration : ${i.timestamp}\n\nUploaded : ${i.ago}\n\nAuthor : ${i.author.name}\n\nUrl : ${i.url}\n\n\n---------------------------------------------\n\n\n`
         }
         A17.sendMessage(m.chat, { image: { url: search.all[0].thumbnail }, caption: teks }, { quoted: m })
       }
@@ -5067,7 +5069,7 @@ _Click the button below to download_`
           contextInfo: {
             mentionedJid: [m.sender],
             externalAdReply: {
-              title: "↺ |◁   II   ▷|   ♡",
+              title: "🦋 │𝐂𝐘𝐁𝜩𝐑│𝐏𝜟𝐍𝐃𝐀│𝐌𝐃│𝐕➂ 🦋",
               body: `Now playing: ${bname}`,
               thumbnailUrl: bimg,
               sourceUrl: burl,
