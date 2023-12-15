@@ -622,22 +622,23 @@ Typed *surrender* to surrender and admited defeat`
     /*
   let smallinput = budy.toLowerCase()
   if (smallinput.includes('hello')) {
-    reply (`Hello ${pushname}, I am ${BotName}. How can i help you?`);
+    reply (`*හලො ඉතින් කොහොමද...*, 
+    *මහෙන් මොකක් හරි උදවුවක් ඔනිද..ඔයා මොකද කරන්නෙ..*`);
   } 
   
-  //if (smallinput.includes('hi')) {
+  //if (smallinput.includes('he')) {
   
   //   reply (`Hello ${pushname}, I am ${BotName}. How can i help you?`);
   
   // } 
   
-  if (smallinput=='kai') {
-      reply (`My Boss is lost in another Multiverse, and I lost the connection with him...`)
+  if (smallinput=='hi') {
+      reply (`*හායි හායි* *ඉතින් කියන්න පැටියො ඔයා* *මොකද කරන්නෙ*`)
   }
   
   
   if (smallinput=='runtime') {
-    reply (`Hey ${pushname} my runtime is ${runtime(process.uptime())}\n\nCurrent Time: ${kaitime}\n\nCurrent Date: ${kaidate}`)
+    reply (`Hi💞 ${pushname}🦋 │𝐂𝐘𝐁𝜩𝐑│𝐏𝜟𝐍𝐃𝐀│𝐌𝐃│𝐕➂ 🦋${runtime(process.uptime())}\n\nCurrent Time: ${kaitime}\n\nCurrent Date: ${kaidate}`)
   }
   
   
@@ -647,37 +648,45 @@ Typed *surrender* to surrender and admited defeat`
   }
   
   
-  if (smallinput=='a17') {
+  if (smallinput=='panda') {
       reply ('Yes I am Alive 🫂')
   }
   
-  if (smallinput=='sasha') {
-    reply ('Only you...🫶🏻')
+  if (smallinput=='Hm') {
+    reply ('*හූම් හූම්.ගාන්න උබ බක මුනෙක්ද...එ කියපන් පකකො😂*.')
+  }
+    
+  }
+  
+  if (smallinput=='mk') {
+    reply ('*මොමවත් නැ.අනෙ ඔයා මොකද කරන්නෙ..*')
   }
   
   if (smallinput=='ping') {
-      reply (`Hey ${pushname} Pong ${latensie.toFixed(4)} ms`)
+      reply (`𝘏𝘐🦋 ${pushname} 𝘗𝘖𝘕𝘎 ${latensie.toFixed(4)} 𝘔;𝘚
+      🦋 │𝐂𝐘𝐁𝜩𝐑│𝐏𝜟𝐍𝐃𝐀│𝐌𝐃│𝐕➂ 🦋`)
   }
   
   
-  if (smallinput.includes('good morning') || smallinput.includes('ohayo')) {
-    reply (`Good morning to you too ${pushname} ☺️. Have a great day 😇.`);
+  if (smallinput.includes('good morning') || smallinput.includes('Gm')) {
+    reply (`* ${pushname} ගුට් මොනින්ග් පැටියො 
+    ආදරෙයි හැම දාම සතුටින් පරිස්සමින් ඉන්න..💞 `);
   }
   
   if (smallinput.includes('good afternoon') || smallinput.includes('konnichiwa')) {
   
-    reply (`Good afthernoon to you too ${pushname} ✨. Wishing you an enjoyable afternoon too 😇🤞🏻.`);
+    reply (`Good afthernoon to you too ${pushname} 🦋 │𝐂𝐘𝐁𝜩𝐑│𝐏𝜟𝐍𝐃𝐀│𝐌𝐃│𝐕➂ 🦋.`);
   
   }
   
   
   //if (smallinput.includes('good afthernoon')) {
-   // reply (`Huh ${pushname} 😇. Wishing you an enjoyable afternoon too.`);
+   // reply (`Huh ${pushname} 😇.🦋 │𝐂𝐘𝐁𝜩𝐑│𝐏𝜟𝐍𝐃𝐀│𝐌𝐃│𝐕➂ 🦋`);
   //   }
   
   
   if (smallinput.includes('good night')) {
-    reply (`Good night to you too ${pushname} 😇. Sleep well and sweet dreams.`);
+    reply (`😴 ගුට් නයිට් පැටියො 💞 ${pushname} බත් කලද ඉන්නෙ.🤷`);
   }
   
   if (smallinput.includes('arigato')|| smallinput.includes('arigatou') || smallinput.includes('thank')) {
@@ -1712,9 +1721,9 @@ Typed *surrender* to surrender and admited defeat`
       case 'reaction': case 'react': case 'reactions': case 'r':
         if (isBan) return reply(mess.banned);
         if (isBanChat) return reply(mess.bangc);
-        A17.sendMessage(from, { react: { text: "❤️", key: m.key } })
+        A17.sendMessage(from, { react: { text: "🛡️", key: m.key } })
 
-        reply(` *━━〈  ⚡ Reactions ⚡  〉━━*\n\nbonk, cry, bully, cuddle, hug, kiss, lick, pat, smug, yeet, blush, smile, wave, highfive, handhold, nom, glomp, bite, slap, kill, happy, wink, poke, dance, cringe`)
+        reply(` *━━〈  💞 Reactions 💞  〉━━*\n\nbonk, cry, bully, cuddle, hug, kiss, lick, pat, smug, yeet, blush, smile, wave, highfive, handhold, nom, glomp, bite, slap, kill, happy, wink, poke, dance, cringe`)
         break;
 
 
