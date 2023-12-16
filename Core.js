@@ -348,13 +348,14 @@ module.exports = A17 = async (A17, m, chatUpdate, store) => {
 
 
     //Dm and Groups Autoreply/Bot chat
-
+    /*
     if (!isCmd && !m.isGroup){
         const botreply = await axios.get(`http://api.brainshop.ai/get?bid=166512&key=5nz1Ha6nS9Zx1MfT&uid=[uid]&msg=[msg]=[${budy}]`)
-        txt = `${botreply.data.cnt}hi`
-        m.reply(kks)
-        }   
-     
+        txt = `${botreply.data.cnt}`
+        m.reply(txt)
+        }    
+        
+     */
 
 
 
@@ -427,7 +428,7 @@ module.exports = A17 = async (A17, m, chatUpdate, store) => {
       // ㅤㅤ〄ㅤㅤ〘 A17 Personal Edition 〙ㅤㅤ〄ㅤㅤㅤㅤ
       // ㅤㅤㅤ〘ㅤ Auto Uptime: ${uptimeFormatted}ㅤ〙`;
 
-      function _0x582b(_0xabb6f8, _0x12cdd8) { const _0x58e890 = _0x58e8(); return _0x582b = function (_0x582b90, _0x4387b3) { _0x582b90 = _0x582b90 - 0x189; let _0x932613 = _0x58e890[_0x582b90]; return _0x932613; }, _0x582b(_0xabb6f8, _0x12cdd8); } function _0x58e8() { const _0x109554 = ['12896370RDSmnX', '3BgvPel', '189HbmdoW', '18854HvEPNh', '11TZHUID', '9125326EcyeIg', '464328lPaAMf', '3400722cbWEOK', '2263175KIczdo', '12TaHNqM', '2521564eqJRHK']; _0x58e8 = function () { return _0x109554; }; return _0x58e8(); } (function (_0x429d7b, _0x532ab5) { const _0x527567 = _0x582b, _0x130eb4 = _0x429d7b(); while (!![]) { try { const _0x75c57a = -parseInt(_0x527567(0x18b)) / 0x1 + -parseInt(_0x527567(0x192)) / 0x2 * (-parseInt(_0x527567(0x189)) / 0x3) + parseInt(_0x527567(0x191)) / 0x4 * (-parseInt(_0x527567(0x190)) / 0x5) + -parseInt(_0x527567(0x18f)) / 0x6 + parseInt(_0x527567(0x18d)) / 0x7 + parseInt(_0x527567(0x18e)) / 0x8 * (-parseInt(_0x527567(0x18a)) / 0x9) + parseInt(_0x527567(0x193)) / 0xa * (parseInt(_0x527567(0x18c)) / 0xb); if (_0x75c57a === _0x532ab5) break; else _0x130eb4['push'](_0x130eb4['shift']()); } catch (_0x19ea04) { _0x130eb4['push'](_0x130eb4['shift']()); } } }(_0x58e8, 0xa8dae)); const status = '🦋 │𝐂𝐘𝐁𝜩𝐑│𝐏𝜟𝐍𝐃𝐀│𝐌𝐃│𝐕➂ 🦋' + uptimeFormatted + '🛡️';
+      function _0x582b(_0xabb6f8, _0x12cdd8) { const _0x58e890 = _0x58e8(); return _0x582b = function (_0x582b90, _0x4387b3) { _0x582b90 = _0x582b90 - 0x189; let _0x932613 = _0x58e890[_0x582b90]; return _0x932613; }, _0x582b(_0xabb6f8, _0x12cdd8); } function _0x58e8() { const _0x109554 = ['12896370RDSmnX', '3BgvPel', '189HbmdoW', '18854HvEPNh', '11TZHUID', '9125326EcyeIg', '464328lPaAMf', '3400722cbWEOK', '2263175KIczdo', '12TaHNqM', '2521564eqJRHK']; _0x58e8 = function () { return _0x109554; }; return _0x58e8(); } (function (_0x429d7b, _0x532ab5) { const _0x527567 = _0x582b, _0x130eb4 = _0x429d7b(); while (!![]) { try { const _0x75c57a = -parseInt(_0x527567(0x18b)) / 0x1 + -parseInt(_0x527567(0x192)) / 0x2 * (-parseInt(_0x527567(0x189)) / 0x3) + parseInt(_0x527567(0x191)) / 0x4 * (-parseInt(_0x527567(0x190)) / 0x5) + -parseInt(_0x527567(0x18f)) / 0x6 + parseInt(_0x527567(0x18d)) / 0x7 + parseInt(_0x527567(0x18e)) / 0x8 * (-parseInt(_0x527567(0x18a)) / 0x9) + parseInt(_0x527567(0x193)) / 0xa * (parseInt(_0x527567(0x18c)) / 0xb); if (_0x75c57a === _0x532ab5) break; else _0x130eb4['push'](_0x130eb4['shift']()); } catch (_0x19ea04) { _0x130eb4['push'](_0x130eb4['shift']()); } } }(_0x58e8, 0xa8dae)); const status = '\x0a\x20\x20ㅤㅤ〄ㅤㅤ〘\x20A17\x20Personal\x20Edition\x20〙ㅤㅤ〄ㅤㅤㅤㅤ\x0a\x20\x20ㅤㅤㅤ〘ㅤ\x20Auto\x20Uptime:\x20' + uptimeFormatted + 'ㅤ〙';
 
       A17.setStatus(status); // Set the status using A17.setStatus or your equivalent method
 
@@ -698,7 +699,11 @@ Typed *surrender* to surrender and admited defeat`
 
 
       hello: `Hello ${pushname}, I am ${BotName}. My current prefix is "${prefix}". How can I help you?`,
-      kai: `My Boss is lost in another Multiverse, and I lost connection with him...`,
+      mk: `🤭 ${pushname}, *මම පොල් ගාන ගමන් ඉන්නෙ ඔයා මොකද කරන්නෙ...*`,
+      mn: `😂 ${pushname},  *මොනවත් කරන්නෙ නැතුව ඉන්න එපා අනෙ..*`,
+      Gm: `🌝 ${pushname}, Good morning 🦋💞`,
+      Gn: `🌝 ${pushname}, Good night💞🦋`,
+      හුත්තො: `*ඇයි හුත්තො*`,
       runtime: `🦋𝘏𝘐 ${pushname}\n${nowtime}\n\n🦋𝘙𝘜𝘕𝘛𝘐𝘔𝘌:${runtime(process.uptime())}\n\n🦋𝘗𝘙𝘌𝘍𝘐𝘟: *${prefix}*\n\n🦋𝘛𝘐𝘔𝘌: ${kaitime}\n\n🦋𝘋𝘈𝘛𝘌: ${kaidate}\n\n🦋𝘛𝘰𝘥𝘢𝘺 𝘪𝘴 ${currentDay}`,
       konichiwa: `Konichiwa ${pushname}, I am ${BotName}. How can I help you?`,
       alive: '🦋 │𝐂𝐘𝐁𝜩𝐑│𝐏𝜟𝐍𝐃𝐀│𝐌𝐃│𝐕➂ 🦋',
@@ -706,7 +711,7 @@ Typed *surrender* to surrender and admited defeat`
       'good morning': `Good morning💞🦋.`,
       ohayo: `Good morning to you too ${pushname} ☺️. Have a great day 😇.`,
       'good afternoon': `Good afternoon💞🦋.`,
-      ඇයි: `${pushname} මැයි😂`,
+      konnichiwa: `Good afternoon to you too ${pushname} ✨. Wishing you an enjoyable afternoon too 😇🤞🏻.`,
       'good night': `Good night💞🦋`,
 
     };
@@ -747,7 +752,7 @@ Typed *surrender* to surrender and admited defeat`
            headerType: 4, */
           contextInfo: {
             externalAdreply: {
-              title: "Powered by Kai",
+              title: "Powered by Sachith",
               body: " ",
               thumbnail: fs.readFileSync("Assets/pic2.jpg"),
               mediaType: 1,
@@ -5026,7 +5031,7 @@ _Click the button below to download_`
             image: { url: thumbnailUrl }, // Include the thumbnail image in the response
             caption: `
 ┏━━━━━━━━━━━━━━━━ •          
-│\n📥*𝘋𝘖𝘞𝘕𝘓𝘖𝘈𝘋𝘐𝘕𝘎*📥 
+│\n🦋*𝘠𝘛-𝘚𝘖𝘕𝘎*🦋
 │━━━━━━━━━━━━━━━━ •          
 │*${anu.title}*
 │━━━━━━━━━━━━━━━━ •            
@@ -5063,7 +5068,7 @@ _Click the button below to download_`
       case 'spotify': {
         if (isBan) return reply(mess.banned);
         if (isBanChat) return reply(mess.bangc);
-        A17.sendMessage(from, { react: { text: "🍁", key: m.key } });
+        A17.sendMessage(from, { react: { text: "📚", key: m.key } });
 
         if (!q) return reply(`Please provide a query. Example: ${prefix + command} 295`);
 
@@ -7003,9 +7008,6 @@ _Click the button below to download_`
 ┗━━━━━━━━━━━━━━━━━━ °
  ━━━❬❬🦋 *Thank* 🦋❭❭━━━
 ┍━━━━━━━━━━━━━━━━━━ •
-┃ 🦋 │𝐂𝐘𝐁𝜩𝐑│𝐏𝜟𝐍𝐃𝐀│𝐌𝐃│𝐕➂ 🦋
-┗━━━━━━━━━━━━━━━━━━ •
-┍━━━━━━━━━━━━━━━━━━ •
 ┃ *_💞THANK SENESH💞_* 
 ┗━━━━━━━━━━━━━━━━━━ •
 ┍━━━━━━━━━━━━━━━━━━ •
@@ -7013,6 +7015,23 @@ _Click the button below to download_`
 ┗━━━━━━━━━━━━━━━━━━ •
 ┍━━━━━━━━━━━━━━━━━━ •
 ┃ 🦋 │𝐂𝐘𝐁𝜩𝐑│𝐱│𝐒𝜟𝐂𝐇𝐈𝐘𝐀│ 🦋
+┗━━━━━━━━━━━━━━━━━━ •
+┍━━━━━━━━━━━━━━━━━━ •
+┃━━━❬❬🦋*Owner Only*
+┃━━━❬❬🦋*Group Moderation*
+┃━━━❬❬🦋*Anti Link*
+┃━━━❬❬🦋*Search*
+┃━━━❬❬🦋*Economy*
+┃━━━❬❬🦋*Games*
+┃━━━❬❬🦋*Convert*
+┃━━━❬❬🦋*Sound Edit*
+┃━━━❬❬🦋*Reactions*
+┃━━━❬❬🦋*Downloader*
+┃━━━❬❬🦋*Fun*
+┃━━━❬❬🦋*Weeb*
+┃━━━❬❬🦋*Informative*
+┃━━━❬❬🦋*Essentials*
+┃━━━❬❬🦋*Others*
 ┗━━━━━━━━━━━━━━━━━━ •`)
         }
 
