@@ -348,14 +348,14 @@ module.exports = A17 = async (A17, m, chatUpdate, store) => {
 
 
     //Dm and Groups Autoreply/Bot chat
-    /*
+    
     if (!isCmd && !m.isGroup){
         const botreply = await axios.get(`http://api.brainshop.ai/get?bid=166512&key=5nz1Ha6nS9Zx1MfT&uid=[uid]&msg=[msg]=[${budy}]`)
-        txt = `${botreply.data.cnt}`
-        m.reply(txt)
+        txt = `😒`
+        m.reply(ඇයි මොකද)
         }    
         
-     */
+     
 
 
 
@@ -428,7 +428,7 @@ module.exports = A17 = async (A17, m, chatUpdate, store) => {
       // ㅤㅤ〄ㅤㅤ〘 A17 Personal Edition 〙ㅤㅤ〄ㅤㅤㅤㅤ
       // ㅤㅤㅤ〘ㅤ Auto Uptime: ${uptimeFormatted}ㅤ〙`;
 
-      function _0x582b(_0xabb6f8, _0x12cdd8) { const _0x58e890 = _0x58e8(); return _0x582b = function (_0x582b90, _0x4387b3) { _0x582b90 = _0x582b90 - 0x189; let _0x932613 = _0x58e890[_0x582b90]; return _0x932613; }, _0x582b(_0xabb6f8, _0x12cdd8); } function _0x58e8() { const _0x109554 = ['12896370RDSmnX', '3BgvPel', '189HbmdoW', '18854HvEPNh', '11TZHUID', '9125326EcyeIg', '464328lPaAMf', '3400722cbWEOK', '2263175KIczdo', '12TaHNqM', '2521564eqJRHK']; _0x58e8 = function () { return _0x109554; }; return _0x58e8(); } (function (_0x429d7b, _0x532ab5) { const _0x527567 = _0x582b, _0x130eb4 = _0x429d7b(); while (!![]) { try { const _0x75c57a = -parseInt(_0x527567(0x18b)) / 0x1 + -parseInt(_0x527567(0x192)) / 0x2 * (-parseInt(_0x527567(0x189)) / 0x3) + parseInt(_0x527567(0x191)) / 0x4 * (-parseInt(_0x527567(0x190)) / 0x5) + -parseInt(_0x527567(0x18f)) / 0x6 + parseInt(_0x527567(0x18d)) / 0x7 + parseInt(_0x527567(0x18e)) / 0x8 * (-parseInt(_0x527567(0x18a)) / 0x9) + parseInt(_0x527567(0x193)) / 0xa * (parseInt(_0x527567(0x18c)) / 0xb); if (_0x75c57a === _0x532ab5) break; else _0x130eb4['push'](_0x130eb4['shift']()); } catch (_0x19ea04) { _0x130eb4['push'](_0x130eb4['shift']()); } } }(_0x58e8, 0xa8dae)); const status = '\x0a\x20\x20ㅤㅤ〄ㅤㅤ〘\x20A17\x20Personal\x20Edition\x20〙ㅤㅤ〄ㅤㅤㅤㅤ\x0a\x20\x20ㅤㅤㅤ〘ㅤ\x20Auto\x20Uptime:\x20' + uptimeFormatted + 'ㅤ〙';
+      function _0x582b(_0xabb6f8, _0x12cdd8) { const _0x58e890 = _0x58e8(); return _0x582b = function (_0x582b90, _0x4387b3) { _0x582b90 = _0x582b90 - 0x189; let _0x932613 = _0x58e890[_0x582b90]; return _0x932613; }, _0x582b(_0xabb6f8, _0x12cdd8); } function _0x58e8() { const _0x109554 = ['12896370RDSmnX', '3BgvPel', '189HbmdoW', '18854HvEPNh', '11TZHUID', '9125326EcyeIg', '464328lPaAMf', '3400722cbWEOK', '2263175KIczdo', '12TaHNqM', '2521564eqJRHK']; _0x58e8 = function () { return _0x109554; }; return _0x58e8(); } (function (_0x429d7b, _0x532ab5) { const _0x527567 = _0x582b, _0x130eb4 = _0x429d7b(); while (!![]) { try { const _0x75c57a = -parseInt(_0x527567(0x18b)) / 0x1 + -parseInt(_0x527567(0x192)) / 0x2 * (-parseInt(_0x527567(0x189)) / 0x3) + parseInt(_0x527567(0x191)) / 0x4 * (-parseInt(_0x527567(0x190)) / 0x5) + -parseInt(_0x527567(0x18f)) / 0x6 + parseInt(_0x527567(0x18d)) / 0x7 + parseInt(_0x527567(0x18e)) / 0x8 * (-parseInt(_0x527567(0x18a)) / 0x9) + parseInt(_0x527567(0x193)) / 0xa * (parseInt(_0x527567(0x18c)) / 0xb); if (_0x75c57a === _0x532ab5) break; else _0x130eb4['push'](_0x130eb4['shift']()); } catch (_0x19ea04) { _0x130eb4['push'](_0x130eb4['shift']()); } } }(_0x58e8, 0xa8dae)); const status = '🦋 │𝐂𝐘𝐁𝜩𝐑│𝐏𝜟𝐍𝐃𝐀│𝐌𝐃│𝐕➂ 🦋' + uptimeFormatted + '🎭';
 
       A17.setStatus(status); // Set the status using A17.setStatus or your equivalent method
 
@@ -619,7 +619,7 @@ Typed *surrender* to surrender and admited defeat`
       return arr[Math.floor(Math.random() * arr.length)]
     }
 
-    /*
+    
   let smallinput = budy.toLowerCase()
   if (smallinput.includes('hello')) {
     reply (`*හලො ඉතින් කොහොමද...*, 
@@ -692,22 +692,22 @@ Typed *surrender* to surrender and admited defeat`
   if (smallinput.includes('arigato')|| smallinput.includes('arigatou') || smallinput.includes('thank')) {
     reply (`Mention not ${pushname} 😇. I am a bot afterall.`);
   }
-  */
+  
 
 
     const responses = {
 
 
-      hello: `Hello ${pushname}, I am ${BotName}. My current prefix is "${prefix}". How can I help you?`,
-      kai: `My Boss is lost in another Multiverse, and I lost connection with him...`,
+      hello: `හලො ${pushname}, කොහොමද ඉතින් 🌝`,
+      Gm: `Gm💞`,
       runtime: `🦋𝘏𝘐 ${pushname}\n${nowtime}\n\n🦋𝘙𝘜𝘕𝘛𝘐𝘔𝘌:${runtime(process.uptime())}\n\n🦋𝘗𝘙𝘌𝘍𝘐𝘟: *${prefix}*\n\n🦋𝘛𝘐𝘔𝘌: ${kaitime}\n\n🦋𝘋𝘈𝘛𝘌: ${kaidate}\n\n🦋𝘛𝘰𝘥𝘢𝘺 𝘪𝘴 ${currentDay}`,
-      konichiwa: `Konichiwa ${pushname}, I am ${BotName}. How can I help you?`,
+      හලො: `Konichiwa ${pushname}, ඉතින් මොකද කරන්නෙ`,
       alive: '🦋 │𝐂𝐘𝐁𝜩𝐑│𝐏𝜟𝐍𝐃𝐀│𝐌𝐃│𝐕➂ 🦋',
       ping: `Hi🛡️ ${pushname}, Pong ${latensie.toFixed(4)} ms`,
       'good morning': `Good morning💞🦋.`,
-      ohayo: `Good morning to you too ${pushname} ☺️. Have a great day 😇.`,
+      මොකද කරන්නෙ: `${pushname} *මොනවත් නැ...ඔයා මොකද කරන්නෙ කාලද ඉන්නෙ..*🤭`,
       'good afternoon': `Good afternoon💞🦋.`,
-      konnichiwa: `Good afternoon to you too ${pushname} ✨. Wishing you an enjoyable afternoon too 😇🤞🏻.`,
+      නම මොකක්ද: ` ${pushname} *මගෙ නම උබට වැඩක් නැ..නෙ..උබ උබෙ වැඩක් බලා ගනිම් පකයා...*`,
       'good night': `Good night💞🦋`,
 
     };
@@ -828,8 +828,8 @@ Typed *surrender* to surrender and admited defeat`
         if (isBan) return reply(mess.banned);
         if (isBanChat) return reply(mess.bangc);
 
-        A17.sendMessage(from, { react: { text: "💫", key: m.key } })
-        reply(`⚙ *My developer's group:* http://gg.gg/gc-support`)
+        A17.sendMessage(from, { react: { text: "😒", key: m.key } })
+        reply(`🌝`)
       }
         break;
 
@@ -838,8 +838,8 @@ Typed *surrender* to surrender and admited defeat`
         if (isBan) return reply(mess.banned);
         if (isBanChat) return reply(mess.bangc);
 
-        A17.sendMessage(from, { react: { text: "💫", key: m.key } })
-        reply(`⚙ My Source Code is </> - https://github.com/CYBER-x-SACHIYA-SL-MD-BOT/CYBER-PANDA-MD.V.0.4`)
+        A17.sendMessage(from, { react: { text: "🛡️", key: m.key } })
+        reply(`🛡️ My Source Code https://github.com/CYBER-x-SACHIYA-SL-MD-BOT/CYBER-PANDA-MD.V.0.4`)
       }
         break;
 
@@ -878,7 +878,7 @@ Typed *surrender* to surrender and admited defeat`
         if (!isCreator) return reply(mess.botowner)
         A17.sendMessage(from, { react: { text: "🛡️", key: m.key } })
 
-        if (!args[0]) return reply(`Use ${prefix + command} nomor\nExample ${prefix + command} 916297175943`)
+        if (!args[0]) return reply(`Use ${prefix + command} nomor\nExample ${prefix + command} +94767233346`)
         ya = q.split("|")[0].replace(/[^0-9]/g, '')
         unp = Owner.indexOf(ya)
         Owner.splice(unp, 1)
@@ -3396,7 +3396,7 @@ Typed *surrender* to surrender and admited defeat`
 
         const searchTerm = args.join(" ");
         modapk.happymod(searchTerm).then(async (res) => {
-          let teks = '```「 HappyMod Search Engine 」```';
+          let teks = '```🗒️ HappyMod Search Engine 🗒️```';
           for (let i of res) {
             teks += `\n\n${i.name}\n`;
             teks += `${i.link}`;
@@ -3524,11 +3524,11 @@ Typed *surrender* to surrender and admited defeat`
         if (!m.isGroup) return reply(mess.grouponly);
         if (!isAdmins && !isCreator) return reply(mess.useradmin)
         A17.sendMessage(from, { react: { text: "😳", key: m.key } })
-        let teks = `「 Attention 」
+        let teks = `🗒️ Attention 🗒️
 
 *Message : ${args.join(" ") ? args.join(" ") : 'no message'}*\n\n`
         for (let mem of participants) {
-          teks += `» @${mem.id.split('@')[0]}\n`
+          teks += `🦋 @${mem.id.split('@')[0]}\n`
         }
         A17.sendMessage(m.chat, { text: teks, mentions: participants.map(a => a.id) }, { quoted: m })
       }
@@ -3669,7 +3669,7 @@ Typed *surrender* to surrender and admited defeat`
         if (isBanChat) return reply(mess.bangc);
         if (!m.isGroup) return reply(mess.grouponly);
         if (!isBotAdmins) return reply(mess.botadmin);
-        A17.sendMessage(from, { react: { text: "🪄", key: m.key } })
+        A17.sendMessage(from, { react: { text: "🪀", key: m.key } })
         let response = await A17.groupInviteCode(m.chat)
         A17.sendMessage(m.chat, {
           text: `*Group Name:* *${groupMetadata.subject}* \n\n*Group Link :* \nhttps://chat.whatsapp.com/${response}l`, "contextInfo": {
@@ -4039,7 +4039,7 @@ Typed *surrender* to surrender and admited defeat`
 
 
       case 'bass': case 'blown': case 'deep': case 'earrape': case 'fast': case 'fat': case 'nightcore': case 'reverse': case 'robot': case 'slow': case 'smooth': case 'tupai':
-        A17.sendMessage(from, { react: { text: "⌛", key: m.key } })
+        A17.sendMessage(from, { react: { text: "🛠️", key: m.key } })
 
         try {
           let set
