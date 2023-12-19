@@ -699,11 +699,7 @@ Typed *surrender* to surrender and admited defeat`
 
 
       hello: `Hello ${pushname}, I am ${BotName}. My current prefix is "${prefix}". How can I help you?`,
-      mk: `🤭 ${pushname}, *මම පොල් ගාන ගමන් ඉන්නෙ ඔයා මොකද කරන්නෙ...*`,
-      mn: `😂 ${pushname},  *මොනවත් කරන්නෙ නැතුව ඉන්න එපා අනෙ..*`,
-      Gm: `🌝 ${pushname}, Good morning 🦋💞`,
-      Gn: `🌝 ${pushname}, Good night💞🦋`,
-      හුත්තො: `*ඇයි හුත්තො*`,
+      kai: `My Boss is lost in another Multiverse, and I lost connection with him...`,
       runtime: `🦋𝘏𝘐 ${pushname}\n${nowtime}\n\n🦋𝘙𝘜𝘕𝘛𝘐𝘔𝘌:${runtime(process.uptime())}\n\n🦋𝘗𝘙𝘌𝘍𝘐𝘟: *${prefix}*\n\n🦋𝘛𝘐𝘔𝘌: ${kaitime}\n\n🦋𝘋𝘈𝘛𝘌: ${kaidate}\n\n🦋𝘛𝘰𝘥𝘢𝘺 𝘪𝘴 ${currentDay}`,
       konichiwa: `Konichiwa ${pushname}, I am ${BotName}. How can I help you?`,
       alive: '🦋 │𝐂𝐘𝐁𝜩𝐑│𝐏𝜟𝐍𝐃𝐀│𝐌𝐃│𝐕➂ 🦋',
@@ -752,7 +748,7 @@ Typed *surrender* to surrender and admited defeat`
            headerType: 4, */
           contextInfo: {
             externalAdreply: {
-              title: "Powered by Sachith",
+              title: "Powered by Kai",
               body: " ",
               thumbnail: fs.readFileSync("Assets/pic2.jpg"),
               mediaType: 1,
@@ -5031,7 +5027,7 @@ _Click the button below to download_`
             image: { url: thumbnailUrl }, // Include the thumbnail image in the response
             caption: `
 ┏━━━━━━━━━━━━━━━━ •          
-│\n🦋*𝘠𝘛-𝘚𝘖𝘕𝘎*🦋
+│\n📥*𝘋𝘖𝘞𝘕𝘓𝘖𝘈𝘋𝘐𝘕𝘎*📥 
 │━━━━━━━━━━━━━━━━ •          
 │*${anu.title}*
 │━━━━━━━━━━━━━━━━ •            
@@ -5068,7 +5064,7 @@ _Click the button below to download_`
       case 'spotify': {
         if (isBan) return reply(mess.banned);
         if (isBanChat) return reply(mess.bangc);
-        A17.sendMessage(from, { react: { text: "📚", key: m.key } });
+        A17.sendMessage(from, { react: { text: "🍁", key: m.key } });
 
         if (!q) return reply(`Please provide a query. Example: ${prefix + command} 295`);
 
@@ -6696,11 +6692,54 @@ _Click the button below to download_`
         const helpmenu = `
 ┍━━━━━━━━━━━━━━━━━━ •
 ┃  *${pushname}*
-┃━━━━━━━━━━━━━━━━ •  
+┡━━━━━━━━━━━━━━━━━━ •  
 ┃  ${nowtime} 
 ┗━━━━━━━━━━━━━━━━━━ •
 ┍━━━━━━━━━━━━━━━━━━ •
-┃ 🦋 │𝐂𝐘𝐁𝜩𝐑│𝐏𝜟𝐍𝐃𝐀│𝐌𝐃│𝐕➂ 🦋
+┃ *𝘛𝘐𝘔𝘌* : ${kaitime}
+┃ *𝘋𝘈𝘛𝘌* : ${kaidate}
+┃*𝘉𝘖𝘛 𝘜𝘚𝘙 𝘕𝘈𝘔𝘌 :* ${pushname} 
+┃*𝘔𝘠 𝘗𝘙𝘌𝘍𝘐𝘟 𝘐𝘚 :*  ${prefix}
+┃*𝘖𝘞𝘕𝘌𝘙 𝘕𝘈𝘔𝘌 :* ${global.OwnerName} 
+┃*𝘉𝘖𝘛 𝘙𝘜𝘕𝘛𝘐𝘔𝘌 :* ${runtime(process.uptime())} 
+┃*𝘗𝘓𝘈𝘛𝘍𝘖𝘙𝘔 :* Linux
+┗━━━━━━━━━━━━━━━━━━ °
+┏━━━━━━━━━━━━━━━━━━ • 
+┃*botmenu*
+┃*ownermenu*
+┃*groupmenu*
+┃*antilinkmenu*
+┃*searchmenu*
+┃*economymenu*
+┃*gamesmenu*
+┃*convertmenu*
+┃*soundmenu*
+┃*reactionsmenu*
+┃*downloadmenu*
+┃*funmenu*
+┃*weebmenu*
+┗━━━━━━━━━━━━━━━━━━ •`
+        let buttonMessage = {
+          video: fs.readFileSync('./system/A17_3.mp4'), gifPlayback: true,
+          caption: helpmenu,
+
+          headerType: 4
+
+        }
+        A17.sendMessage(m.chat, buttonMessage, { quoted: m })
+      }
+        break;
+
+
+      case 'alive':
+        if (isCmd) {
+          if (isBan) return reply(mess.banned);
+          if (isBanChat) return reply(mess.bangc);
+          A17.sendMessage(from, { react: { text: "🗓️", key: m.key } })
+
+          reply(`
+┍━━━━━━━━━━━━━━━━━━ •
+┃│𝐂𝐘𝐁𝜩𝐑│𝐏𝜟𝐍𝐃𝐀│𝐌𝐃│𝐕➃ 
 ┗━━━━━━━━━━━━━━━━━━ •
 ┍━━━━━━━━━━━━━━━━━━ •
 ┃ *𝘛𝘐𝘔𝘌* : ${kaitime}
@@ -6715,7 +6754,31 @@ _Click the button below to download_`
 ┃*𝘉𝘖𝘛 𝘙𝘜𝘕𝘛𝘐𝘔𝘌 :* ${runtime(process.uptime())} 
 ┃*𝘗𝘓𝘈𝘛𝘍𝘖𝘙𝘔 :* Linux
 ┗━━━━━━━━━━━━━━━━━━ °
- ━━━❬❬🦋 *Bot-menu* 🦋❭❭━━━
+ ━━━❬❬💝 *Thank* 💝❭❭━━━
+┍━━━━━━━━━━━━━━━━━━ •
+┃│𝐂𝐘𝐁𝜩𝐑│𝐏𝜟𝐍𝐃𝐀│𝐌𝐃│𝐕➃ 
+┗━━━━━━━━━━━━━━━━━━ •
+┍━━━━━━━━━━━━━━━━━━ •
+┃ *_THANK SENESH_* 
+┗━━━━━━━━━━━━━━━━━━ •
+┍━━━━━━━━━━━━━━━━━━ •
+┃ *𝘚𝘈𝘊𝘏𝘐𝘛𝘏-𝘊𝘏𝘈𝘕𝘋𝘙𝘈*
+┗━━━━━━━━━━━━━━━━━━ •
+┍━━━━━━━━━━━━━━━━━━ •
+┃*│𝐂𝐘𝐁𝜩𝐑│𝐱│𝐒𝜟𝐂𝐇𝐈𝐘𝐀│*
+┗━━━━━━━━━━━━━━━━━━ •`)
+        }
+
+        break;
+
+
+      case 'botmenu':
+        if (isCmd) {
+          if (isBan) return reply(mess.banned);
+          if (isBanChat) return reply(mess.bangc);
+          A17.sendMessage(from, { react: { text: "🗓️", key: m.key } })
+
+          reply(`
 ┏━━━━━━━━━━━━━━━━━━ • 
 ┃${prefix}repo
 ┃${prefix}script
@@ -6726,8 +6789,20 @@ _Click the button below to download_`
 ┃${prefix}auto-status
 ┃${prefix}auto-typing
 ┃${prefix}auto-recoding
-┗━━━━━━━━━━━━━━━━━━ •
- ━━━❬❬🦋 *Owner Only* 🦋❭❭━━━
+┗━━━━━━━━━━━━━━━━━━ •`)
+        }
+
+        break;
+
+
+
+      case 'ownermenu':
+        if (isCmd) {
+          if (isBan) return reply(mess.banned);
+          if (isBanChat) return reply(mess.bangc);
+          A17.sendMessage(from, { react: { text: "🎩", key: m.key } })
+
+          reply(`
 ┏━━━━━━━━━━━━━━━━━━ • 
 ┃${prefix}join
 ┃${prefix}self
@@ -6747,8 +6822,20 @@ _Click the button below to download_`
 ┃${prefix}unblock
 ┃${prefix}ban add
 ┃${prefix}ban del
-┗━━━━━━━━━━━━━━━━━━ •
- ━━━❬❬🦋 *Group Moderation* 🦋❭❭━━━
+┗━━━━━━━━━━━━━━━━━━ •`)
+        }
+
+        break;
+        
+        
+        
+    case 'groupmenu':
+        if (isCmd) {
+          if (isBan) return reply(mess.banned);
+          if (isBanChat) return reply(mess.bangc);
+          A17.sendMessage(from, { react: { text: "🧊", key: m.key } })
+
+          reply(`
 ┏━━━━━━━━━━━━━━━━━━ • 
 ┃${prefix}add
 ┃${prefix}invite
@@ -6766,8 +6853,19 @@ _Click the button below to download_`
 ┃${prefix}hidetag
 ┃${prefix}nsfw
 ┃${prefix}nsnfwmenu
-┗━━━━━━━━━━━━━━━━━━ •
- ━━━❬❬🦋 *Anti Link* 🦋❭❭━━━
+┗━━━━━━━━━━━━━━━━━━ •`)
+        }
+
+        break;    
+        
+        
+        case 'antilinkmenu':
+        if (isCmd) {
+          if (isBan) return reply(mess.banned);
+          if (isBanChat) return reply(mess.bangc);
+          A17.sendMessage(from, { react: { text: "🛡️", key: m.key } })
+
+          reply(`
 ┏━━━━━━━━━━━━━━━━━━ • 
 ┃${prefix}antilinkgc
 ┃${prefix}antilinktt
@@ -6778,8 +6876,19 @@ _Click the button below to download_`
 ┃${prefix}antilinktwit
 ┃${prefix}antiwame
 ┃${prefix}antilinkall
-┗━━━━━━━━━━━━━━━━━━ •
- ━━━❬❬🦋 *Search* 🦋❭❭━━━
+┗━━━━━━━━━━━━━━━━━━ •`)
+        }
+
+        break;
+        
+        
+        case 'searchmenu':
+        if (isCmd) {
+          if (isBan) return reply(mess.banned);
+          if (isBanChat) return reply(mess.bangc);
+          A17.sendMessage(from, { react: { text: "🗒️", key: m.key } })
+
+          reply(`
 ┏━━━━━━━━━━━━━━━━━━ • 
 ┃${prefix}play
 ┃${prefix}song
@@ -6796,8 +6905,19 @@ _Click the button below to download_`
 ┃${prefix}image
 ┃${prefix}searchgc
 ┃${prefix}wikimedia
-┗━━━━━━━━━━━━━━━━━━ •
- ━━━❬❬🦋 *Economy* 🦋❭❭━━━
+┗━━━━━━━━━━━━━━━━━━ •`)
+        }
+
+        break;
+        
+        
+        case 'economymenu':
+        if (isCmd) {
+          if (isBan) return reply(mess.banned);
+          if (isBanChat) return reply(mess.bangc);
+          A17.sendMessage(from, { react: { text: "💫", key: m.key } })
+
+          reply(`
 ┏━━━━━━━━━━━━━━━━━━ • 
 ┃${prefix}daily 
 ┃${prefix}wallet
@@ -6808,16 +6928,38 @@ _Click the button below to download_`
 ┃${prefix}rob / attack
 ┃${prefix}transfer / give
 ┃${prefix}wealth / ritual
-┗━━━━━━━━━━━━━━━━━━ •
- ━━━❬❬🦋 *Games* 🦋❭❭━━━
+┗━━━━━━━━━━━━━━━━━━ •`)
+        }
+
+        break;
+        
+        
+        case 'gamesmenu':
+        if (isCmd) {
+          if (isBan) return reply(mess.banned);
+          if (isBanChat) return reply(mess.bangc);
+          A17.sendMessage(from, { react: { text: "🧿", key: m.key } })
+
+          reply(`
 ┏━━━━━━━━━━━━━━━━━━ • 
 ┃${prefix}ttt / tictactoe
 ┃${prefix}truth
 ┃${prefix}dare
 ┃${prefix}spin / slot
 ┃${prefix}gamble / lottery
- ┗━━━━━━━━━━━━━━━━━━ •
- ━━━❬❬🦋 *Convert* 🦋❭❭━━━
+┗━━━━━━━━━━━━━━━━━━ •`)
+        }
+
+        break;
+        
+        
+        case 'convertmenu':
+        if (isCmd) {
+          if (isBan) return reply(mess.banned);
+          if (isBanChat) return reply(mess.bangc);
+          A17.sendMessage(from, { react: { text: "🥰", key: m.key } })
+
+          reply(`
 ┏━━━━━━━━━━━━━━━━━━ • 
 ┃${prefix}sticker
 ┃${prefix}toimg
@@ -6829,8 +6971,19 @@ _Click the button below to download_`
 ┃${prefix}steal
 ┃${prefix}stickermeme
 ┃${prefix}emojimix
-┗━━━━━━━━━━━━━━━━━━ •
- ━━━❬❬🦋 *Sound Edit* 🦋❭❭━━━
+┗━━━━━━━━━━━━━━━━━━ •`)
+        }
+
+        break;
+        
+        
+        case 'soundmenu':
+        if (isCmd) {
+          if (isBan) return reply(mess.banned);
+          if (isBanChat) return reply(mess.bangc);
+          A17.sendMessage(from, { react: { text: "📣", key: m.key } })
+
+          reply(`
 ┏━━━━━━━━━━━━━━━━━━ • 
 ┃${prefix}ringtone
 ┃${prefix}bass
@@ -6845,8 +6998,19 @@ _Click the button below to download_`
 ┃${prefix}fat
 ┃${prefix}nightcore
 ┃${prefix}reverse
-┗━━━━━━━━━━━━━━━━━━ •
- ━━━❬❬🦋 *Reactions* 🦋❭❭ ━━━
+┗━━━━━━━━━━━━━━━━━━ •`)
+        }
+
+        break;
+        
+        
+        case 'reactionsmenu':
+        if (isCmd) {
+          if (isBan) return reply(mess.banned);
+          if (isBanChat) return reply(mess.bangc);
+          A17.sendMessage(from, { react: { text: "🔑", key: m.key } })
+
+          reply(`
 ┏━━━━━━━━━━━━━━━━━━ • 
 ┃${prefix}cuddle
 ┃${prefix}hug
@@ -6873,8 +7037,19 @@ _Click the button below to download_`
 ┃${prefix}wink
 ┃${prefix}dance
 ┃${prefix}cringe
-┗━━━━━━━━━━━━━━━━━━ •
- ━━━❬❬🦋 *Downloader* 🦋❭❭━━━
+┗━━━━━━━━━━━━━━━━━━ •`)
+        }
+
+        break;
+        
+        
+        case 'downloadmenu':
+        if (isCmd) {
+          if (isBan) return reply(mess.banned);
+          if (isBanChat) return reply(mess.bangc);
+          A17.sendMessage(from, { react: { text: "💝", key: m.key } })
+
+          reply(`
 ┏━━━━━━━━━━━━━━━━━━ • 
 ┃${prefix}ytvideo
 ┃${prefix}mediafire
@@ -6888,8 +7063,19 @@ _Click the button below to download_`
 ┃${prefix}tiktokaudio
 ┃${prefix}happymod
 ┃${prefix}tiktoknowm
-┗━━━━━━━━━━━━━━━━━━ •
- ━━━❬❬🦋 *Fun* 🦋❭❭━━━
+┗━━━━━━━━━━━━━━━━━━ •`)
+        }
+
+        break;
+        
+        
+        case 'funmenu':
+        if (isCmd) {
+          if (isBan) return reply(mess.banned);
+          if (isBanChat) return reply(mess.bangc);
+          A17.sendMessage(from, { react: { text: "🤪", key: m.key } })
+
+          reply(`
 ┏━━━━━━━━━━━━━━━━━━ • 
 ┃${prefix}reaction
 ┃${prefix}cutecheck
@@ -6906,8 +7092,19 @@ _Click the button below to download_`
 ┃${prefix}hornychec
 ┃${prefix}prettycheck
 ┃${prefix}lovelycheck
-┗━━━━━━━━━━━━━━━━━━ •
- ━━━❬❬🦋 *Weeb* 🦋❭❭━━━
+┗━━━━━━━━━━━━━━━━━━ •`)
+        }
+
+        break;
+        
+        
+        case 'weebmenu':
+        if (isCmd) {
+          if (isBan) return reply(mess.banned);
+          if (isBanChat) return reply(mess.bangc);
+          A17.sendMessage(from, { react: { text: "🌐", key: m.key } })
+
+          reply(`
 ┏━━━━━━━━━━━━━━━━━━ • 
 ┃${prefix}anime
 ┃${prefix}animestory
@@ -6931,114 +7128,13 @@ _Click the button below to download_`
 ┃${prefix}migumin
 ┃${prefix}wallpaper
 ┃${prefix}animequote
-┗━━━━━━━━━━━━━━━━━━ •
-  ━━━❬❬🦋 *Informative* 🦋❭❭━━━
-┏━━━━━━━━━━━━━━━━━━ • 
-┃${prefix}quote
-┃${prefix}weather
-┃${prefix}covid
-┃${prefix}earthquake
-┃${prefix}wiki
-┃${prefix}stalknumber
-┗━━━━━━━━━━━━━━━━━━ •
- ━━━❬❬🦋 *Essentials* 🦋❭❭━━━
-┏━━━━━━━━━━━━━━━━━━ • 
-┃${prefix}qr
-┃${prefix}say
-┃${prefix}fliptext
-┃${prefix}toletter
-┃${prefix}translate, 
-┗━━━━━━━━━━━━━━━━━━ •
-━━━❬❬🦋 *Others* 🦋❭❭━━━
-┏━━━━━━━━━━━━━━━━━━ • 
-┃${prefix}stickermeme
-┃${prefix}quotes
-┃${prefix}report
-┃${prefix}afk
-┃${prefix}darkjoke
-┗━━━━━━━━━━━━━━━━━━ •
- ━━━❬❬🦋 *Thank* 🦋❭❭━━━
-┍━━━━━━━━━━━━━━━━━━ •
-┃ 🦋 │𝐂𝐘𝐁𝜩𝐑│𝐏𝜟𝐍𝐃𝐀│𝐌𝐃│𝐕➂ 🦋
-┗━━━━━━━━━━━━━━━━━━ •
-┍━━━━━━━━━━━━━━━━━━ •
-┃ *_💞THANK SENESH💞_* 
-┗━━━━━━━━━━━━━━━━━━ •
-┍━━━━━━━━━━━━━━━━━━ •
-┃ 🦋𝘚𝘈𝘊𝘏𝘐𝘛𝘏-𝘊𝘏𝘈𝘕𝘋𝘙𝘈
-┗━━━━━━━━━━━━━━━━━━ •
-┍━━━━━━━━━━━━━━━━━━ •
-┃ 🦋 │𝐂𝐘𝐁𝜩𝐑│𝐱│𝐒𝜟𝐂𝐇𝐈𝐘𝐀│ 🦋
-┗━━━━━━━━━━━━━━━━━━ •
-`
-        let buttonMessage = {
-          video: fs.readFileSync('./system/A17_3.mp4'), gifPlayback: true,
-          caption: helpmenu,
-
-          headerType: 4
-
-        }
-        A17.sendMessage(m.chat, buttonMessage, { quoted: m })
-      }
-        break;
-
-
-      case 'alive':
-        if (isCmd) {
-          if (isBan) return reply(mess.banned);
-          if (isBanChat) return reply(mess.bangc);
-          A17.sendMessage(from, { react: { text: "🗓️", key: m.key } })
-
-          reply(`
-┍━━━━━━━━━━━━━━━━━━ •
-┃ 🦋 │𝐂𝐘𝐁𝜩𝐑│𝐏𝜟𝐍𝐃𝐀│𝐌𝐃│𝐕➂ 🦋
-┗━━━━━━━━━━━━━━━━━━ •
-┍━━━━━━━━━━━━━━━━━━ •
-┃ *𝘛𝘐𝘔𝘌* : ${kaitime}
-┗━━━━━━━━━━━━━━━━━━ •
-┍━━━━━━━━━━━━━━━━━━ •
-┃ *𝘋𝘈𝘛𝘌* : ${kaidate}
-┗━━━━━━━━━━━━━━━━━━ •
-┍━━━━━━━━━━━━━━━━━━ •
-┃*𝘉𝘖𝘛 𝘜𝘚𝘙 𝘕𝘈𝘔𝘌 :* ${pushname} 
-┃*𝘔𝘠 𝘗𝘙𝘌𝘍𝘐𝘟 𝘐𝘚 :*  ${prefix}
-┃*𝘖𝘞𝘕𝘌𝘙 𝘕𝘈𝘔𝘌 :* ${global.OwnerName} 
-┃*𝘉𝘖𝘛 𝘙𝘜𝘕𝘛𝘐𝘔𝘌 :* ${runtime(process.uptime())} 
-┃*𝘗𝘓𝘈𝘛𝘍𝘖𝘙𝘔 :* Linux
-┗━━━━━━━━━━━━━━━━━━ °
- ━━━❬❬🦋 *Thank* 🦋❭❭━━━
-┍━━━━━━━━━━━━━━━━━━ •
-┃ *_💞THANK SENESH💞_* 
-┗━━━━━━━━━━━━━━━━━━ •
-┍━━━━━━━━━━━━━━━━━━ •
-┃ 🦋𝘚𝘈𝘊𝘏𝘐𝘛𝘏-𝘊𝘏𝘈𝘕𝘋𝘙𝘈
-┗━━━━━━━━━━━━━━━━━━ •
-┍━━━━━━━━━━━━━━━━━━ •
-┃ 🦋 │𝐂𝐘𝐁𝜩𝐑│𝐱│𝐒𝜟𝐂𝐇𝐈𝐘𝐀│ 🦋
-┗━━━━━━━━━━━━━━━━━━ •
-┍━━━━━━━━━━━━━━━━━━ •
-┃━━━❬❬🦋*Owner Only*
-┃━━━❬❬🦋*Group Moderation*
-┃━━━❬❬🦋*Anti Link*
-┃━━━❬❬🦋*Search*
-┃━━━❬❬🦋*Economy*
-┃━━━❬❬🦋*Games*
-┃━━━❬❬🦋*Convert*
-┃━━━❬❬🦋*Sound Edit*
-┃━━━❬❬🦋*Reactions*
-┃━━━❬❬🦋*Downloader*
-┃━━━❬❬🦋*Fun*
-┃━━━❬❬🦋*Weeb*
-┃━━━❬❬🦋*Informative*
-┃━━━❬❬🦋*Essentials*
-┃━━━❬❬🦋*Others*
 ┗━━━━━━━━━━━━━━━━━━ •`)
         }
 
         break;
-
-
-      case '':
+        
+        
+        case '':
         if (isCmd) {
           if (isBan) return reply(mess.banned);
           if (isBanChat) return reply(mess.bangc);
@@ -7048,22 +7144,8 @@ _Click the button below to download_`
         }
 
         break;
-
-
-
-      case '':
-        if (isCmd) {
-          if (isBan) return reply(mess.banned);
-          if (isBanChat) return reply(mess.bangc);
-          A17.sendMessage(from, { react: { text: "✨", key: m.key } })
-
-          reply(`Do you need any help ${pushname} ? Type *${prefix}help* to get my full command list.`)
-        }
-
-        break;
-
-
-      //qr
+               
+       //qr
       case 'qr': case 'scanner': case 'qrcode':
         if (isBan) return reply(mess.banned);
         if (isBanChat) return reply(mess.bangc);
