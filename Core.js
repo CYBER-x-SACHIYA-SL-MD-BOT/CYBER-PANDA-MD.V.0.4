@@ -699,26 +699,17 @@ Typed *surrender* to surrender and admited defeat`
 
 
       hello: `Hello ${pushname}, I am ${BotName}. My current prefix is "${prefix}". How can I help you?`,
-      panda: '🦋 │𝐂𝐘𝐁𝜩𝐑│𝐏𝜟𝐍𝐃𝐀│𝐌𝐃│𝐕➂ 🦋',
-      හුත්තො: 'ඇයි හුත්තො',
-      පකයො: 'ඇයි පකයො',
+      kai: `My Boss is lost in another Multiverse, and I lost connection with him...`,
       runtime: `🦋𝘏𝘐 ${pushname}\n${nowtime}\n\n🦋𝘙𝘜𝘕𝘛𝘐𝘔𝘌:${runtime(process.uptime())}\n\n🦋𝘗𝘙𝘌𝘍𝘐𝘟: *${prefix}*\n\n🦋𝘛𝘐𝘔𝘌: ${kaitime}\n\n🦋𝘋𝘈𝘛𝘌: ${kaidate}\n\n🦋𝘛𝘰𝘥𝘢𝘺 𝘪𝘴 ${currentDay}`,
       konichiwa: `Konichiwa ${pushname}, I am ${BotName}. How can I help you?`,
       alive: '🦋 │𝐂𝐘𝐁𝜩𝐑│𝐏𝜟𝐍𝐃𝐀│𝐌𝐃│𝐕➂ 🦋',
       ping: `Hi🛡️ ${pushname}, Pong ${latensie.toFixed(4)} ms`,
+      'good morning': `Good morning💞🦋.`,
+      ohayo: `Good morning to you too ${pushname} ☺️. Have a great day 😇.`,
+      'good afternoon': `Good afternoon💞🦋.`,
+      konnichiwa: `Good afternoon to you too ${pushname} ✨. Wishing you an enjoyable afternoon too 😇🤞🏻.`,
       'good night': `Good night💞🦋`,
-      'gn': `Good night💞🦋`,     
-      'gm': `Good Morning💞🦋`,      
-      'Gm': `Good Morning💞🦋`,      
-      'Gn': `Good night💞🦋`,      
-      'good morning': `Good Morning💞🦋`,      
-      මොකද කරන්නෙ:'මොනවත් නැ හලො😊'      
-      Mk: 'මොනවත් නැ.හලො..ඔයා මොකද කරන්නෙ...',      
-      mk: 'මොනවත් නැ.හලො..ඔයා මොකද කරන්නෙ...',
-      Hi: 'Hi\nහලො ඉතින් කොහොමද ඔයාට',      
-      MN: 'ඇයි මොනවත් කරන්නෙ නැද්ද..',      
-      mn: 'ඇයි මොනවත් කරන්නෙ නැද්ද..',      
-      
+
     };
 
     const smallinput = budy.toLowerCase();
@@ -3396,7 +3387,7 @@ Typed *surrender* to surrender and admited defeat`
       // break;
 
       //
-      case 'apk': case 'app': {
+      case 'happymod': case 'modapk': {
         if (isBan) return reply(mess.banned);
         if (isBanChat) return reply(mess.bangc);
         A17.sendMessage(from, { react: { text: "🔍", key: m.key } });
@@ -5036,7 +5027,7 @@ _Click the button below to download_`
             image: { url: thumbnailUrl }, // Include the thumbnail image in the response
             caption: `
 ┏━━━━━━━━━━━━━━━━ •          
-│   🎧 *ʏᴛ ꜱᴏɴɢ* 🎧
+│ 🎧 *ʏᴛ-ꜱᴏɴɢ* 🎧 
 ┣━━━━━━━━━━━━━━━━ •          
 │ *${anu.title}*
 ┣━━━━━━━━━━━━━━━━ •            
@@ -5044,10 +5035,10 @@ _Click the button below to download_`
 ┣━━━━━━━━━━━━━━━━ •
 │🔦 *ᴠɪᴇᴡᴇʀꜱ* ${anu.views}
 ┣━━━━━━━━━━━━━━━━ •
-│📽️ *ᴄʜᴀɴɴᴇʟ* ${anu.author.name}
+│📽 *ᴄʜᴀɴɴᴇʟ* ${anu.author.name}
 ┣━━━━━━━━━━━━━━━━ •
-│🎬 *ꜱᴏɴɢ ᴜᴘʟᴏᴀᴅᴇ* ${anu.ago}
-┣━━━━━━━━━━━━━━━━ •
+│🎬 *ᴠɪᴅᴇᴏ ᴜᴘʟᴏᴀᴅᴇᴅ* ${anu.ago}
+│━━━━━━━━━━━━━━━━ •
 │📂 *ᴜʀʟ* ${anu.url}\n
 ┣━━━━━━━━━━━━━━━━ •          
 │ *ᴄʏʙᴇʀ ᴘᴀɴᴅᴀ ᴍᴅ*
@@ -5115,7 +5106,7 @@ _Click the button below to download_`
         let search = await yts(text)
         let anu = search.videos[0]
         const ytmp4play = await YT.mp4(anu.url)
-        A17.sendMessage(from, { video: { url: ytmp4play.videoUrl }, mimetype: "video/mp4", caption: anu.title + '━━━❬❬🦋 *ʏᴛ-ᴠɪᴅᴇᴏ* 🦋❭❭ ━━━', }, { quoted: m })
+        A17.sendMessage(from, { video: { url: ytmp4play.videoUrl }, mimetype: "video/mp4", caption: anu.title + '━━━❬❬🦋 *𝘠𝘛-𝘝𝘐𝘋𝘌𝘖* 🦋❭❭ ━━━', }, { quoted: m })
       }
 
         break;
@@ -6694,7 +6685,7 @@ _Click the button below to download_`
 
 
 
-      case 'help': case 'h': case 'menu': case 'allmenu': case 'listmenu': {
+      case 'help': case 'h': case 'menu': case 'list': case 'listmenu': {
         if (isBan) return reply(mess.banned);
         if (isBanChat) return reply(mess.bangc);
         A17.sendMessage(from, { react: { text: "📂", key: m.key } })
@@ -6702,27 +6693,29 @@ _Click the button below to download_`
 ┍━━━━━━━━━━━━━━━━━━ •
 ┃  *${pushname}*
 ┣━━━━━━━━━━━━━━━━━━ •  
-┃📅 *𝘛𝘐𝘔𝘌* : ${kaitime}
-┃🕒 *𝘋𝘈𝘛𝘌* : ${kaidate}
-┃🎩 *𝘉𝘖𝘛 𝘜𝘚𝘙 𝘕𝘈𝘔𝘌* : ${pushname} 
-┃🔑 *𝘔𝘠 𝘗𝘙𝘌𝘍𝘐𝘟 𝘐𝘚* :  ${prefix}
-┃🧊 *𝘖𝘞𝘕𝘌𝘙 𝘕𝘈𝘔𝘌*: ${global.OwnerName} 
-┃📌 *𝘉𝘖𝘛 𝘙𝘜𝘕𝘛𝘐𝘔𝘌* : ${runtime(process.uptime())} 
-┃🎯 *𝘗𝘓𝘈𝘛𝘍𝘖𝘙𝘔* : Linux
+┃  ${nowtime} 
+┣━━━━━━━━━━━━━━━━━━ •
+┃ *ᴛɪᴍᴇ* : ${kaitime}
+┃ *ᴅᴀᴛᴇ* : ${kaidate}
+┃ *ʙᴏᴛ ᴜꜱᴇʀ ɴᴀᴍᴇ* ${pushname} 
+┃ *ᴍʏ ᴘʀᴇꜰɪx ɪꜱ*  ${prefix}
+┃ *ᴏᴡɴᴇʀ ɴᴀᴍᴇ* ${global.OwnerName} 
+┃ *ʙᴏᴛ ʀᴜɴᴛɪᴍᴇ* ${runtime(process.uptime())} 
+┃ *ᴘʟᴀᴛꜰᴏʀᴍ* 𝙻𝙸𝙽𝚄𝚇
 ┣━━━━━━━━━━━━━━━━━━ °
-┃ *1.0*   ~botmenu~
-┃ *2.1*   ~ownermenu~
-┃ *3.2*   ~Groupmenu~
-┃ *4.3*   ~searchmenu~
-┃ *5.4*   ~botmenu~
-┃ *6.5*   ~economymenu~
-┃ *7.6*   ~gamesmenu~
-┃ *8.7*   ~convertmenu~
-┃ *9.8*   ~soundmenu~
-┃ *10.9*  ~reactionsmenu~
-┃ *11.10* ~downloadmenu~
-┃ *12.11* ~funmenu~
-┃ *13.12* ~weebmenu~
+┃ *ʙᴏᴛᴍᴇɴᴜ*
+┃ *ᴏᴡɴᴇʀᴍᴇɴᴜ*
+┃ *ɢʀᴏᴜᴘᴍᴇɴᴜ*
+┃ *ᴀɴᴛɪʟɪɴᴋᴍᴇɴᴜ*
+┃ *ꜱᴇᴀʀᴄʜᴍᴇɴᴜ*
+┃ *ᴇᴄᴏɴᴏᴍʏᴍᴇɴᴜ*
+┃ *ɢᴀᴍᴇꜱᴍᴇɴᴜ*
+┃ *ᴄᴏɴᴡᴇʀᴛᴍᴇɴᴜ*
+┃ *ꜱᴏᴜɴᴅᴍᴇɴᴜ*
+┃ *ʀᴇᴀᴄᴛɪᴏɴꜱᴍᴇɴᴜ*
+┃ *ᴅᴏᴡɴʟᴏᴀᴅᴍᴇɴᴜ*
+┃ *ꜰᴜɴᴍᴇɴᴜ*
+┃ *ᴡᴇᴇʙᴍᴇɴᴜ*
 ┗━━━━━━━━━━━━━━━━━━ •`
         let buttonMessage = {
           video: fs.readFileSync('./system/A17_3.mp4'), gifPlayback: true,
@@ -6777,7 +6770,7 @@ _Click the button below to download_`
         break;
 
 
-      case '1.0':
+      case 'botmenu':
         if (isCmd) {
           if (isBan) return reply(mess.banned);
           if (isBanChat) return reply(mess.bangc);
@@ -6801,7 +6794,7 @@ _Click the button below to download_`
 
 
 
-      case '2.1':
+      case 'ownermenu':
         if (isCmd) {
           if (isBan) return reply(mess.banned);
           if (isBanChat) return reply(mess.bangc);
@@ -6834,7 +6827,7 @@ _Click the button below to download_`
         
         
         
-    case '3.2':
+    case 'groupmenu':
         if (isCmd) {
           if (isBan) return reply(mess.banned);
           if (isBanChat) return reply(mess.bangc);
@@ -6864,7 +6857,7 @@ _Click the button below to download_`
         break;    
         
         
-        case '4.3':
+        case 'antilinkmenu':
         if (isCmd) {
           if (isBan) return reply(mess.banned);
           if (isBanChat) return reply(mess.bangc);
@@ -6887,7 +6880,7 @@ _Click the button below to download_`
         break;
         
         
-        case '5.4':
+        case 'searchmenu':
         if (isCmd) {
           if (isBan) return reply(mess.banned);
           if (isBanChat) return reply(mess.bangc);
@@ -6916,7 +6909,7 @@ _Click the button below to download_`
         break;
         
         
-        case '6.5':
+        case 'economymenu':
         if (isCmd) {
           if (isBan) return reply(mess.banned);
           if (isBanChat) return reply(mess.bangc);
@@ -6939,7 +6932,7 @@ _Click the button below to download_`
         break;
         
         
-        case '7.6':
+        case 'gamesmenu':
         if (isCmd) {
           if (isBan) return reply(mess.banned);
           if (isBanChat) return reply(mess.bangc);
@@ -6958,7 +6951,7 @@ _Click the button below to download_`
         break;
         
         
-        case '8.7':
+        case 'convertmenu':
         if (isCmd) {
           if (isBan) return reply(mess.banned);
           if (isBanChat) return reply(mess.bangc);
@@ -6982,7 +6975,7 @@ _Click the button below to download_`
         break;
         
         
-        case '9.8':
+        case 'soundmenu':
         if (isCmd) {
           if (isBan) return reply(mess.banned);
           if (isBanChat) return reply(mess.bangc);
@@ -7009,7 +7002,7 @@ _Click the button below to download_`
         break;
         
         
-        case '10.9':
+        case 'reactionsmenu':
         if (isCmd) {
           if (isBan) return reply(mess.banned);
           if (isBanChat) return reply(mess.bangc);
@@ -7048,7 +7041,7 @@ _Click the button below to download_`
         break;
         
         
-        case '11.10':
+        case 'downloadmenu':
         if (isCmd) {
           if (isBan) return reply(mess.banned);
           if (isBanChat) return reply(mess.bangc);
@@ -7074,7 +7067,7 @@ _Click the button below to download_`
         break;
         
         
-        case '12.11':
+        case 'funmenu':
         if (isCmd) {
           if (isBan) return reply(mess.banned);
           if (isBanChat) return reply(mess.bangc);
@@ -7103,7 +7096,7 @@ _Click the button below to download_`
         break;
         
         
-        case '13.12':
+        case 'weebmenu':
         if (isCmd) {
           if (isBan) return reply(mess.banned);
           if (isBanChat) return reply(mess.bangc);
@@ -7251,7 +7244,7 @@ _Click the button below to download_`
           if (isBan) return reply(mess.banned);
           if (isBanChat) return reply(mess.bangc);
           A17.sendMessage(from, { react: { text: "❌", key: m.key } })
-          reply(`Hey *Youser* මෙවනි ව්දානයක් මා සතුව නැත..`)
+          reply(`Hey *${pushname}* senpai! this command are not programmed! Type *${prefix}help* to get my full command list!`)
 
         }
 
