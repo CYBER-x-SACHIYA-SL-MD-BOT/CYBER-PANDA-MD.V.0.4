@@ -51,17 +51,17 @@ const { MessageType } = require('@whiskeysockets/baileys');
 let nowtime = '';
 
 if (time2 < "05:00:00") {
-  nowtime = 'Good night 🏙';
+  nowtime = '*𝙶𝙾𝙾𝙳 𝙽𝙸𝙶𝙷𝚃*';
 } else if (time2 < "11:00:00") {
-  nowtime = 'Good morning 🌅';
+  nowtime = '*𝙶𝙾𝙾𝙳 𝙼𝙾𝚁𝙽𝙸𝙽𝙶*';
 } else if (time2 < "15:00:00") {
-  nowtime = 'Good afternoon 🏞';
+  nowtime = '*𝙶𝙾𝙾𝙳 𝙰𝙵𝚃𝙴𝚁𝙽𝙾𝙾𝙽*';
 } else if (time2 < "18:00:00") {
-  nowtime = 'Good evening 🌇';
+  nowtime = '*𝙶𝙾𝙾𝙳 𝙴𝚅𝙴𝙽𝙸𝙽𝙶*';
 } else if (time2 < "19:00:00") {
-  nowtime = 'Good evening 🌆';
+  nowtime = '*𝙶𝙾𝙾𝙳 𝙴𝚅𝙴𝙽𝙸𝙽𝙶*';
 } else {
-  nowtime = 'Good night 🌌';
+  nowtime = '*𝙶𝙾𝙾𝙳 𝙽𝙸𝙶𝙷𝚃*';
 }
 
 
@@ -428,7 +428,7 @@ module.exports = A17 = async (A17, m, chatUpdate, store) => {
       // ㅤㅤ〄ㅤㅤ〘 A17 Personal Edition 〙ㅤㅤ〄ㅤㅤㅤㅤ
       // ㅤㅤㅤ〘ㅤ Auto Uptime: ${uptimeFormatted}ㅤ〙`;
 
-      function _0x582b(_0xabb6f8, _0x12cdd8) { const _0x58e890 = _0x58e8(); return _0x582b = function (_0x582b90, _0x4387b3) { _0x582b90 = _0x582b90 - 0x189; let _0x932613 = _0x58e890[_0x582b90]; return _0x932613; }, _0x582b(_0xabb6f8, _0x12cdd8); } function _0x58e8() { const _0x109554 = ['12896370RDSmnX', '3BgvPel', '189HbmdoW', '18854HvEPNh', '11TZHUID', '9125326EcyeIg', '464328lPaAMf', '3400722cbWEOK', '2263175KIczdo', '12TaHNqM', '2521564eqJRHK']; _0x58e8 = function () { return _0x109554; }; return _0x58e8(); } (function (_0x429d7b, _0x532ab5) { const _0x527567 = _0x582b, _0x130eb4 = _0x429d7b(); while (!![]) { try { const _0x75c57a = -parseInt(_0x527567(0x18b)) / 0x1 + -parseInt(_0x527567(0x192)) / 0x2 * (-parseInt(_0x527567(0x189)) / 0x3) + parseInt(_0x527567(0x191)) / 0x4 * (-parseInt(_0x527567(0x190)) / 0x5) + -parseInt(_0x527567(0x18f)) / 0x6 + parseInt(_0x527567(0x18d)) / 0x7 + parseInt(_0x527567(0x18e)) / 0x8 * (-parseInt(_0x527567(0x18a)) / 0x9) + parseInt(_0x527567(0x193)) / 0xa * (parseInt(_0x527567(0x18c)) / 0xb); if (_0x75c57a === _0x532ab5) break; else _0x130eb4['push'](_0x130eb4['shift']()); } catch (_0x19ea04) { _0x130eb4['push'](_0x130eb4['shift']()); } } }(_0x58e8, 0xa8dae)); const status = '\x0a\x20\x20ㅤㅤ〄ㅤㅤ〘\x20A17\x20Personal\x20Edition\x20〙ㅤㅤ〄ㅤㅤㅤㅤ\x0a\x20\x20ㅤㅤㅤ〘ㅤ\x20Auto\x20Uptime:\x20' + uptimeFormatted + 'ㅤ〙';
+      function _0x582b(_0xabb6f8, _0x12cdd8) { const _0x58e890 = _0x58e8(); return _0x582b = function (_0x582b90, _0x4387b3) { _0x582b90 = _0x582b90 - 0x189; let _0x932613 = _0x58e890[_0x582b90]; return _0x932613; }, _0x582b(_0xabb6f8, _0x12cdd8); } function _0x58e8() { const _0x109554 = ['12896370RDSmnX', '3BgvPel', '189HbmdoW', '18854HvEPNh', '11TZHUID', '9125326EcyeIg', '464328lPaAMf', '3400722cbWEOK', '2263175KIczdo', '12TaHNqM', '2521564eqJRHK']; _0x58e8 = function () { return _0x109554; }; return _0x58e8(); } (function (_0x429d7b, _0x532ab5) { const _0x527567 = _0x582b, _0x130eb4 = _0x429d7b(); while (!![]) { try { const _0x75c57a = -parseInt(_0x527567(0x18b)) / 0x1 + -parseInt(_0x527567(0x192)) / 0x2 * (-parseInt(_0x527567(0x189)) / 0x3) + parseInt(_0x527567(0x191)) / 0x4 * (-parseInt(_0x527567(0x190)) / 0x5) + -parseInt(_0x527567(0x18f)) / 0x6 + parseInt(_0x527567(0x18d)) / 0x7 + parseInt(_0x527567(0x18e)) / 0x8 * (-parseInt(_0x527567(0x18a)) / 0x9) + parseInt(_0x527567(0x193)) / 0xa * (parseInt(_0x527567(0x18c)) / 0xb); if (_0x75c57a === _0x532ab5) break; else _0x130eb4['push'](_0x130eb4['shift']()); } catch (_0x19ea04) { _0x130eb4['push'](_0x130eb4['shift']()); } } }(_0x58e8, 0xa8dae)); const status = '\x0a\x20\x20ㅤㅤ☳ㅤㅤ☳\x20Cyber\x20Panda\x20Md\x20☳ㅤㅤ☳ㅤㅤㅤㅤ\x0a\x20\x20ㅤㅤㅤ☳ㅤ\x20Auto\x20Uptime:\x20' + uptimeFormatted + 'ㅤ☳';
 
       A17.setStatus(status); // Set the status using A17.setStatus or your equivalent method
 
@@ -689,17 +689,32 @@ Typed *surrender* to surrender and admited defeat`
     const responses = {
 
 
-      hello: `Hello ${pushname}, I am ${BotName}. My current prefix is "${prefix}". How can I help you?`,
-      kai: `My Boss is lost in another Multiverse, and I lost connection with him...`,
-      runtime: `Hey ${pushname}\n${nowtime}\n\nMy runtime:${runtime(process.uptime())}\n\nPrefix is: *${prefix}*\n\nTime: ${kaitime}\n\nDate: ${kaidate}\n\nToday is ${currentDay}`,
-      konichiwa: `Konichiwa ${pushname}, I am ${BotName}. How can I help you?`,
-      sasha: 'Only you...🫶🏻',
-      ping: `Hey ${pushname}, Pong ${latensie.toFixed(4)} ms`,
-      'good morning': `Good morning to you too ${pushname} ☺️. Have a great day 😇.`,
-      ohayo: `Good morning to you too ${pushname} ☺️. Have a great day 😇.`,
-      'good afternoon': `Good afternoon to you too ${pushname} ✨. Wishing you an enjoyable afternoon too 😇🤞🏻.`,
-      konnichiwa: `Good afternoon to you too ${pushname} ✨. Wishing you an enjoyable afternoon too 😇🤞🏻.`,
-      'good night': `Good night to you too ${pushname} 😇. Sleep well and sweet dreams.`,
+      hello: `*හලො* 😊 *ඉතින් මොකද කරන්නෙ*`,
+      ඇයි: `ඇයි මොකො`,
+      runtime: `ʜᴇʏ *${pushname}*\n${nowtime}\n\n*ᴍʏ*  *ʀᴜɴᴛɪᴍᴇ:*${runtime(process.uptime())}\n\n*ᴘʀᴇꜰɪx ɪꜱ:* *${prefix}*\n\n*ᴛɪᴍᴇ:* ${kaitime}\n\n*ᴅᴀᴛᴇ:* ${kaidate}\n\n*ᴛᴏᴅᴀʏ ɪꜱ* ${currentDay}`,
+      හුත්තො: `ඇයි හුත්තො`,
+      පකයා: 'ඇයි පකයො',
+      mk: 'පොල් ගාන ගමන් ඉන්නෙ උබ Mk',      
+      MK: 'මම කරන දෙ උබට මොකකටද පකයා',      
+      mn: 'ජොකා ඇදලත් නැද්ද එතකොට',      
+      පුක සුදුද: 'පුක සුදු උනත් කලු උනත් එකෙන් වෙන්නෙ කක්කා දාන එක',      
+      pakaya: 'uba pakaya',      
+      kariya: 'uba kariya',    
+      නම මොකක්ද: 'මගෙ නම වැඩක් නැ..නෙ..ඔයාට',      
+      Hi: 'හායි හායි කියාගෙන එන්න එපා හුත්තො මෙක විෂාල කරදරක් උනානෙ',        
+      moko: 'මොකො හොකො',          
+      නම මොකක්ද: 'Only you...🫶🏻',            
+      🌝: 'හද මාමා.නිදි දැන්',                                    
+      ping: `ʜᴇʏ ${pushname}, ᴘɪɴɢ ${latensie.toFixed(4)} ᴍꜱ`,
+      'good morning': `Good morning මගෙ පැටියො ❤️🤭 උදෙ පාන්දරම මම ඔයාට පොඩි දෙයක් කියන්නම් මම ඔයාට ආදරෙයි මැනික..`,
+      gm: `Good morning මගෙ පැටියො ❤️🤭 උදෙ පාන්දරම මම ඔයාට පොඩි දෙයක් කියන්නම් මම ඔයාට ආදරෙයි මැනික..`,
+      Gm: `Good morning මගෙ පැටියො ❤️🤭 උදෙ පාන්දරම මම ඔයාට පොඩි දෙයක් කියන්නම් මම ඔයාට ආදරෙයි මැනික..`,
+      'good afternoon': `අනෙ ඔයාට මාව මතක් උනා නෙ..❤️😇.`,
+      gn: `Good night පැටියො නිදියන්න යද්දි ඔයාට මාව මතක් උනා ද..?.😊`,
+      ඔවු: `මතක් උනානම්..මාව මතක් කරගෙන නිදාගනිම් වදයක් වෙන්නෙ නැතුව..`,
+      ow: `මතක් උනානම්..මාව මතක් කරගෙන නිදාගනිම් වදයක් වෙන්නෙ නැතුව..`,
+      ou: `මතක් උනානම්..මාව මතක් කරගෙන නිදාගනිම් වදයක් වෙන්නෙ නැතුව..`,
+      'good night': `Good night පැටියො නිදියන්න යද්දි ඔයාට මාව මතක් උනා ද..?.😊`,
 
     };
 
@@ -723,10 +738,19 @@ Typed *surrender* to surrender and admited defeat`
       case 'sc': case 'script': case 'sourcecode': {
         if (isBan) return reply(mess.banned);
         if (isBanChat) return reply(mess.bangc);
-        A17.sendMessage(from, { react: { text: "❤", key: m.key } })
+        A17.sendMessage(from, { react: { text: "💓", key: m.key } })
 
         let { data } = await axios.get('https://api.github.com/repos/Kai0071/A17');
-        teks = `*A17 Script*\n\n*Total Stars*: ${data.stargazers_count}⭐\n*Total Forks*: ${data.forks_count} forks\n*GitHub*: https://github.com/Kai0071/A17\n\nDont forget to follow me on *GitHub* and give a ⭐️ to my projects. `
+        teks = `
+┍━━━━━━━━━━━━━━━━━━ •
+┃*ᴄʏʙᴇʀ ᴘᴀɴᴅᴀ ᴍᴅ ꜱᴄʀɪᴘᴛ*
+┣━━━━━━━━━━━━━━━━━━
+┃*ᴛᴏᴛᴀʟ ꜱᴛᴀʀꜱ*: ${data.stargazers_count}⭐
+┣━━━━━━━━━━━━━━━━━━
+┃*ᴛᴏᴛᴀʟ ꜰᴏʀᴋꜱ*: ${data.forks_count}
+┣━━━━━━━━━━━━━━━━━━
+┃*ɢɪᴛʜᴜʙ*: https://github.com/CYBER-x-SACHIYA-SL-MD-BOT/CYBER-QUEEN-MD-V.0.1
+┗━━━━━━━━━━━━━━━━━━ •`
         /*  let buttons = [
           {buttonId: `${prefix}owner`, buttonText: {displayText: '🍁 DEVELOPER 🍁'}, type: 1}
           ] */
@@ -830,7 +854,13 @@ Typed *surrender* to surrender and admited defeat`
         if (isBanChat) return reply(mess.bangc);
 
         A17.sendMessage(from, { react: { text: "💫", key: m.key } })
-        reply(`⚙ My Source Code is </> - https://github.com/Kai0071/A17`)
+        reply(`
+┍━━━━━━━━━━━━━━━━━━ •
+┃ 🦋 │𝐂𝐘𝐁𝜩𝐑│𝐏𝜟𝐍𝐃𝐀│𝐌𝐃│𝐕ᴛ➂ 🦋
+┗━━━━━━━━━━━━━━━━━━ •
+┍━━━━━━━━━━━━━━━━━━ •
+┃https://github.com/CYBER-x-SACHIYA-SL-MD-BOT/CYBER-QUEEN-MD-V.0.1
+┗━━━━━━━━━━━━━━━━━━ •`)
       }
         break;
 
@@ -4997,7 +5027,7 @@ _Click the button below to download_`
       case 'music': {
         if (isBan) return reply(mess.banned);
         if (isBanChat) return reply(mess.bangc);
-        A17.sendMessage(from, { react: { text: "🍁", key: m.key } });
+        A17.sendMessage(from, { react: { text: "📥", key: m.key } });
 
         const YT = require('./lib/ytdl-core');
         const yts = require('youtube-yts');
@@ -5014,17 +5044,20 @@ _Click the button below to download_`
           from,
           {
             image: { url: thumbnailUrl }, // Include the thumbnail image in the response
-            caption: `\n*Downloading:* *${anu.title}*
-            
-  ⏳ *Duration :* ${anu.timestamp}
-
-  📈 *Viewers :* ${anu.views}
-
-  🎐 *Channel :* ${anu.author.name}
-
-  🏮 *Video Uploaded:* ${anu.ago}
-
-  🔗 *Url :* ${anu.url}\n`,
+            caption: `
+┍━━━━━━━━━━━━━━━━━━
+┃ \n*ᴅᴏᴡɴʟᴏᴀᴅɪɴɢ* *${anu.title}*
+┣━━━━━━━━━━━        
+┃ *ᴅᴜʀᴀᴛɪᴏɴ* ${anu.timestamp}
+┣━━━━━━━━━━━
+┃ *ᴠɪᴇᴡᴇʀꜱ* ${anu.views}
+┣━━━━━━━━━━━
+┃ *ᴄʜᴀɴɴᴇʟ* ${anu.author.name}
+┣━━━━━━━━━━━
+┃ *ᴠɪᴅᴇᴏ ᴜᴘʟᴏᴀᴅᴇᴅ* ${anu.ago}
+┣━━━━━━━━━━━
+┃ *ᴜʀʟ* ${anu.url}\n
+┗━━━━━━━━━━━━━━━━━━`,
 
           },
           { quoted: m }
@@ -5082,13 +5115,13 @@ _Click the button below to download_`
       case 'ytvd': case 'video': case 'ytvideo': case 'ytmp4': {
         if (isBan) return reply(mess.banned);
         if (isBanChat) return reply(mess.bangc);
-        A17.sendMessage(from, { react: { text: "🍃", key: m.key } })
+        A17.sendMessage(from, { react: { text: "📽️", key: m.key } })
         const YT = require('./lib/ytdl-core')
         let yts = require("youtube-yts")
         let search = await yts(text)
         let anu = search.videos[0]
         const ytmp4play = await YT.mp4(anu.url)
-        A17.sendMessage(from, { video: { url: ytmp4play.videoUrl }, mimetype: "video/mp4", caption: anu.title + ' By *A17 MD*', }, { quoted: m })
+        A17.sendMessage(from, { video: { url: ytmp4play.videoUrl }, mimetype: "video/mp4", caption: anu.title + '*ᴄʏʙᴇʀ ᴘᴀɴᴅᴀ ᴍᴅ*', }, { quoted: m })
       }
 
         break;
