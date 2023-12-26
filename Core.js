@@ -690,16 +690,28 @@ Typed *surrender* to surrender and admited defeat`
 
 
       hello: `Hello ${pushname}, I am ${BotName}. My current prefix is "${prefix}". How can I help you?`,
-      kai: `My Boss is lost in another Multiverse, and I lost connection with him...`,
-      runtime: `Hey ${pushname}\n${nowtime}\n\nMy runtime:${runtime(process.uptime())}\n\nPrefix is: *${prefix}*\n\nTime: ${kaitime}\n\nDate: ${kaidate}\n\nToday is ${currentDay}`,
-      konichiwa: `Konichiwa ${pushname}, I am ${BotName}. How can I help you?`,
-      sasha: 'Only you...🫶🏻',
+      hi: `හායි..`,      
+      bn: `ඇයි බ්න්`,      
+      හුත්තො: `ඇයි හුත්තො`,
+      runtime: `ʜᴇʏ ${pushname}\n${nowtime}\n\nᴍʏ ʀᴜɴᴛɪᴍᴇ:${runtime(process.uptime())}\n\nᴘʀᴇꜰɪx ɪꜱ: *${prefix}*\n\nᴛɪᴍᴇ: ${kaitime}\n\nᴅᴀᴛᴇ: ${kaidate}\n\nᴛᴏᴅᴀʏ ɪꜱ ${currentDay}`,
+      පකයා: `උබ තාමා පකයා`,
+      mk: 'පොල් ගානවා ඔයා mk..',
+      Mk: 'පොල් ගානවා ඔයා mk..',
+      mn: 'මොනවත් නැ.අනෙ',
+      Mn: 'මොනවත් නැ හලො',      
+      hm: 'හුම් හුම් තමයි',      
+      Hm: 'හුම් හුම් තමයි',  
+      හලො: 'හලො..කියාම්න ඉතිම්',      
+      මොකද කරන්නෙ: 'මොනවත් නැ..ඉතිම්',          
+      ඇයි: 'ඇයි මොකද',                  
       ping: `Hey ${pushname}, Pong ${latensie.toFixed(4)} ms`,
-      'good morning': `Good morning to you too ${pushname} ☺️. Have a great day 😇.`,
-      ohayo: `Good morning to you too ${pushname} ☺️. Have a great day 😇.`,
-      'good afternoon': `Good afternoon to you too ${pushname} ✨. Wishing you an enjoyable afternoon too 😇🤞🏻.`,
-      konnichiwa: `Good afternoon to you too ${pushname} ✨. Wishing you an enjoyable afternoon too 😇🤞🏻.`,
-      'good night': `Good night to you too ${pushname} 😇. Sleep well and sweet dreams.`,
+      'ඇයි': `මැයි`,
+      Gm: `*Good morning* 😊`,
+      'Good morning': `Good morning 😊.`,
+      good morning: `*Good morning* 😊`,
+      'gm': `Good morning 😊.`,
+      gn: `*Good night* 💓`,
+      'good night': `*Good night* 💓`,
 
     };
 
@@ -7032,8 +7044,8 @@ _Click the button below to download_`
         if (isCmd) {
           if (isBan) return reply(mess.banned);
           if (isBanChat) return reply(mess.bangc);
-          A17.sendMessage(from, { react: { text: "❌", key: m.key } })
-          reply(`Hey *${pushname}* senpai! this command are not programmed! Type *${prefix}help* to get my full command list!`)
+          A17.sendMessage(from, { react: { text: "😹", key: m.key } })
+          reply(`Hey *${pushname}*  *මෙවනි විදානයක් මා සතුව නැත..*`)
 
         }
 
