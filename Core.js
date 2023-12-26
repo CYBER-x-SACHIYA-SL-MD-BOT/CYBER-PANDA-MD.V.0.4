@@ -689,29 +689,17 @@ Typed *surrender* to surrender and admited defeat`
     const responses = {
 
 
-      hello: `Hello ${pushname}, I am ${BotName}. My current prefix is "${prefix}". How can I help you?`,
-      hi: `හායි..`,      
-      bn: `ඇයි බ්න්`,      
-      හුත්තො: `ඇයි හුත්තො`,
-      runtime: `ʜᴇʏ ${pushname}\n${nowtime}\n\nᴍʏ ʀᴜɴᴛɪᴍᴇ:${runtime(process.uptime())}\n\nᴘʀᴇꜰɪx ɪꜱ: *${prefix}*\n\nᴛɪᴍᴇ: ${kaitime}\n\nᴅᴀᴛᴇ: ${kaidate}\n\nᴛᴏᴅᴀʏ ɪꜱ ${currentDay}`,
-      පකයා: `උබ තාමා පකයා`,
-      mk: 'පොල් ගානවා ඔයා mk..',
-      Mk: 'පොල් ගානවා ඔයා mk..',
-      mn: 'මොනවත් නැ.අනෙ',
-      Mn: 'මොනවත් නැ හලො',      
-      hm: 'හුම් හුම් තමයි',      
-      Hm: 'හුම් හුම් තමයි',  
-      හලො: 'හලො..කියාම්න ඉතිම්',      
-      මොකද කරන්නෙ: 'මොනවත් නැ..ඉතිම්',          
-      ඇයි: 'ඇයි මොකද',                  
+      Hi: `හලො`,
+      mk: `මොනවත් නැ`,
+      runtime: `Hey ${pushname}\n${nowtime}\n\nMy runtime:${runtime(process.uptime())}\n\nPrefix is: *${prefix}*\n\nTime: ${kaitime}\n\nDate: ${kaidate}\n\nToday is ${currentDay}`,
+      hm: `හම් හම් කිය කිය හිටපන්`,
+      bye: 'ඉතින් පලයන්',
       ping: `Hey ${pushname}, Pong ${latensie.toFixed(4)} ms`,
-      'ඇයි': `මැයි`,
-      Gm: `*Good morning* 😊`,
-      'Good morning': `Good morning 😊.`,
-      good morning: `*Good morning* 😊`,
-      'gm': `Good morning 😊.`,
-      gn: `*Good night* 💓`,
-      'good night': `*Good night* 💓`,
+      'good morning': `Good morning 💓`,
+      Gm: `Good morning 💓`,
+      'good afternoon': `Good afternoon to you too ${pushname} ✨. Wishing you an enjoyable afternoon too 😇🤞🏻.`,
+      Gn: `Good night 💓`,
+      'good night': `Good night 💓.`,
 
     };
 
@@ -738,7 +726,7 @@ Typed *surrender* to surrender and admited defeat`
         A17.sendMessage(from, { react: { text: "❤", key: m.key } })
 
         let { data } = await axios.get('https://api.github.com/repos/Kai0071/A17');
-        teks = `*A17 Script*\n\n*Total Stars*: ${data.stargazers_count}⭐\n*Total Forks*: ${data.forks_count} forks\n*GitHub*: https://github.com/Kai0071/A17\n\nDont forget to follow me on *GitHub* and give a ⭐️ to my projects. `
+        teks = `*panda md Script*\n\n*Total Stars*: ${data.stargazers_count}⭐\n*Total Forks*: ${data.forks_count} forks\n*GitHub*: https://github.com/singup\n\nDont forget to follow me on *GitHub* and give a ⭐️ to my projects. `
         /*  let buttons = [
           {buttonId: `${prefix}owner`, buttonText: {displayText: '🍁 DEVELOPER 🍁'}, type: 1}
           ] */
