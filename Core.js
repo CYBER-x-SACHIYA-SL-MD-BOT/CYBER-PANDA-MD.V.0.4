@@ -51,17 +51,17 @@ const { MessageType } = require('@whiskeysockets/baileys');
 let nowtime = '';
 
 if (time2 < "05:00:00") {
-  nowtime = '*𝙶𝙾𝙾𝙳 𝙽𝙸𝙶𝙷𝚃*';
+  nowtime = 'Good night 🏙';
 } else if (time2 < "11:00:00") {
-  nowtime = '*𝙶𝙾𝙾𝙳 𝙼𝙾𝚁𝙽𝙸𝙽𝙶*';
+  nowtime = 'Good morning 🌅';
 } else if (time2 < "15:00:00") {
-  nowtime = '*𝙶𝙾𝙾𝙳 𝙰𝙵𝚃𝙴𝚁𝙽𝙾𝙾𝙽*';
+  nowtime = 'Good afternoon 🏞';
 } else if (time2 < "18:00:00") {
-  nowtime = '*𝙶𝙾𝙾𝙳 𝙴𝚅𝙴𝙽𝙸𝙽𝙶*';
+  nowtime = 'Good evening 🌇';
 } else if (time2 < "19:00:00") {
-  nowtime = '*𝙶𝙾𝙾𝙳 𝙴𝚅𝙴𝙽𝙸𝙽𝙶*';
+  nowtime = 'Good evening 🌆';
 } else {
-  nowtime = '*𝙶𝙾𝙾𝙳 𝙽𝙸𝙶𝙷𝚃*';
+  nowtime = 'Good night 🌌';
 }
 
 
@@ -689,32 +689,17 @@ Typed *surrender* to surrender and admited defeat`
     const responses = {
 
 
-      hello: `*හලො* 😊 *ඉතින් මොකද කරන්නෙ*`,
-      ඇයි: `ඇයි මොකො`,
-      runtime: `ʜᴇʏ *${pushname}*\n${nowtime}\n\n*ᴍʏ*  *ʀᴜɴᴛɪᴍᴇ:*${runtime(process.uptime())}\n\n*ᴘʀᴇꜰɪx ɪꜱ:* *${prefix}*\n\n*ᴛɪᴍᴇ:* ${kaitime}\n\n*ᴅᴀᴛᴇ:* ${kaidate}\n\n*ᴛᴏᴅᴀʏ ɪꜱ* ${currentDay}`,
-      හුත්තො: `ඇයි හුත්තො`,
-      පකයා: 'ඇයි පකයො',
-      mk: 'පොල් ගාන ගමන් ඉන්නෙ උබ Mk',      
-      MK: 'මම කරන දෙ උබට මොකකටද පකයා',      
-      mn: 'ජොකා ඇදලත් නැද්ද එතකොට',      
-      පුක සුදුද: 'පුක සුදු උනත් කලු උනත් එකෙන් වෙන්නෙ කක්කා දාන එක',      
-      pakaya: 'uba pakaya',      
-      kariya: 'uba kariya',    
-      නම මොකක්ද: 'මගෙ නම වැඩක් නැ..නෙ..ඔයාට',      
-      Hi: 'හායි හායි කියාගෙන එන්න එපා හුත්තො මෙක විෂාල කරදරක් උනානෙ',        
-      moko: 'මොකො හොකො',          
-      නම මොකක්ද: 'Only you...🫶🏻',            
-      🌝: 'හද මාමා.නිදි දැන්',                                    
-      ping: `ʜᴇʏ ${pushname}, ᴘɪɴɢ ${latensie.toFixed(4)} ᴍꜱ`,
-      'good morning': `Good morning මගෙ පැටියො ❤️🤭 උදෙ පාන්දරම මම ඔයාට පොඩි දෙයක් කියන්නම් මම ඔයාට ආදරෙයි මැනික..`,
-      gm: `Good morning මගෙ පැටියො ❤️🤭 උදෙ පාන්දරම මම ඔයාට පොඩි දෙයක් කියන්නම් මම ඔයාට ආදරෙයි මැනික..`,
-      Gm: `Good morning මගෙ පැටියො ❤️🤭 උදෙ පාන්දරම මම ඔයාට පොඩි දෙයක් කියන්නම් මම ඔයාට ආදරෙයි මැනික..`,
-      'good afternoon': `අනෙ ඔයාට මාව මතක් උනා නෙ..❤️😇.`,
-      gn: `Good night පැටියො නිදියන්න යද්දි ඔයාට මාව මතක් උනා ද..?.😊`,
-      ඔවු: `මතක් උනානම්..මාව මතක් කරගෙන නිදාගනිම් වදයක් වෙන්නෙ නැතුව..`,
-      ow: `මතක් උනානම්..මාව මතක් කරගෙන නිදාගනිම් වදයක් වෙන්නෙ නැතුව..`,
-      ou: `මතක් උනානම්..මාව මතක් කරගෙන නිදාගනිම් වදයක් වෙන්නෙ නැතුව..`,
-      'good night': `Good night පැටියො නිදියන්න යද්දි ඔයාට මාව මතක් උනා ද..?.😊`,
+      hello: `Hello ${pushname}, I am ${BotName}. My current prefix is "${prefix}". How can I help you?`,
+      kai: `My Boss is lost in another Multiverse, and I lost connection with him...`,
+      runtime: `Hey ${pushname}\n${nowtime}\n\nMy runtime:${runtime(process.uptime())}\n\nPrefix is: *${prefix}*\n\nTime: ${kaitime}\n\nDate: ${kaidate}\n\nToday is ${currentDay}`,
+      konichiwa: `Konichiwa ${pushname}, I am ${BotName}. How can I help you?`,
+      sasha: 'Only you...🫶🏻',
+      ping: `Hey ${pushname}, Pong ${latensie.toFixed(4)} ms`,
+      'good morning': `Good morning to you too ${pushname} ☺️. Have a great day 😇.`,
+      ohayo: `Good morning to you too ${pushname} ☺️. Have a great day 😇.`,
+      'good afternoon': `Good afternoon to you too ${pushname} ✨. Wishing you an enjoyable afternoon too 😇🤞🏻.`,
+      konnichiwa: `Good afternoon to you too ${pushname} ✨. Wishing you an enjoyable afternoon too 😇🤞🏻.`,
+      'good night': `Good night to you too ${pushname} 😇. Sleep well and sweet dreams.`,
 
     };
 
@@ -738,19 +723,10 @@ Typed *surrender* to surrender and admited defeat`
       case 'sc': case 'script': case 'sourcecode': {
         if (isBan) return reply(mess.banned);
         if (isBanChat) return reply(mess.bangc);
-        A17.sendMessage(from, { react: { text: "💓", key: m.key } })
+        A17.sendMessage(from, { react: { text: "❤", key: m.key } })
 
         let { data } = await axios.get('https://api.github.com/repos/Kai0071/A17');
-        teks = `
-┍━━━━━━━━━━━━━━━━━━ •
-┃*ᴄʏʙᴇʀ ᴘᴀɴᴅᴀ ᴍᴅ ꜱᴄʀɪᴘᴛ*
-┣━━━━━━━━━━━━━━━━━━
-┃*ᴛᴏᴛᴀʟ ꜱᴛᴀʀꜱ*: ${data.stargazers_count}⭐
-┣━━━━━━━━━━━━━━━━━━
-┃*ᴛᴏᴛᴀʟ ꜰᴏʀᴋꜱ*: ${data.forks_count}
-┣━━━━━━━━━━━━━━━━━━
-┃*ɢɪᴛʜᴜʙ*: https://github.com/CYBER-x-SACHIYA-SL-MD-BOT/CYBER-QUEEN-MD-V.0.1
-┗━━━━━━━━━━━━━━━━━━ •`
+        teks = `*A17 Script*\n\n*Total Stars*: ${data.stargazers_count}⭐\n*Total Forks*: ${data.forks_count} forks\n*GitHub*: https://github.com/Kai0071/A17\n\nDont forget to follow me on *GitHub* and give a ⭐️ to my projects. `
         /*  let buttons = [
           {buttonId: `${prefix}owner`, buttonText: {displayText: '🍁 DEVELOPER 🍁'}, type: 1}
           ] */
@@ -854,13 +830,7 @@ Typed *surrender* to surrender and admited defeat`
         if (isBanChat) return reply(mess.bangc);
 
         A17.sendMessage(from, { react: { text: "💫", key: m.key } })
-        reply(`
-┍━━━━━━━━━━━━━━━━━━ •
-┃ 🦋 │𝐂𝐘𝐁𝜩𝐑│𝐏𝜟𝐍𝐃𝐀│𝐌𝐃│𝐕ᴛ➂ 🦋
-┗━━━━━━━━━━━━━━━━━━ •
-┍━━━━━━━━━━━━━━━━━━ •
-┃https://github.com/CYBER-x-SACHIYA-SL-MD-BOT/CYBER-QUEEN-MD-V.0.1
-┗━━━━━━━━━━━━━━━━━━ •`)
+        reply(`⚙ My Source Code is </> - https://github.com/Kai0071/A17`)
       }
         break;
 
@@ -5027,7 +4997,7 @@ _Click the button below to download_`
       case 'music': {
         if (isBan) return reply(mess.banned);
         if (isBanChat) return reply(mess.bangc);
-        A17.sendMessage(from, { react: { text: "📥", key: m.key } });
+        A17.sendMessage(from, { react: { text: "💓", key: m.key } });
 
         const YT = require('./lib/ytdl-core');
         const yts = require('youtube-yts');
@@ -5046,17 +5016,14 @@ _Click the button below to download_`
             image: { url: thumbnailUrl }, // Include the thumbnail image in the response
             caption: `
 ┍━━━━━━━━━━━━━━━━━━
-┃ \n*ᴅᴏᴡɴʟᴏᴀᴅɪɴɢ* *${anu.title}*
-┣━━━━━━━━━━━        
-┃ *ᴅᴜʀᴀᴛɪᴏɴ* ${anu.timestamp}
-┣━━━━━━━━━━━
-┃ *ᴠɪᴇᴡᴇʀꜱ* ${anu.views}
-┣━━━━━━━━━━━
-┃ *ᴄʜᴀɴɴᴇʟ* ${anu.author.name}
-┣━━━━━━━━━━━
-┃ *ᴠɪᴅᴇᴏ ᴜᴘʟᴏᴀᴅᴇᴅ* ${anu.ago}
-┣━━━━━━━━━━━
-┃ *ᴜʀʟ* ${anu.url}\n
+│ \n*ᴅᴏᴡɴʟᴏᴀᴅɪɴɢ* *${anu.title}*
+┗━━━━━━━━━━━━━━━━━━
+┍━━━━━━━━━━━━━━━━━━           
+│ *ᴅᴜʀᴀᴛɪᴏɴ* ${anu.timestamp}
+│ *ᴠɪᴇᴡᴇʀꜱ* ${anu.views}
+│ *ᴄʜᴀɴɴᴇʟ* ${anu.author.name}
+│ *ᴠɪᴅᴇᴏ ᴜᴘʟᴏᴀᴅᴇᴅ* ${anu.ago}
+│ *ᴜʀʟ* ${anu.url}\n
 ┗━━━━━━━━━━━━━━━━━━`,
 
           },
@@ -5121,7 +5088,7 @@ _Click the button below to download_`
         let search = await yts(text)
         let anu = search.videos[0]
         const ytmp4play = await YT.mp4(anu.url)
-        A17.sendMessage(from, { video: { url: ytmp4play.videoUrl }, mimetype: "video/mp4", caption: anu.title + '*ᴄʏʙᴇʀ ᴘᴀɴᴅᴀ ᴍᴅ*', }, { quoted: m })
+        A17.sendMessage(from, { video: { url: ytmp4play.videoUrl }, mimetype: "video/mp4", caption: anu.title + '*ᴄʏʙᴇʀ-ᴘᴀɴᴅᴀ-ᴍᴅ*', }, { quoted: m })
       }
 
         break;
@@ -6704,32 +6671,206 @@ _Click the button below to download_`
       case 'help': case 'h': case 'menu': case 'allmenu': case 'listmenu': {
         if (isBan) return reply(mess.banned);
         if (isBanChat) return reply(mess.bangc);
-        A17.sendMessage(from, { react: { text: "🗒", key: m.key } })
+        A17.sendMessage(from, { react: { text: "✅", key: m.key } })
         const helpmenu = `
-┏━━━━━━━━━━━━━━━━━
+┍━━━━━━━━━━━━━━━━━━
 │ *ᴛɪᴍᴇ* : ${kaitime}
 │ *ᴅᴀᴛᴇ* : ${kaidate}
-┣━━━━━━━━━━━
-│ *ᴄʏʙᴇʀ ᴘᴀɴᴅ ᴍᴅ*
-┣━━━━━━━━━━━
 │ *ʙᴏᴛ ᴜꜱᴇʀ ɴᴀᴍᴇ* ${pushname} 
 │ *ᴍʏ ᴘʀᴇꜰɪx ɪꜱ*  ${prefix}
 │ *ᴏᴡɴᴇʀ ɴᴀᴍᴇ* ${global.OwnerName} 
 │ *ʙᴏᴛ ʀᴜɴᴛɪᴍᴇ* ${runtime(process.uptime())} 
-│ *ᴘʟᴀᴛꜰᴏʀᴍ* 𝙻𝚒𝚗𝚞𝚡
-┣━━━┳━━━━━━━
-┃ 1.0 ┃ *ʙᴏᴛʟɪꜱᴛ*
-┃ 2.1 ┃ *ᴏᴡɴᴇʀ*
-┃ 3.2 ┃ *ɢʀᴏᴜᴘ*
-┃ 4.3 ┃ *ᴀɴᴛɪʟɪɴᴋ*
-┃ 5.4 ┃ *ꜱᴏᴜnᴅ*
-┃ 6.5 ┃ *ᴅᴏᴡɴʟᴏᴀᴅ*
-┃ 7.6 ┃ *ᴡᴇᴇʙʟɪꜱᴛ*
-┃ 8.7 ┃ *ꜱᴛɪᴄᴋᴇʀ*
-┃ 9.8 ┃ *ʏᴛ-ᴅʟ-ᴍᴇɴᴜ*
-┣━━━┻━━━━━━━
-┃ 11.11 *ʙᴏᴛɪɴꜰᴏɴ
-┗━━━━━━━━━━━━━━━━━`
+│ *ᴘʟᴀᴛꜰᴏʀᴍ* Linux
+┗━━━━━━━━━━━━━━━━━━
+
+╭───❮ *ʙᴏᴛ-ᴍᴇɴᴜ* ❯
+│${prefix}repo
+│${prefix}script
+│${prefix}speak
+│${prefix}support
+│${prefix}stalk
+│${prefix}setprefix
+│${prefix}auto-status
+│${prefix}auto-typing
+│${prefix}auto-recoding
+╰─────────────⦁
+
+╭───❮ *ᴏᴡɴᴇʀ-ᴍᴇɴᴜ* ❯
+│${prefix}join
+│${prefix}self
+│${prefix}public
+│${prefix}restart
+│${prefix}sleep
+│${prefix}setbotpp
+│${prefix}post
+│${prefix}listonline
+│${prefix}listgc
+│${prefix}listpc
+│${prefix}getcase
+│${prefix}bangroup
+│${prefix}broadcast
+│${prefix}bye
+│${prefix}block
+│${prefix}unblock
+│${prefix}ban add
+│${prefix}ban del
+╰─────────────⦁
+
+╭───❮ *ɢʀᴏᴜᴘ-ᴍᴇɴᴜ* ❯
+│${prefix}add
+│${prefix}invite
+│${prefix}remove
+│${prefix}grouplink
+│${prefix}groupsetting
+│${prefix}setname
+│${prefix}tagall
+╰─────────────⦁
+
+╭───❮ *ᴀɴᴛɪ-ʟɪɴᴋ* ❯  
+│${prefix}antilinkgc
+│${prefix}antilinktt
+│${prefix}antilinkytch
+│${prefix}antilinkytch
+│${prefix}antilinkig
+│${prefix}antilinkfb
+│${prefix}antilinktwit
+│${prefix}antiwame
+│${prefix}antilinkall
+╰─────────────⦁  
+  
+╭───❮ *ꜱᴇᴀʀᴄʜ* ❯ 
+│${prefix}play
+│${prefix}song
+│${prefix}video
+│${prefix}ytmp3
+│${prefix}ytmp4 
+│${prefix}yts
+│${prefix}lyrics
+│${prefix}movie
+│${prefix}google
+│${prefix}gimage
+│${prefix}pinterest
+│${prefix}wallpaper
+│${prefix}image
+│${prefix}searchgc
+│${prefix}wikimedia
+╰─────────────⦁
+
+╭───❮ *ɢᴀᴍᴇ-ᴍᴇɴᴜ* ❯
+│${prefix}ttt / tictactoe
+│${prefix}truth
+│${prefix}dare
+│${prefix}spin / slot
+│${prefix}gamble / lottery
+╰─────────────⦁
+
+╭───❮ *ᴄᴏɴᴠᴇʀᴛ* ❯
+│${prefix}sticker
+│${prefix}toimg
+│${prefix}tovideo
+│${prefix}togif
+│${prefix}tourl
+│${prefix}tomp3
+│${prefix}toaudio
+│${prefix}steal
+│${prefix}stickermeme
+│${prefix}emojimix
+╰─────────────⦁
+
+╭───❮ *ꜱᴏᴜɴᴅ-ᴍᴇɴᴜ* ❯
+│${prefix}ringtone
+│${prefix}bass
+│${prefix}tempo
+│${prefix}blown
+│${prefix}robot
+│${prefix}slow
+│${prefix}squirrel
+│${prefix}deep
+│${prefix}earrape
+│${prefix}fast
+│${prefix}fat
+│${prefix}nightcore
+│${prefix}reverse
+╰─────────────⦁
+
+╭───❮ *ᴅʟ-ᴍᴇɴᴜ* ❯
+│${prefix}ytvideo
+│${prefix}mediafire
+│${prefix}instagram
+│${prefix}igtv
+│${prefix}facebook
+│${prefix}fbmp3
+│${prefix}twitter
+│${prefix}twittermp3
+│${prefix}tiktok
+│${prefix}tiktokaudio
+│${prefix}happymod
+│${prefix}tiktoknowm
+╰─────────────⦁
+
+╭───❮ *ꜰᴜɴ-ᴍᴇɴᴜ* ❯
+│${prefix}reaction
+│${prefix}cutecheck
+│${prefix}couple
+│${prefix}soulmate
+│${prefix}handsomecheck
+│${prefix}beautifulcheck
+│${prefix}awesomecheck
+│${prefix}greatcheck
+│${prefix}gaycheck
+│${prefix}uglycheck
+│${prefix}charactercheck
+│${prefix}lesbiancheck
+│${prefix}hornychec
+│${prefix}prettycheck
+│${prefix}lovelycheck
+╰─────────────⦁  
+  
+╭───❮ *ᴡᴇᴇʙ-ᴍᴇɴᴜ* ❯  
+│${prefix}anime
+│${prefix}animestory
+│${prefix}awoo
+│${prefix}manga
+│${prefix}animewall
+│${prefix}animewallpaper2
+│${prefix}crosplay
+│${prefix}animenom
+│${prefix}feed
+│${prefix}foxgirl
+│${prefix}waifu
+│${prefix}waifu2
+│${prefix}waifu3
+│${prefix}loli
+│${prefix}coffee
+│${prefix}migumin
+│${prefix}wallpaper
+│${prefix}animequote
+╰─────────────⦁
+
+╭───❮ *ɪɴꜰᴏʀᴍᴀᴛɪᴠᴇ* ❯
+│${prefix}quote
+│${prefix}weather
+│${prefix}covid
+│${prefix}earthquake
+│${prefix}wiki
+│${prefix}stalknumber
+╰─────────────⦁
+ 
+╭───❮ *ᴇꜱꜱᴇɴᴛɪᴀʟꜱ* ❯
+│${prefix}qr
+│${prefix}say
+│${prefix}fliptext
+│${prefix}toletter
+│${prefix}translate, 
+╰─────────────⦁
+
+╭───❮ *ᴏᴛʜᴇʀ-ᴍᴇɴᴜ* ❯
+│${prefix}stickermeme
+│${prefix}quotes
+│${prefix}report
+│${prefix}afk
+│${prefix}darkjoke
+╰─────────────⦁`
         let buttonMessage = {
           video: fs.readFileSync('./system/A17_3.mp4'), gifPlayback: true,
           caption: helpmenu,
@@ -6742,397 +6883,30 @@ _Click the button below to download_`
         break;
 
 
-      case '':
+      case 'alive':
         if (isCmd) {
           if (isBan) return reply(mess.banned);
           if (isBanChat) return reply(mess.bangc);
-          A17.sendMessage(from, { react: { text: "✨", key: m.key } })
-
-          reply(`Do you need any help ${pushname} ? Type *${prefix}help* to get my full command list.`)
-        }
-
-        break;
-        
-        
-        
-      case '1.0':
-        if (isCmd) {
-          if (isBan) return reply(mess.banned);
-          if (isBanChat) return reply(mess.bangc);
-          A17.sendMessage(from, { react: { text: "✨", key: m.key } })
+          A17.sendMessage(from, { react: { text: "🗒️", key: m.key } })
 
           reply(`
 ┍━━━━━━━━━━━━━━━━━━
-│   ${prefix}repo
-│   ${prefix}script
-│   ${prefix}speak
-│   ${prefix}support
-│   ${prefix}stalk
-│   ${prefix}setprefix
-│   ${prefix}auto-status
-│   ${prefix}auto-typing
-│   ${prefix}auto-recoding
+│ *ᴄʏʙᴇʀ ᴘᴀɴᴅᴀ ᴍᴅ*
+┗━━━━━━━━━━━━━━━━━━
+┍━━━━━━━━━━━━━━━━━━
+│ *ᴛɪᴍᴇ* : ${kaitime}
+│ *ᴅᴀᴛᴇ* : ${kaidate}
+│ *ʙᴏᴛ ᴜꜱᴇʀ ɴᴀᴍᴇ* ${pushname} 
+│ *ᴍʏ ᴘʀᴇꜰɪx ɪꜱ*  ${prefix}
+│ *ᴏᴡɴᴇʀ ɴᴀᴍᴇ* ${global.OwnerName} 
+│ *ʙᴏᴛ ʀᴜɴᴛɪᴍᴇ* ${runtime(process.uptime())} 
+│ *ᴘʟᴀᴛꜰᴏʀᴍ* Linux
 ┗━━━━━━━━━━━━━━━━━━`)
         }
 
         break;
-        
-        
-      case '2.1':
-        if (isCmd) {
-          if (isBan) return reply(mess.banned);
-          if (isBanChat) return reply(mess.bangc);
-          A17.sendMessage(from, { react: { text: "✨", key: m.key } })
 
-          reply(`
-┍━━━━━━━━━━━━━━━━━━
-│   ${prefix}join
-│   ${prefix}self
-│   ${prefix}public
-│   ${prefix}restart
-│   ${prefix}sleep
-│   ${prefix}setbotpp
-│   ${prefix}post
-│   ${prefix}listonline
-│   ${prefix}listgc
-│   ${prefix}listpc
-│   ${prefix}getcase
-│   ${prefix}bangroup
-│   ${prefix}broadcast
-│   ${prefix}bye
-│   ${prefix}block
-│   ${prefix}unblock
-│   ${prefix}ban add
-│   ${prefix}ban del
-┗━━━━━━━━━━━━━━━━━━`)
-        }
 
-        break;
-       
-       
-      case '3.2':
-        if (isCmd) {
-          if (isBan) return reply(mess.banned);
-          if (isBanChat) return reply(mess.bangc);
-          A17.sendMessage(from, { react: { text: "✨", key: m.key } })
-
-          reply(`
-┍━━━━━━━━━━━━━━━━━━
-│   ${prefix}add
-│   ${prefix}invite
-│   ${prefix}remove
-│   ${prefix}promote
-│   ${prefix}demote
-│   ${prefix}grouplink
-│   ${prefix}group-event
-│   ${prefix}groupsetting
-│   ${prefix}setname
-│   ${prefix}setgcpp
-│   ${prefix}setdesc
-│   ${prefix}revoke
-│   ${prefix}tagall
-│   ${prefix}hidetag
-┗━━━━━━━━━━━━━━━━━━`)
-        }
-
-        break;
-        
-        
-      case '4.3':
-        if (isCmd) {
-          if (isBan) return reply(mess.banned);
-          if (isBanChat) return reply(mess.bangc);
-          A17.sendMessage(from, { react: { text: "✨", key: m.key } })
-
-          reply(`
-┍━━━━━━━━━━━━━━━━━━
-│   ${prefix}antilinkgc
-│   ${prefix}antilinktt
-│   ${prefix}antilinkytch
-│   ${prefix}antilinkytch
-│   ${prefix}antilinkig
-│   ${prefix}antilinkfb
-│   ${prefix}antilinktwit
-│   ${prefix}antiwame
-│   ${prefix}antilinkall.
-┗━━━━━━━━━━━━━━━━━━`)
-        }
-
-        break;
-        
-        
-      case '6.5':
-        if (isCmd) {
-          if (isBan) return reply(mess.banned);
-          if (isBanChat) return reply(mess.bangc);
-          A17.sendMessage(from, { react: { text: "✨", key: m.key } })
-
-          reply(`
-┍━━━━━━━━━━━━━━━━━━
-│   ${prefix}play
-│   ${prefix}song
-│   ${prefix}video
-│   ${prefix}ytmp3
-│   ${prefix}ytmp4 
-│   ${prefix}yts
-│   ${prefix}lyrics
-│   ${prefix}movie
-│   ${prefix}google
-│   ${prefix}gimage
-│   ${prefix}pinterest
-│   ${prefix}wallpaper
-│   ${prefix}image
-│   ${prefix}searchgc
-│   ${prefix}wikimedia
-┗━━━━━━━━━━━━━━━━━━`)
-        }
-
-        break;
-        
-                        
-
-      case 'ඇ':
-        if (isCmd) {
-          if (isBan) return reply(mess.banned);
-          if (isBanChat) return reply(mess.bangc);
-          A17.sendMessage(from, { react: { text: "✨", key: m.key } })
-
-          reply(`
-┍━━━━━━━━━━━━━━━━━━ •
-┃ 🦋 │𝐂𝐘𝐁𝜩𝐑│𝐏𝜟𝐍𝐃𝐀│𝐌𝐃│𝐕➂ 🦋
-┗━━━━━━━━━━━━━━━━━━ •`)
-        }
-
-        break;
-        
-        
-      case 'ගෙම්':
-        if (isCmd) {
-          if (isBan) return reply(mess.banned);
-          if (isBanChat) return reply(mess.bangc);
-          A17.sendMessage(from, { react: { text: "✨", key: m.key } })
-
-          reply(`
-┍━━━━━━━━━━━━━━━━━━ •
-┃ 🦋 │𝐂𝐘𝐁𝜩𝐑│𝐏𝜟𝐍𝐃𝐀│𝐌𝐃│𝐕➂ 🦋
-┗━━━━━━━━━━━━━━━━━━ •`)
-        }
-
-        break;
-        
-        
-      case '8.7':
-        if (isCmd) {
-          if (isBan) return reply(mess.banned);
-          if (isBanChat) return reply(mess.bangc);
-          A17.sendMessage(from, { react: { text: "✨", key: m.key } })
-          
-         reply(`
-┍━━━━━━━━━━━━━━━━━━
-│   ${prefix}sticker
-│   ${prefix}toimg
-│   ${prefix}tovideo
-│   ${prefix}togif
-│   ${prefix}tourl
-│   ${prefix}tomp3
-│   ${prefix}toaudio
-│   ${prefix}steal
-│   ${prefix}stickermeme
-│   ${prefix}emojimix
-┗━━━━━━━━━━━━━━━━━━`)
-        }
-
-        break;
-        
-        
-      case '5.4':
-        if (isCmd) {
-          if (isBan) return reply(mess.banned);
-          if (isBanChat) return reply(mess.bangc);
-          A17.sendMessage(from, { react: { text: "✨", key: m.key } })
-
-          reply(`
-┍━━━━━━━━━━━━━━━━━━
-│   ${prefix}ringtone
-│   ${prefix}bass
-│   ${prefix}tempo
-│   ${prefix}blown
-│   ${prefix}robot
-│   ${prefix}slow
-│   ${prefix}squirrel
-│   ${prefix}deep
-│   ${prefix}earrape
-│   ${prefix}fast
-│   ${prefix}fat
-│   ${prefix}nightcore
-│   ${prefix}reverse
-┗━━━━━━━━━━━━━━━━━━`)
-        }
-
-        break;
-        
-        
-      case 'හු':
-        if (isCmd) {
-          if (isBan) return reply(mess.banned);
-          if (isBanChat) return reply(mess.bangc);
-          A17.sendMessage(from, { react: { text: "✨", key: m.key } })
-
-          reply(`
-┍━━━━━━━━━━━━━━━━━━ •
-┃ 🦋 │𝐂𝐘𝐁𝜩𝐑│𝐏𝜟𝐍𝐃𝐀│𝐌𝐃│𝐕➂ 🦋
-┗━━━━━━━━━━━━━━━━━━ •`)
-        }
-
-        break;
-        
-        
-      case '9.8':
-        if (isCmd) {
-          if (isBan) return reply(mess.banned);
-          if (isBanChat) return reply(mess.bangc);
-          A17.sendMessage(from, { react: { text: "✨", key: m.key } })
-
-          reply(`
-┍━━━━━━━━━━━━━━━━━━
-│   ${prefix}ytvideo
-│   ${prefix}mediafire
-│   ${prefix}instagram
-│   ${prefix}igtv
-│   ${prefix}facebook
-│   ${prefix}fbmp3
-│   ${prefix}twitter
-│   ${prefix}twittermp3
-│   ${prefix}tiktok
-│   ${prefix}tiktokaudio
-│   ${prefix}happymod
-│   ${prefix}tiktoknowm
-┗━━━━━━━━━━━━━━━━━━`)
-        }
-
-        break;
-        
-        
-      case 'ෆන්':
-        if (isCmd) {
-          if (isBan) return reply(mess.banned);
-          if (isBanChat) return reply(mess.bangc);
-          A17.sendMessage(from, { react: { text: "✨", key: m.key } })
-
-          reply(`
-┍━━━━━━━━━━━━━━━━━━
-│   ${prefix}reaction
-│   ${prefix}cutecheck
-│   ${prefix}couple
-│   ${prefix}soulmate
-│   ${prefix}handsomecheck
-│   ${prefix}beautifulcheck
-│   ${prefix}awesomecheck
-│   ${prefix}greatcheck
-│   ${prefix}gaycheck
-│   ${prefix}uglycheck
-│   ${prefix}charactercheck
-│   ${prefix}lesbiancheck
-│   ${prefix}hornychec
-│   ${prefix}prettycheck
-│   ${prefix}lovelycheck
-┗━━━━━━━━━━━━━━━━━━`)
-        }
-
-        break;
-        
-        
-      case '7.6':
-        if (isCmd) {
-          if (isBan) return reply(mess.banned);
-          if (isBanChat) return reply(mess.bangc);
-          A17.sendMessage(from, { react: { text: "✨", key: m.key } })
-
-          reply(`
-┍━━━━━━━━━━━━━━━━━━
-│   ${prefix}anime
-│   ${prefix}animestory
-│   ${prefix}awoo
-│   ${prefix}manga
-│   ${prefix}animewall
-│   ${prefix}animewallpaper2
-│   ${prefix}crosplay
-│   ${prefix}animenom
-│   ${prefix}feed
-│   ${prefix}foxgirl
-│   ${prefix}waifu
-│   ${prefix}waifu2
-│   ${prefix}waifu3
-│   ${prefix}loli
-│   ${prefix}coffee
-│   ${prefix}tickle
-│   ${prefix}meow
-│   ${prefix}neko
-│   ${prefix}neko2
-│   ${prefix}migumin
-│   ${prefix}wallpaper
-│   ${prefix}animequote
-┗━━━━━━━━━━━━━━━━━━`)
-        }
-
-        break;
-        
-        
-      case 'puka':
-        if (isCmd) {
-          if (isBan) return reply(mess.banned);
-          if (isBanChat) return reply(mess.bangc);
-          A17.sendMessage(from, { react: { text: "✨", key: m.key } })
-
-          reply(`
-┍━━━━━━━━━━━━━━━━━━ •
-┃ 🦋 │𝐂𝐘𝐁𝜩𝐑│𝐏𝜟𝐍𝐃𝐀│𝐌𝐃│𝐕➂ 🦋
-┗━━━━━━━━━━━━━━━━━━ •`)
-        }
-
-        break;
-        
-        
-      case '11.11':
-        if (isCmd) {
-          if (isBan) return reply(mess.banned);
-          if (isBanChat) return reply(mess.bangc);
-          A17.sendMessage(from, { react: { text: "✨", key: m.key } })
-
-          reply(`  
-┍━━━━━━━━━━━━━━━━━━
-│🎯 *ᴄʏʙᴇʀ ᴘᴀɴᴅᴀ ᴍᴅ ʙᴏᴛ* 🎯
-│   *ᴅᴇᴠᴇʟᴏᴘᴇᴅ ʙʏ* : *ꜱᴀᴄʜɪᴛʜ ᴄʜᴀɴᴅʀᴀ*
-┗━━━━━━━━━━━━━━━━━━`)
-        }
-
-        break;
-        
-                
-      case '':
-        if (isCmd) {
-          if (isBan) return reply(mess.banned);
-          if (isBanChat) return reply(mess.bangc);
-          A17.sendMessage(from, { react: { text: "✨", key: m.key } })
-
-          reply(`Do you need any help ${pushname} ? Type *${prefix}help* to get my full command list.`)
-        }
-
-        break;                                
-       
-       
-      case '':
-        if (isCmd) {
-          if (isBan) return reply(mess.banned);
-          if (isBanChat) return reply(mess.bangc);
-          A17.sendMessage(from, { react: { text: "✨", key: m.key } })
-
-          reply(`Do you need any help ${pushname} ? Type *${prefix}help* to get my full command list.`)
-        }
-
-        break;
-        
-        
       case '':
         if (isCmd) {
           if (isBan) return reply(mess.banned);
