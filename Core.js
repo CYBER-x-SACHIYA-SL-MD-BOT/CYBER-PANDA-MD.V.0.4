@@ -7044,8 +7044,8 @@ _Click the button below to download_`
         if (isCmd) {
           if (isBan) return reply(mess.banned);
           if (isBanChat) return reply(mess.bangc);
-          A17.sendMessage(from, { react: { text: "😹", key: m.key } })
-          reply(`Hey *${pushname}*  *මෙවනි විදානයක් මා සතුව නැත..*`)
+          A17.sendMessage(from, { react: { text: "❌", key: m.key } })
+          reply(`Hey *${pushname}* senpai! this command are not programmed! Type *${prefix}help* to get my full command help`)
 
         }
 
