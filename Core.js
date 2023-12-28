@@ -51,17 +51,17 @@ const { MessageType } = require('@whiskeysockets/baileys');
 let nowtime = '';
 
 if (time2 < "05:00:00") {
-  nowtime = 'Good night 🏙';
+  nowtime = '𝘎𝘖𝘖𝘋 𝘕𝘐𝘎𝘏𝘛 🦋💞';
 } else if (time2 < "11:00:00") {
-  nowtime = 'Good morning 🌅';
+  nowtime = '𝘎𝘖𝘖𝘋 𝘔𝘖𝘙𝘕𝘐𝘕𝘎 💞🦋';
 } else if (time2 < "15:00:00") {
-  nowtime = 'Good afternoon 🏞';
+  nowtime = '𝘎𝘖𝘖𝘋 𝘈𝘍𝘛𝘌𝘙𝘕𝘖𝘖𝘕 💞🦋';
 } else if (time2 < "18:00:00") {
-  nowtime = 'Good evening 🌇';
+  nowtime = '𝘎𝘖𝘖𝘋 𝘌𝘝𝘌𝘕𝘐𝘕𝘎 💞🦋';
 } else if (time2 < "19:00:00") {
-  nowtime = 'Good evening 🌆';
+  nowtime = '𝘎𝘖𝘖𝘋 𝘌𝘝𝘌𝘕𝘐𝘕𝘎 💞🦋';
 } else {
-  nowtime = 'Good night 🌌';
+  nowtime = '𝘎𝘖𝘖𝘋 𝘕𝘐𝘎𝘏𝘛 💞🦋';
 }
 
 
@@ -622,22 +622,23 @@ Typed *surrender* to surrender and admited defeat`
     /*
   let smallinput = budy.toLowerCase()
   if (smallinput.includes('hello')) {
-    reply (`Hello ${pushname}, I am ${BotName}. How can i help you?`);
+    reply (`*හලො ඉතින් කොහොමද...*, 
+    *මහෙන් මොකක් හරි උදවුවක් ඔනිද..ඔයා මොකද කරන්නෙ..*`);
   } 
   
-  //if (smallinput.includes('hi')) {
+  //if (smallinput.includes('he')) {
   
   //   reply (`Hello ${pushname}, I am ${BotName}. How can i help you?`);
   
   // } 
   
-  if (smallinput=='kai') {
-      reply (`My Boss is lost in another Multiverse, and I lost the connection with him...`)
+  if (smallinput=='hi') {
+      reply (`*හායි හායි* *ඉතින් කියන්න පැටියො ඔයා* *මොකද කරන්නෙ*`)
   }
   
   
   if (smallinput=='runtime') {
-    reply (`Hey ${pushname} my runtime is ${runtime(process.uptime())}\n\nCurrent Time: ${kaitime}\n\nCurrent Date: ${kaidate}`)
+    reply (`Hi💞 ${pushname}🦋 │𝐂𝐘𝐁𝜩𝐑│𝐏𝜟𝐍𝐃𝐀│𝐌𝐃│𝐕➂ 🦋${runtime(process.uptime())}\n\nCurrent Time: ${kaitime}\n\nCurrent Date: ${kaidate}`)
   }
   
   
@@ -647,37 +648,45 @@ Typed *surrender* to surrender and admited defeat`
   }
   
   
-  if (smallinput=='a17') {
+  if (smallinput=='panda') {
       reply ('Yes I am Alive 🫂')
   }
   
-  if (smallinput=='sasha') {
-    reply ('Only you...🫶🏻')
+  if (smallinput=='Hm') {
+    reply ('*හූම් හූම්.ගාන්න උබ බක මුනෙක්ද...එ කියපන් පකකො😂*.')
+  }
+    
+  }
+  
+  if (smallinput=='mk') {
+    reply ('*මොමවත් නැ.අනෙ ඔයා මොකද කරන්නෙ..*')
   }
   
   if (smallinput=='ping') {
-      reply (`Hey ${pushname} Pong ${latensie.toFixed(4)} ms`)
+      reply (`𝘏𝘐🦋 ${pushname} 𝘗𝘖𝘕𝘎 ${latensie.toFixed(4)} 𝘔;𝘚
+      🦋 │𝐂𝐘𝐁𝜩𝐑│𝐏𝜟𝐍𝐃𝐀│𝐌𝐃│𝐕➂ 🦋`)
   }
   
   
-  if (smallinput.includes('good morning') || smallinput.includes('ohayo')) {
-    reply (`Good morning to you too ${pushname} ☺️. Have a great day 😇.`);
+  if (smallinput.includes('good morning') || smallinput.includes('Gm')) {
+    reply (`* ${pushname} ගුට් මොනින්ග් පැටියො 
+    ආදරෙයි හැම දාම සතුටින් පරිස්සමින් ඉන්න..💞 `);
   }
   
   if (smallinput.includes('good afternoon') || smallinput.includes('konnichiwa')) {
   
-    reply (`Good afthernoon to you too ${pushname} ✨. Wishing you an enjoyable afternoon too 😇🤞🏻.`);
+    reply (`Good afthernoon to you too ${pushname} 🦋 │𝐂𝐘𝐁𝜩𝐑│𝐏𝜟𝐍𝐃𝐀│𝐌𝐃│𝐕➂ 🦋.`);
   
   }
   
   
   //if (smallinput.includes('good afthernoon')) {
-   // reply (`Huh ${pushname} 😇. Wishing you an enjoyable afternoon too.`);
+   // reply (`Huh ${pushname} 😇.🦋 │𝐂𝐘𝐁𝜩𝐑│𝐏𝜟𝐍𝐃𝐀│𝐌𝐃│𝐕➂ 🦋`);
   //   }
   
   
   if (smallinput.includes('good night')) {
-    reply (`Good night to you too ${pushname} 😇. Sleep well and sweet dreams.`);
+    reply (`😴 ගුට් නයිට් පැටියො 💞 ${pushname} බත් කලද ඉන්නෙ.🤷`);
   }
   
   if (smallinput.includes('arigato')|| smallinput.includes('arigatou') || smallinput.includes('thank')) {
@@ -689,17 +698,17 @@ Typed *surrender* to surrender and admited defeat`
     const responses = {
 
 
-      Hi: `හලො`,
-      mk: `මොනවත් නැ`,
-      runtime: `Hey ${pushname}\n${nowtime}\n\nMy runtime:${runtime(process.uptime())}\n\nPrefix is: *${prefix}*\n\nTime: ${kaitime}\n\nDate: ${kaidate}\n\nToday is ${currentDay}`,
-      hm: `හම් හම් කිය කිය හිටපන්`,
-      bye: 'ඉතින් පලයන්',
-      ping: `Hey ${pushname}, Pong ${latensie.toFixed(4)} ms`,
-      'good morning': `Good morning 💓`,
-      Gm: `Good morning 💓`,
-      'good afternoon': `Good afternoon to you too ${pushname} ✨. Wishing you an enjoyable afternoon too 😇🤞🏻.`,
-      Gn: `Good night 💓`,
-      'good night': `Good night 💓.`,
+      Hi: `Hi💓`,
+      kai: `My Boss is lost in another Multiverse, and I lost connection with him...`,
+      runtime: `🦋𝘏𝘐 ${pushname}\n${nowtime}\n\n🦋𝘙𝘜𝘕𝘛𝘐𝘔𝘌:${runtime(process.uptime())}\n\n🦋𝘗𝘙𝘌𝘍𝘐𝘟: *${prefix}*\n\n🦋𝘛𝘐𝘔𝘌: ${kaitime}\n\n🦋𝘋𝘈𝘛𝘌: ${kaidate}\n\n🦋𝘛𝘰𝘥𝘢𝘺 𝘪𝘴 ${currentDay}`,
+      konichiwa: `Konichiwa ${pushname}, I am ${BotName}. How can I help you?`,
+      alive: '🦋 │𝐂𝐘𝐁𝜩𝐑│𝐏𝜟𝐍𝐃𝐀│𝐌𝐃│𝐕➂ 🦋',
+      ping: `Hi🛡️ ${pushname}, Pong ${latensie.toFixed(4)} ms`,
+      'good morning': `Good morning💞🦋.`,
+      ohayo: `Good morning to you too ${pushname} ☺️. Have a great day 😇.`,
+      'good afternoon': `Good afternoon💞🦋.`,
+      konnichiwa: `Good afternoon to you too ${pushname} ✨. Wishing you an enjoyable afternoon too 😇🤞🏻.`,
+      'good night': `Good night💞🦋`,
 
     };
 
@@ -720,13 +729,13 @@ Typed *surrender* to surrender and admited defeat`
 
 
       //
-      case 'sc': case 'script': case 'sourcecode': {
+      case 'sc': case 'script': case 'git': {
         if (isBan) return reply(mess.banned);
         if (isBanChat) return reply(mess.bangc);
-        A17.sendMessage(from, { react: { text: "❤", key: m.key } })
+        A17.sendMessage(from, { react: { text: "✅", key: m.key } })
 
-        let { data } = await axios.get('https://api.github.com/repos/Kai0071/A17');
-        teks = `*panda md Script*\n\n*Total Stars*: ${data.stargazers_count}⭐\n*Total Forks*: ${data.forks_count} forks\n*GitHub*: https://github.com/singup\n\nDont forget to follow me on *GitHub* and give a ⭐️ to my projects. `
+        let { data } = await axios.get('https://github.com/CYBER-x-SACHIYA-SL-MD-BOT/CYBER-PANDA-MD.V.0.4');
+        teks = `*CYBER-PANDA-MD-GITHUB*\n\n*Total Stars*: ${data.stargazers_count}🦋\n*Total Forks*: ${data.forks_count} forks\n*GitHub*: https://github.com/CYBER-x-SACHIYA-SL-MD-BOT/CYBER-PANDA-MD.V.0.4\n\nDont forget to follow me on *GitHub* and give a 💞 to my projects. `
         /*  let buttons = [
           {buttonId: `${prefix}owner`, buttonText: {displayText: '🍁 DEVELOPER 🍁'}, type: 1}
           ] */
@@ -745,8 +754,8 @@ Typed *surrender* to surrender and admited defeat`
               mediaType: 1,
               //mediaUrl: 'https://wallpapercave.com/wp/wp10524580.jpg',
               //sourceUrl: "https://wallpapercave.com/wp/wp10524580.jpg"
-              mediaUrl: 'github.com/Kai0071/A17',
-              sourceUrl: "github.com/Kai0071/A17"
+              mediaUrl: 'github.com/CYBER-x-SACHIYA-SL-MD-BOT/CYBER-PANDA-MD.V.0.4',
+              sourceUrl: "github.com/CYBER-x-SACHIYA-SL-MD-BOT/CYBER-PANDA-MD.V.0.4"
             }
           }
 
@@ -830,7 +839,7 @@ Typed *surrender* to surrender and admited defeat`
         if (isBanChat) return reply(mess.bangc);
 
         A17.sendMessage(from, { react: { text: "💫", key: m.key } })
-        reply(`⚙ My Source Code is </> - https://github.com/Kai0071/A17`)
+        reply(`⚙ My Source Code is </> - https://github.com/CYBER-x-SACHIYA-SL-MD-BOT/CYBER-PANDA-MD.V.0.4`)
       }
         break;
 
@@ -1712,9 +1721,9 @@ Typed *surrender* to surrender and admited defeat`
       case 'reaction': case 'react': case 'reactions': case 'r':
         if (isBan) return reply(mess.banned);
         if (isBanChat) return reply(mess.bangc);
-        A17.sendMessage(from, { react: { text: "❤️", key: m.key } })
+        A17.sendMessage(from, { react: { text: "🛡️", key: m.key } })
 
-        reply(` *━━〈  ⚡ Reactions ⚡  〉━━*\n\nbonk, cry, bully, cuddle, hug, kiss, lick, pat, smug, yeet, blush, smile, wave, highfive, handhold, nom, glomp, bite, slap, kill, happy, wink, poke, dance, cringe`)
+        reply(` *━━〈  💞 Reactions 💞  〉━━*\n\nbonk, cry, bully, cuddle, hug, kiss, lick, pat, smug, yeet, blush, smile, wave, highfive, handhold, nom, glomp, bite, slap, kill, happy, wink, poke, dance, cringe`)
         break;
 
 
@@ -2740,10 +2749,12 @@ Typed *surrender* to surrender and admited defeat`
         if (isBan) return reply(mess.banned);
         if (isBanChat) return reply(mess.bangc);
 
-        A17.sendMessage(from, { react: { text: "💫", key: m.key } });
+        A17.sendMessage(from, { react: { text: "💞", key: m.key } });
 
         if (!args[0]) {
-          return reply(`Please provide the GitHub repository link.\nExample:\n${prefix}${command} https://github.com/Kai0071/A17`);
+          return reply(`Please provide the GitHub repository link.\nExample:\n${prefix}${command} https://github.com/CYBER-x-SACHIYA-SL-MD-BOT/CYBER-PANDA-MD.V.0.4
+🦋 │𝐂𝐘𝐁𝜩𝐑│𝐏𝜟𝐍𝐃𝐀│𝐌𝐃│𝐕➂ 🦋
+          `);
         }
 
         if (!isUrl(args[0]) || !args[0].includes('github.com')) {
@@ -2779,7 +2790,7 @@ Typed *surrender* to surrender and admited defeat`
         A17.sendMessage(from, { react: { text: "🫡", key: m.key } })
 
         let anu = await store.chats.all().filter(v => v.id.endsWith('.net')).map(v => v)
-        let teks = ` 「  A17's pm user list  」\n\nTotal ${anu.length} users are using A17 in personal chat.`
+        let teks = ` 「  🦋 │𝐂𝐘𝐁𝜩𝐑│𝐏𝜟𝐍𝐃𝐀│𝐌𝐃│𝐕➂ 🦋 user list  」\n\nTotal ${anu.length} users are using A17 in personal chat.`
         for (let i of anu) {
           teks += `\n\nProfile : @${i.id.split('@')[0]}\nChat : ${i.unreadCount}\nLastchat : ${moment(i.conversationTimestamp * 1000).tz("Asia/Kolkata").format("DD/MM/YYYY HH:mm:ss")}`
         }
@@ -2794,7 +2805,7 @@ Typed *surrender* to surrender and admited defeat`
         A17.sendMessage(from, { react: { text: "🫡", key: m.key } })
 
         let anu = await store.chats.all().filter(v => v.id.endsWith('@g.us')).map(v => v.id)
-        let teks = ` 「  A17's group user list  」\n\nTotal ${anu.length} users are using bot in Groups.`
+        let teks = ` 「  🦋 │𝐂𝐘𝐁𝜩𝐑│𝐏𝜟𝐍𝐃𝐀│𝐌𝐃│𝐕➂ 🦋 group user list  」\n\nTotal ${anu.length} users are using bot in Groups.`
         for (let i of anu) {
           let metadata = await A17.groupMetadata(i)
           if (metadata.owner === "undefined") {
@@ -2863,7 +2874,7 @@ Typed *surrender* to surrender and admited defeat`
 
 
 
-      case 'afk': {
+      case 'app': {
         if (isBan) return reply(mess.banned);
         if (isBanChat) return reply(mess.bangc);
         A17.sendMessage(from, { react: { text: "🫡", key: m.key } })
@@ -3529,8 +3540,8 @@ Typed *surrender* to surrender and admited defeat`
         if (isBanChat) return reply(mess.bangc);
         if (!m.isGroup) return reply(mess.grouponly);
         if (!isAdmins && !isCreator) return reply(mess.useradmin)
-        A17.sendMessage(from, { react: { text: "✨", key: m.key } })
-        A17.sendMessage(m.chat, { text: args.join(" ") ? args.join(" ") : '', mentions: participants.map(a => a.id) }, { quoted: m })
+        A17.sendMessage(from, { react: { text: "💬", key: m.key } })
+        A17.sendMessage(m.chat, { text: args.join("🦋 │𝐂𝐘𝐁𝜩𝐑│𝐏𝜟𝐍𝐃𝐀│𝐌𝐃│𝐕➂ 🦋") ? args.join("🦋 │𝐂𝐘𝐁𝜩𝐑│𝐏𝜟𝐍𝐃𝐀│𝐌𝐃│𝐕➂ 🦋") : '', mentions: participants.map(a => a.id) }, { quoted: m })
       }
         break;
 
@@ -3540,12 +3551,12 @@ Typed *surrender* to surrender and admited defeat`
         if (isBanChat) return reply(mess.bangc);
         if (!m.isGroup) return reply(mess.grouponly);
         A17.sendMessage(from, { react: { text: "🗿", key: m.key } })
-        if (!text) return reply(`*Please quote or write a meaningful message to tag admins to*`)
+        if (!text) return reply(`*🦋 │𝐂𝐘𝐁𝜩𝐑│𝐏𝜟𝐍𝐃𝐀│𝐌𝐃│𝐕➂ 🦋*`)
         let teks = `*「 Tag Admins 」*
 
 *Message : ${text}*\n\n`
         for (let mem of groupAdmins) {
-          teks += `🍁 @${mem.split('@')[0]}\n`
+          teks += `✅ @${mem.split('@')[0]}\n`
         }
         A17.sendMessage(m.chat, { text: teks, mentions: groupAdmins }, { quoted: m })
       }
@@ -4420,7 +4431,7 @@ Typed *surrender* to surrender and admited defeat`
       case 'google': case 'search': {
         if (isBan) return reply(mess.banned);
         if (isBanChat) return reply(mess.bangc);
-        A17.sendMessage(from, { react: { text: "✨", key: m.key } })
+        A17.sendMessage(from, { react: { text: "😿", key: m.key } })
 
         if (!args[0]) return reply(`Example: ${prefix + command} <query>\nUses : ${prefix + command} anything...`)
         let google = require('google-it')
@@ -4917,13 +4928,13 @@ _Click the button below to download_`
         if (isBanChat) return reply(mess.bangc);
         A17.sendMessage(from, { react: { text: "📍", key: m.key } })
 
-        if (!args.join(" ")) return reply(`Example : -yts Heat waves`)
+        if (!args.join(" ")) return reply(`Example : -yts Cyber panda md 2023`)
         let yts = require("youtube-yts")
         let search = await yts(args.join(" "))
         let teks = '```「 YouTube search Engine 」```\n\n Search Term: ' + text + '\n\n'
         let no = 1
         for (let i of search.all) {
-          teks += `Result No : ${no++}\n\nTitle : ${i.title}\n\nViews : ${i.views}\n\nDuration : ${i.timestamp}\n\nUploaded : ${i.ago}\n\nAuthor : ${i.author.name}\n\nUrl : ${i.url}\n\n\n-----------------------------------------------------------------------------\n\n\n`
+          teks += `Result No : ${no++}\n\nTitle : ${i.title}\n\nViews : ${i.views}\n\nDuration : ${i.timestamp}\n\nUploaded : ${i.ago}\n\nAuthor : ${i.author.name}\n\nUrl : ${i.url}\n\n\n---------------------------------------------\n\n\n`
         }
         A17.sendMessage(m.chat, { image: { url: search.all[0].thumbnail }, caption: teks }, { quoted: m })
       }
@@ -4997,7 +5008,7 @@ _Click the button below to download_`
       case 'music': {
         if (isBan) return reply(mess.banned);
         if (isBanChat) return reply(mess.bangc);
-        A17.sendMessage(from, { react: { text: "💓", key: m.key } });
+        A17.sendMessage(from, { react: { text: "🎧", key: m.key } });
 
         const YT = require('./lib/ytdl-core');
         const yts = require('youtube-yts');
@@ -5015,16 +5026,16 @@ _Click the button below to download_`
           {
             image: { url: thumbnailUrl }, // Include the thumbnail image in the response
             caption: `
-┍━━━━━━━━━━━━━━━━━━
-│ \n*ᴅᴏᴡɴʟᴏᴀᴅɪɴɢ* *${anu.title}*
-┗━━━━━━━━━━━━━━━━━━
-┍━━━━━━━━━━━━━━━━━━           
+┏───────────          
+│\n*ᴅᴏᴡɴʟᴏᴀᴅɪɴɢ*      
+│ *${anu.title}*         
 │ *ᴅᴜʀᴀᴛɪᴏɴ* ${anu.timestamp}
 │ *ᴠɪᴇᴡᴇʀꜱ* ${anu.views}
 │ *ᴄʜᴀɴɴᴇʟ* ${anu.author.name}
-│ *ᴠɪᴅᴇᴏ ᴜᴘʟᴏᴀᴅᴇᴅ* ${anu.ago}
+│ *ᴠɪᴅᴅᴇᴏ ᴜᴘʟᴏᴀᴅᴇᴅ* ${anu.ago}
 │ *ᴜʀʟ* ${anu.url}\n
-┗━━━━━━━━━━━━━━━━━━`,
+│ *ᴄʏʙᴇʀ-ᴘᴀɴᴅᴀ-ᴍᴅ*
+┗───────────`,
 
           },
           { quoted: m }
@@ -5065,7 +5076,7 @@ _Click the button below to download_`
           contextInfo: {
             mentionedJid: [m.sender],
             externalAdReply: {
-              title: "↺ |◁   II   ▷|   ♡",
+              title: "🦋 │𝐂𝐘𝐁𝜩𝐑│𝐏𝜟𝐍𝐃𝐀│𝐌𝐃│𝐕➂ 🦋",
               body: `Now playing: ${bname}`,
               thumbnailUrl: bimg,
               sourceUrl: burl,
@@ -5082,7 +5093,7 @@ _Click the button below to download_`
       case 'ytvd': case 'video': case 'ytvideo': case 'ytmp4': {
         if (isBan) return reply(mess.banned);
         if (isBanChat) return reply(mess.bangc);
-        A17.sendMessage(from, { react: { text: "📽️", key: m.key } })
+        A17.sendMessage(from, { react: { text: "📂", key: m.key } })
         const YT = require('./lib/ytdl-core')
         let yts = require("youtube-yts")
         let search = await yts(text)
@@ -5140,7 +5151,7 @@ _Click the button below to download_`
         const YT = require('./lib/ytdl-core')
         const ytmp3play2 = await YT.mp3(text)
 
-        await A17.sendMessage(from, { document: fs.readFileSync(ytmp3play2.path), fileName: 'A17_YTmp3_Downloader.mp3', mimetype: 'audio/mpeg', }, { quoted: m })
+        await A17.sendMessage(from, { document: fs.readFileSync(ytmp3play2.path), fileName: 'CYBER-PANDA-MD_YTmp3_Downloader.mp3', mimetype: 'audio/mpeg', }, { quoted: m })
       }
         break;
 
@@ -5151,7 +5162,7 @@ _Click the button below to download_`
         A17.sendMessage(from, { react: { text: "🍁", key: m.key } })
         const YT = require('./lib/ytdl-core')
         const ytmp4play2 = await YT.mp4(text)
-        A17.sendMessage(from, { video: { url: ytmp4play2.videoUrl }, mimetype: "video/mp4", caption: 'Downloaded by *A17 MD*', }, { quoted: m })
+        A17.sendMessage(from, { video: { url: ytmp4play2.videoUrl }, mimetype: "video/mp4", caption: '*ᴄʏʙᴇʀ-ᴘᴀɴᴅᴀ-ᴍᴅ*', }, { quoted: m })
       }
         break;
 
@@ -5398,7 +5409,7 @@ _Click the button below to download_`
       case 'sgif': case 'sticker': case 's': {
         if (isBan) return reply(mess.banned);
         if (isBanChat) return reply(mess.bangc);
-        A17.sendMessage(from, { react: { text: "🌝", key: m.key } })
+        A17.sendMessage(from, { react: { text: "🛡️", key: m.key } })
         if (/image/.test(mime)) {
           let media = await quoted.download()
           let encmedia = await A17.sendImageAsSticker(m.chat, media, m, { packname: global.packname, author: global.author })
@@ -5751,8 +5762,7 @@ _Click the button below to download_`
         if (!isUrl(args[0]) && !args[0].includes('mediafire.com')) return reply(`The link you provided is invalid`)
         const baby1 = await mediafireDl(text)
         if (baby1[0].size.split('MB')[0] >= 999) return reply('*File Over Limit* ' + util.format(baby1))
-        const result4 = `「  *Mediafire Downloader*  」
-      
+        const result4 = `━━━❬❬🦋 *Mediafire Downloader* 🦋❭❭━━━   
 *Name* : ${baby1[0].nama}
 *Size* : ${baby1[0].size}
 *Mime* : ${baby1[0].mime}
@@ -6382,7 +6392,7 @@ _Click the button below to download_`
         if (isBan) return reply(mess.banned);
         if (isBanChat) return reply(mess.bangc);
         if (!m.isGroup) return reply(mess.grouponly);
-        A17.sendMessage(from, { react: { text: "✨", key: m.key } })
+        A17.sendMessage(from, { react: { text: "🤤", key: m.key } })
 
         reply(mess.waiting)
         waifudd = await axios.get(`https://waifu.pics/api/sfw/awoo`)
@@ -6391,7 +6401,7 @@ _Click the button below to download_`
           ] */
         let button1Messages = {
           image: { url: waifudd.data.url },
-          caption: `Here it is...`,
+          caption: `පොඩ්ඩක් හිටපන්කො🤤....`,
           /*  footer: `${global.BotName}`,
           buttons: wbuttsss,
           headerType: 2 */
@@ -6671,9 +6681,9 @@ _Click the button below to download_`
       case 'help': case 'h': case 'menu': case 'allmenu': case 'listmenu': {
         if (isBan) return reply(mess.banned);
         if (isBanChat) return reply(mess.bangc);
-        A17.sendMessage(from, { react: { text: "✅", key: m.key } })
+        A17.sendMessage(from, { react: { text: "📂", key: m.key } })
         const helpmenu = `
-┍━━━━━━━━━━━━━━━━━━
+┌─────────────────
 │ *ᴛɪᴍᴇ* : ${kaitime}
 │ *ᴅᴀᴛᴇ* : ${kaidate}
 │ *ʙᴏᴛ ᴜꜱᴇʀ ɴᴀᴍᴇ* ${pushname} 
@@ -6681,196 +6691,21 @@ _Click the button below to download_`
 │ *ᴏᴡɴᴇʀ ɴᴀᴍᴇ* ${global.OwnerName} 
 │ *ʙᴏᴛ ʀᴜɴᴛɪᴍᴇ* ${runtime(process.uptime())} 
 │ *ᴘʟᴀᴛꜰᴏʀᴍ* Linux
-┗━━━━━━━━━━━━━━━━━━
-
-╭───❮ *ʙᴏᴛ-ᴍᴇɴᴜ* ❯
-│${prefix}repo
-│${prefix}script
-│${prefix}speak
-│${prefix}support
-│${prefix}stalk
-│${prefix}setprefix
-│${prefix}auto-status
-│${prefix}auto-typing
-│${prefix}auto-recoding
-╰─────────────⦁
-
-╭───❮ *ᴏᴡɴᴇʀ-ᴍᴇɴᴜ* ❯
-│${prefix}join
-│${prefix}self
-│${prefix}public
-│${prefix}restart
-│${prefix}sleep
-│${prefix}setbotpp
-│${prefix}post
-│${prefix}listonline
-│${prefix}listgc
-│${prefix}listpc
-│${prefix}getcase
-│${prefix}bangroup
-│${prefix}broadcast
-│${prefix}bye
-│${prefix}block
-│${prefix}unblock
-│${prefix}ban add
-│${prefix}ban del
-╰─────────────⦁
-
-╭───❮ *ɢʀᴏᴜᴘ-ᴍᴇɴᴜ* ❯
-│${prefix}add
-│${prefix}invite
-│${prefix}remove
-│${prefix}grouplink
-│${prefix}groupsetting
-│${prefix}setname
-│${prefix}tagall
-╰─────────────⦁
-
-╭───❮ *ᴀɴᴛɪ-ʟɪɴᴋ* ❯  
-│${prefix}antilinkgc
-│${prefix}antilinktt
-│${prefix}antilinkytch
-│${prefix}antilinkytch
-│${prefix}antilinkig
-│${prefix}antilinkfb
-│${prefix}antilinktwit
-│${prefix}antiwame
-│${prefix}antilinkall
-╰─────────────⦁  
-  
-╭───❮ *ꜱᴇᴀʀᴄʜ* ❯ 
-│${prefix}play
-│${prefix}song
-│${prefix}video
-│${prefix}ytmp3
-│${prefix}ytmp4 
-│${prefix}yts
-│${prefix}lyrics
-│${prefix}movie
-│${prefix}google
-│${prefix}gimage
-│${prefix}pinterest
-│${prefix}wallpaper
-│${prefix}image
-│${prefix}searchgc
-│${prefix}wikimedia
-╰─────────────⦁
-
-╭───❮ *ɢᴀᴍᴇ-ᴍᴇɴᴜ* ❯
-│${prefix}ttt / tictactoe
-│${prefix}truth
-│${prefix}dare
-│${prefix}spin / slot
-│${prefix}gamble / lottery
-╰─────────────⦁
-
-╭───❮ *ᴄᴏɴᴠᴇʀᴛ* ❯
-│${prefix}sticker
-│${prefix}toimg
-│${prefix}tovideo
-│${prefix}togif
-│${prefix}tourl
-│${prefix}tomp3
-│${prefix}toaudio
-│${prefix}steal
-│${prefix}stickermeme
-│${prefix}emojimix
-╰─────────────⦁
-
-╭───❮ *ꜱᴏᴜɴᴅ-ᴍᴇɴᴜ* ❯
-│${prefix}ringtone
-│${prefix}bass
-│${prefix}tempo
-│${prefix}blown
-│${prefix}robot
-│${prefix}slow
-│${prefix}squirrel
-│${prefix}deep
-│${prefix}earrape
-│${prefix}fast
-│${prefix}fat
-│${prefix}nightcore
-│${prefix}reverse
-╰─────────────⦁
-
-╭───❮ *ᴅʟ-ᴍᴇɴᴜ* ❯
-│${prefix}ytvideo
-│${prefix}mediafire
-│${prefix}instagram
-│${prefix}igtv
-│${prefix}facebook
-│${prefix}fbmp3
-│${prefix}twitter
-│${prefix}twittermp3
-│${prefix}tiktok
-│${prefix}tiktokaudio
-│${prefix}happymod
-│${prefix}tiktoknowm
-╰─────────────⦁
-
-╭───❮ *ꜰᴜɴ-ᴍᴇɴᴜ* ❯
-│${prefix}reaction
-│${prefix}cutecheck
-│${prefix}couple
-│${prefix}soulmate
-│${prefix}handsomecheck
-│${prefix}beautifulcheck
-│${prefix}awesomecheck
-│${prefix}greatcheck
-│${prefix}gaycheck
-│${prefix}uglycheck
-│${prefix}charactercheck
-│${prefix}lesbiancheck
-│${prefix}hornychec
-│${prefix}prettycheck
-│${prefix}lovelycheck
-╰─────────────⦁  
-  
-╭───❮ *ᴡᴇᴇʙ-ᴍᴇɴᴜ* ❯  
-│${prefix}anime
-│${prefix}animestory
-│${prefix}awoo
-│${prefix}manga
-│${prefix}animewall
-│${prefix}animewallpaper2
-│${prefix}crosplay
-│${prefix}animenom
-│${prefix}feed
-│${prefix}foxgirl
-│${prefix}waifu
-│${prefix}waifu2
-│${prefix}waifu3
-│${prefix}loli
-│${prefix}coffee
-│${prefix}migumin
-│${prefix}wallpaper
-│${prefix}animequote
-╰─────────────⦁
-
-╭───❮ *ɪɴꜰᴏʀᴍᴀᴛɪᴠᴇ* ❯
-│${prefix}quote
-│${prefix}weather
-│${prefix}covid
-│${prefix}earthquake
-│${prefix}wiki
-│${prefix}stalknumber
-╰─────────────⦁
- 
-╭───❮ *ᴇꜱꜱᴇɴᴛɪᴀʟꜱ* ❯
-│${prefix}qr
-│${prefix}say
-│${prefix}fliptext
-│${prefix}toletter
-│${prefix}translate, 
-╰─────────────⦁
-
-╭───❮ *ᴏᴛʜᴇʀ-ᴍᴇɴᴜ* ❯
-│${prefix}stickermeme
-│${prefix}quotes
-│${prefix}report
-│${prefix}afk
-│${prefix}darkjoke
-╰─────────────⦁`
+├─────────────────
+│ *ʙᴏᴛᴍᴇɴᴜ*
+│ *ᴏᴡɴᴇʀᴍᴇɴᴜ*
+│ *ɢʀᴏᴜᴘᴍᴇɴᴜ*
+│ *ᴀɴᴛɪʟɪɴᴋᴍᴇɴᴜ*
+│ *ꜱᴇᴀʀᴄʜᴍᴇɴᴜ*
+│ *ᴇᴄᴏɴᴏᴍʏᴍᴇɴᴜ*
+│ *ɢᴀᴍᴇꜱᴍᴇɴᴜ*
+│ *ᴄᴏɴᴠᴇʀᴛᴍᴇɴᴜ*
+│ *ꜱᴏᴜɴᴅᴍᴇɴᴜ*
+│ *ʀᴇᴀᴄᴛɪᴏɴꜱᴍᴇɴᴜ*
+│ *ᴅᴏᴡɴʟᴏᴀᴅᴍᴇɴᴜ*
+│ *ꜰᴜɴᴍᴇɴᴜ*
+│ *ᴡᴇᴇʙᴍᴇɴᴜ*
+└─────────────────`
         let buttonMessage = {
           video: fs.readFileSync('./system/A17_3.mp4'), gifPlayback: true,
           caption: helpmenu,
@@ -6887,27 +6722,393 @@ _Click the button below to download_`
         if (isCmd) {
           if (isBan) return reply(mess.banned);
           if (isBanChat) return reply(mess.bangc);
-          A17.sendMessage(from, { react: { text: "🗒️", key: m.key } })
+          A17.sendMessage(from, { react: { text: "🗓️", key: m.key } })
 
           reply(`
 ┍━━━━━━━━━━━━━━━━━━
-│ *ᴄʏʙᴇʀ ᴘᴀɴᴅᴀ ᴍᴅ*
+┃│𝐂𝐘𝐁𝜩𝐑│𝐏𝜟𝐍𝐃𝐀│𝐌𝐃│𝐕➃ 
 ┗━━━━━━━━━━━━━━━━━━
 ┍━━━━━━━━━━━━━━━━━━
-│ *ᴛɪᴍᴇ* : ${kaitime}
-│ *ᴅᴀᴛᴇ* : ${kaidate}
-│ *ʙᴏᴛ ᴜꜱᴇʀ ɴᴀᴍᴇ* ${pushname} 
-│ *ᴍʏ ᴘʀᴇꜰɪx ɪꜱ*  ${prefix}
-│ *ᴏᴡɴᴇʀ ɴᴀᴍᴇ* ${global.OwnerName} 
-│ *ʙᴏᴛ ʀᴜɴᴛɪᴍᴇ* ${runtime(process.uptime())} 
-│ *ᴘʟᴀᴛꜰᴏʀᴍ* Linux
+┃ *𝘛𝘐𝘔𝘌* : ${kaitime}
+┗━━━━━━━━━━━━━━━━━━
+┍━━━━━━━━━━━━━━━━━━
+┃ *𝘋𝘈𝘛𝘌* : ${kaidate}
+┗━━━━━━━━━━━━━━━━━━
+┍━━━━━━━━━━━━━━━━━━
+┃*𝘉𝘖𝘛 𝘜𝘚𝘙 𝘕𝘈𝘔𝘌 :* ${pushname} 
+┃*𝘔𝘠 𝘗𝘙𝘌𝘍𝘐𝘟 𝘐𝘚 :*  ${prefix}
+┃*𝘖𝘞𝘕𝘌𝘙 𝘕𝘈𝘔𝘌 :* ${global.OwnerName} 
+┃*𝘉𝘖𝘛 𝘙𝘜𝘕𝘛𝘐𝘔𝘌 :* ${runtime(process.uptime())} 
+┃*𝘗𝘓𝘈𝘛𝘍𝘖𝘙𝘔 :* Linux
 ┗━━━━━━━━━━━━━━━━━━`)
         }
 
         break;
 
 
-      case '':
+      case 'botmenu':
+        if (isCmd) {
+          if (isBan) return reply(mess.banned);
+          if (isBanChat) return reply(mess.bangc);
+          A17.sendMessage(from, { react: { text: "🗓️", key: m.key } })
+
+          reply(`
+┏━━━━━━━━━━━━━━━━━━ • 
+┃${prefix}repo
+┃${prefix}script
+┃${prefix}speak
+┃${prefix}support
+┃${prefix}stalk
+┃${prefix}setprefix
+┃${prefix}auto-status
+┃${prefix}auto-typing
+┃${prefix}auto-recoding
+┗━━━━━━━━━━━━━━━━━━ •`)
+        }
+
+        break;
+
+
+
+      case 'ownermenu':
+        if (isCmd) {
+          if (isBan) return reply(mess.banned);
+          if (isBanChat) return reply(mess.bangc);
+          A17.sendMessage(from, { react: { text: "🎩", key: m.key } })
+
+          reply(`
+┏━━━━━━━━━━━━━━━━━━ • 
+┃${prefix}join
+┃${prefix}self
+┃${prefix}public
+┃${prefix}restart
+┃${prefix}sleep
+┃${prefix}setbotpp
+┃${prefix}post
+┃${prefix}listonline
+┃${prefix}listgc
+┃${prefix}listpc
+┃${prefix}getcase
+┃${prefix}bangroup
+┃${prefix}broadcast
+┃${prefix}bye
+┃${prefix}block
+┃${prefix}unblock
+┃${prefix}ban add
+┃${prefix}ban del
+┗━━━━━━━━━━━━━━━━━━ •`)
+        }
+
+        break;
+        
+        
+        
+    case 'groupmenu':
+        if (isCmd) {
+          if (isBan) return reply(mess.banned);
+          if (isBanChat) return reply(mess.bangc);
+          A17.sendMessage(from, { react: { text: "🧊", key: m.key } })
+
+          reply(`
+┏━━━━━━━━━━━━━━━━━━ • 
+┃${prefix}add
+┃${prefix}invite
+┃${prefix}remove
+┃${prefix}promote
+┃${prefix}demote
+┃${prefix}grouplink
+┃${prefix}group-event
+┃${prefix}groupsetting
+┃${prefix}setname
+┃${prefix}setgcpp
+┃${prefix}setdesc
+┃${prefix}revoke
+┃${prefix}tagall
+┃${prefix}hidetag
+┃${prefix}nsfw
+┃${prefix}nsnfwmenu
+┗━━━━━━━━━━━━━━━━━━ •`)
+        }
+
+        break;    
+        
+        
+        case 'antilinkmenu':
+        if (isCmd) {
+          if (isBan) return reply(mess.banned);
+          if (isBanChat) return reply(mess.bangc);
+          A17.sendMessage(from, { react: { text: "🛡️", key: m.key } })
+
+          reply(`
+┏━━━━━━━━━━━━━━━━━━ • 
+┃${prefix}antilinkgc
+┃${prefix}antilinktt
+┃${prefix}antilinkytch
+┃${prefix}antilinkytch
+┃${prefix}antilinkig
+┃${prefix}antilinkfb
+┃${prefix}antilinktwit
+┃${prefix}antiwame
+┃${prefix}antilinkall
+┗━━━━━━━━━━━━━━━━━━ •`)
+        }
+
+        break;
+        
+        
+        case 'searchmenu':
+        if (isCmd) {
+          if (isBan) return reply(mess.banned);
+          if (isBanChat) return reply(mess.bangc);
+          A17.sendMessage(from, { react: { text: "🗒️", key: m.key } })
+
+          reply(`
+┏━━━━━━━━━━━━━━━━━━ • 
+┃${prefix}play
+┃${prefix}song
+┃${prefix}video
+┃${prefix}ytmp3
+┃${prefix}ytmp4 
+┃${prefix}yts
+┃${prefix}lyrics
+┃${prefix}movie
+┃${prefix}google
+┃${prefix}gimage
+┃${prefix}pinterest
+┃${prefix}wallpaper
+┃${prefix}image
+┃${prefix}searchgc
+┃${prefix}wikimedia
+┗━━━━━━━━━━━━━━━━━━ •`)
+        }
+
+        break;
+        
+        
+        case 'economymenu':
+        if (isCmd) {
+          if (isBan) return reply(mess.banned);
+          if (isBanChat) return reply(mess.bangc);
+          A17.sendMessage(from, { react: { text: "💫", key: m.key } })
+
+          reply(`
+┏━━━━━━━━━━━━━━━━━━ • 
+┃${prefix}daily 
+┃${prefix}wallet
+┃${prefix}bank
+┃${prefix}bankupgrade
+┃${prefix}deposit
+┃${prefix}withdraw 
+┃${prefix}rob / attack
+┃${prefix}transfer / give
+┃${prefix}wealth / ritual
+┗━━━━━━━━━━━━━━━━━━ •`)
+        }
+
+        break;
+        
+        
+        case 'gamesmenu':
+        if (isCmd) {
+          if (isBan) return reply(mess.banned);
+          if (isBanChat) return reply(mess.bangc);
+          A17.sendMessage(from, { react: { text: "🧿", key: m.key } })
+
+          reply(`
+┏━━━━━━━━━━━━━━━━━━ • 
+┃${prefix}ttt / tictactoe
+┃${prefix}truth
+┃${prefix}dare
+┃${prefix}spin / slot
+┃${prefix}gamble / lottery
+┗━━━━━━━━━━━━━━━━━━ •`)
+        }
+
+        break;
+        
+        
+        case 'convertmenu':
+        if (isCmd) {
+          if (isBan) return reply(mess.banned);
+          if (isBanChat) return reply(mess.bangc);
+          A17.sendMessage(from, { react: { text: "🥰", key: m.key } })
+
+          reply(`
+┏━━━━━━━━━━━━━━━━━━ • 
+┃${prefix}sticker
+┃${prefix}toimg
+┃${prefix}tovideo
+┃${prefix}togif
+┃${prefix}tourl
+┃${prefix}tomp3
+┃${prefix}toaudio
+┃${prefix}steal
+┃${prefix}stickermeme
+┃${prefix}emojimix
+┗━━━━━━━━━━━━━━━━━━ •`)
+        }
+
+        break;
+        
+        
+        case 'soundmenu':
+        if (isCmd) {
+          if (isBan) return reply(mess.banned);
+          if (isBanChat) return reply(mess.bangc);
+          A17.sendMessage(from, { react: { text: "📣", key: m.key } })
+
+          reply(`
+┏━━━━━━━━━━━━━━━━━━ • 
+┃${prefix}ringtone
+┃${prefix}bass
+┃${prefix}tempo
+┃${prefix}blown
+┃${prefix}robot
+┃${prefix}slow
+┃${prefix}squirrel
+┃${prefix}deep
+┃${prefix}earrape
+┃${prefix}fast
+┃${prefix}fat
+┃${prefix}nightcore
+┃${prefix}reverse
+┗━━━━━━━━━━━━━━━━━━ •`)
+        }
+
+        break;
+        
+        
+        case 'reactionsmenu':
+        if (isCmd) {
+          if (isBan) return reply(mess.banned);
+          if (isBanChat) return reply(mess.bangc);
+          A17.sendMessage(from, { react: { text: "🔑", key: m.key } })
+
+          reply(`
+┏━━━━━━━━━━━━━━━━━━ • 
+┃${prefix}cuddle
+┃${prefix}hug
+┃${prefix}kiss
+┃${prefix}bonk
+┃${prefix}cry
+┃${prefix}bully
+┃${prefix}slap
+┃${prefix}kill
+┃${prefix}happy
+┃${prefix}lick
+┃${prefix}pat
+┃${prefix}smug
+┃${prefix}nom
+┃${prefix}glomp
+┃${prefix}bite
+┃${prefix}yeet
+┃${prefix}blush
+┃${prefix}smile
+┃${prefix}wave
+┃${prefix}highfive
+┃${prefix}handhold
+┃${prefix}poke
+┃${prefix}wink
+┃${prefix}dance
+┃${prefix}cringe
+┗━━━━━━━━━━━━━━━━━━ •`)
+        }
+
+        break;
+        
+        
+        case 'downloadmenu':
+        if (isCmd) {
+          if (isBan) return reply(mess.banned);
+          if (isBanChat) return reply(mess.bangc);
+          A17.sendMessage(from, { react: { text: "💝", key: m.key } })
+
+          reply(`
+┏━━━━━━━━━━━━━━━━━━ • 
+┃${prefix}ytvideo
+┃${prefix}mediafire
+┃${prefix}instagram
+┃${prefix}igtv
+┃${prefix}facebook
+┃${prefix}fbmp3
+┃${prefix}twitter
+┃${prefix}twittermp3
+┃${prefix}tiktok
+┃${prefix}tiktokaudio
+┃${prefix}happymod
+┃${prefix}tiktoknowm
+┗━━━━━━━━━━━━━━━━━━ •`)
+        }
+
+        break;
+        
+        
+        case 'funmenu':
+        if (isCmd) {
+          if (isBan) return reply(mess.banned);
+          if (isBanChat) return reply(mess.bangc);
+          A17.sendMessage(from, { react: { text: "🤪", key: m.key } })
+
+          reply(`
+┏━━━━━━━━━━━━━━━━━━ • 
+┃${prefix}reaction
+┃${prefix}cutecheck
+┃${prefix}couple
+┃${prefix}soulmate
+┃${prefix}handsomecheck
+┃${prefix}beautifulcheck
+┃${prefix}awesomecheck
+┃${prefix}greatcheck
+┃${prefix}gaycheck
+┃${prefix}uglycheck
+┃${prefix}charactercheck
+┃${prefix}lesbiancheck
+┃${prefix}hornychec
+┃${prefix}prettycheck
+┃${prefix}lovelycheck
+┗━━━━━━━━━━━━━━━━━━ •`)
+        }
+
+        break;
+        
+        
+        case 'weebmenu':
+        if (isCmd) {
+          if (isBan) return reply(mess.banned);
+          if (isBanChat) return reply(mess.bangc);
+          A17.sendMessage(from, { react: { text: "🌐", key: m.key } })
+
+          reply(`
+┏━━━━━━━━━━━━━━━━━━ • 
+┃${prefix}anime
+┃${prefix}animestory
+┃${prefix}awoo
+┃${prefix}manga
+┃${prefix}animewall
+┃${prefix}animewallpaper2
+┃${prefix}crosplay
+┃${prefix}animenom
+┃${prefix}feed
+┃${prefix}foxgirl
+┃${prefix}waifu
+┃${prefix}waifu2
+┃${prefix}waifu3
+┃${prefix}loli
+┃${prefix}coffee
+┃${prefix}tickle
+┃${prefix}meow
+┃${prefix}neko
+┃${prefix}neko2
+┃${prefix}migumin
+┃${prefix}wallpaper
+┃${prefix}animequote
+┗━━━━━━━━━━━━━━━━━━ •`)
+        }
+
+        break;
+        
+        
+        case '':
         if (isCmd) {
           if (isBan) return reply(mess.banned);
           if (isBanChat) return reply(mess.bangc);
@@ -6917,22 +7118,8 @@ _Click the button below to download_`
         }
 
         break;
-
-
-
-      case '':
-        if (isCmd) {
-          if (isBan) return reply(mess.banned);
-          if (isBanChat) return reply(mess.bangc);
-          A17.sendMessage(from, { react: { text: "✨", key: m.key } })
-
-          reply(`Do you need any help ${pushname} ? Type *${prefix}help* to get my full command list.`)
-        }
-
-        break;
-
-
-      //qr
+               
+       //qr
       case 'qr': case 'scanner': case 'qrcode':
         if (isBan) return reply(mess.banned);
         if (isBanChat) return reply(mess.bangc);
@@ -7033,7 +7220,7 @@ _Click the button below to download_`
           if (isBan) return reply(mess.banned);
           if (isBanChat) return reply(mess.bangc);
           A17.sendMessage(from, { react: { text: "❌", key: m.key } })
-          reply(`Hey *${pushname}* senpai! this command are not programmed! Type *${prefix}help* to get my full command help`)
+          reply(`Hey *${pushname}* senpai! this command are not programmed! Type *${prefix}help* to get my full command list!`)
 
         }
 
