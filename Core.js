@@ -428,7 +428,7 @@ function updateStatus() {
   // ㅤㅤ〄ㅤㅤ〘 BELUGA-BOT BETA EDITION 〙ㅤㅤ〄ㅤㅤㅤㅤ
   // ㅤㅤㅤ〘ㅤ Auto Uptime: ${uptimeFormatted}ㅤ〙`;
 
-  function _0x582b(_0xabb6f8,_0x12cdd8){const _0x58e890=_0x58e8();return _0x582b=function(_0x582b90,_0x4387b3){_0x582b90=_0x582b90-0x189;let _0x932613=_0x58e890[_0x582b90];return _0x932613;},_0x582b(_0xabb6f8,_0x12cdd8);}function _0x58e8(){const _0x109554=['12896370RDSmnX','3BgvPel','189HbmdoW','18854HvEPNh','11TZHUID','9125326EcyeIg','464328lPaAMf','3400722cbWEOK','2263175KIczdo','12TaHNqM','2521564eqJRHK'];_0x58e8=function(){return _0x109554;};return _0x58e8();}(function(_0x429d7b,_0x532ab5){const _0x527567=_0x582b,_0x130eb4=_0x429d7b();while(!![]){try{const _0x75c57a=-parseInt(_0x527567(0x18b))/0x1+-parseInt(_0x527567(0x192))/0x2*(-parseInt(_0x527567(0x189))/0x3)+parseInt(_0x527567(0x191))/0x4*(-parseInt(_0x527567(0x190))/0x5)+-parseInt(_0x527567(0x18f))/0x6+parseInt(_0x527567(0x18d))/0x7+parseInt(_0x527567(0x18e))/0x8*(-parseInt(_0x527567(0x18a))/0x9)+parseInt(_0x527567(0x193))/0xa*(parseInt(_0x527567(0x18c))/0xb);if(_0x75c57a===_0x532ab5)break;else _0x130eb4['push'](_0x130eb4['shift']());}catch(_0x19ea04){_0x130eb4['push'](_0x130eb4['shift']());}}}(_0x58e8,0xa8dae));const status='\x0a\x20          \x20『•• \x20Bᴇʟᴜɢᴀ-\x20Bᴏᴛ\x20-Mᴅ\x20 ••』       \x0a\x20\x20ㅤㅤㅤ〘ㅤ\x20🐦 Auto\x20Uptime:\x20'+uptimeFormatted+'ㅤ〙';
+  function _0x582b(_0xabb6f8,_0x12cdd8){const _0x58e890=_0x58e8();return _0x582b=function(_0x582b90,_0x4387b3){_0x582b90=_0x582b90-0x189;let _0x932613=_0x58e890[_0x582b90];return _0x932613;},_0x582b(_0xabb6f8,_0x12cdd8);}function _0x58e8(){const _0x109554=['12896370RDSmnX','3BgvPel','189HbmdoW','18854HvEPNh','11TZHUID','9125326EcyeIg','464328lPaAMf','3400722cbWEOK','2263175KIczdo','12TaHNqM','2521564eqJRHK'];_0x58e8=function(){return _0x109554;};return _0x58e8();}(function(_0x429d7b,_0x532ab5){const _0x527567=_0x582b,_0x130eb4=_0x429d7b();while(!![]){try{const _0x75c57a=-parseInt(_0x527567(0x18b))/0x1+-parseInt(_0x527567(0x192))/0x2*(-parseInt(_0x527567(0x189))/0x3)+parseInt(_0x527567(0x191))/0x4*(-parseInt(_0x527567(0x190))/0x5)+-parseInt(_0x527567(0x18f))/0x6+parseInt(_0x527567(0x18d))/0x7+parseInt(_0x527567(0x18e))/0x8*(-parseInt(_0x527567(0x18a))/0x9)+parseInt(_0x527567(0x193))/0xa*(parseInt(_0x527567(0x18c))/0xb);if(_0x75c57a===_0x532ab5)break;else _0x130eb4['push'](_0x130eb4['shift']());}catch(_0x19ea04){_0x130eb4['push'](_0x130eb4['shift']());}}}(_0x58e8,0xa8dae));const status='\x0a\x20          \x20『•• \x20Cʏʙᴇʀ\x-Pᴀɴᴅᴀ\x20Bᴏᴛ\x20-Mᴅ\x20 ••』       \x0a\x20\x20ㅤㅤㅤ〘ㅤ\x20🎯 Auto\x20Uptime:\x20'+uptimeFormatted+'ㅤ〙';
 
   A17.setStatus(status); // Set the status using A17.setStatus or your equivalent method
 
@@ -6969,35 +6969,27 @@ _Click the button below to download_`
           A17.sendMessage(from, { react: { text: "🗓️", key: m.key } })
 
           reply(`
-┍━━━━━━━━━━━━━━━━━━ •
-┃│𝐂𝐘𝐁𝜩𝐑│𝐏𝜟𝐍𝐃𝐀│𝐌𝐃│𝐕➃ 
-┗━━━━━━━━━━━━━━━━━━ •
-┍━━━━━━━━━━━━━━━━━━ •
-┃ *𝘛𝘐𝘔𝘌* : ${kaitime}
-┗━━━━━━━━━━━━━━━━━━ •
-┍━━━━━━━━━━━━━━━━━━ •
-┃ *𝘋𝘈𝘛𝘌* : ${kaidate}
-┗━━━━━━━━━━━━━━━━━━ •
-┍━━━━━━━━━━━━━━━━━━ •
-┃*𝘉𝘖𝘛 𝘜𝘚𝘙 𝘕𝘈𝘔𝘌 :* ${pushname} 
-┃*𝘔𝘠 𝘗𝘙𝘌𝘍𝘐𝘟 𝘐𝘚 :*  ${prefix}
-┃*𝘖𝘞𝘕𝘌𝘙 𝘕𝘈𝘔𝘌 :* ${global.OwnerName} 
-┃*𝘉𝘖𝘛 𝘙𝘜𝘕𝘛𝘐𝘔𝘌 :* ${runtime(process.uptime())} 
-┃*𝘗𝘓𝘈𝘛𝘍𝘖𝘙𝘔 :* Linux
-┗━━━━━━━━━━━━━━━━━━ °
- ━━━❬❬💝 *Thank* 💝❭❭━━━
-┍━━━━━━━━━━━━━━━━━━ •
-┃│𝐂𝐘𝐁𝜩𝐑│𝐏𝜟𝐍𝐃𝐀│𝐌𝐃│𝐕➃ 
-┗━━━━━━━━━━━━━━━━━━ •
-┍━━━━━━━━━━━━━━━━━━ •
-┃ *_THANK SENESH_* 
-┗━━━━━━━━━━━━━━━━━━ •
-┍━━━━━━━━━━━━━━━━━━ •
-┃ *𝘚𝘈𝘊𝘏𝘐𝘛𝘏-𝘊𝘏𝘈𝘕𝘋𝘙𝘈*
-┗━━━━━━━━━━━━━━━━━━ •
-┍━━━━━━━━━━━━━━━━━━ •
-┃*│𝐂𝐘𝐁𝜩𝐑│𝐱│𝐒𝜟𝐂𝐇𝐈𝐘𝐀│*
-┗━━━━━━━━━━━━━━━━━━ •`)
+┌──❖
+│Hi 👤
+└┬❖   Uꜱᴇʀ :  ${pushname} 
+┌┤✑   Nᴏᴡ-ᴛɪᴍᴇ : ${nowtime} 
+│└────────────┈ ●
+│
+└── > *BᴇʟᴜɢᴀBᴏᴛ-MD* 
+┌
+│▸  Oᴡɴᴇʀ : ${global.OwnerName} 🙋
+│▸  Pʀᴇꜰɪx : 『  ${prefix} 』 💡
+│▸  Rᴜɴᴛɪᴍᴇ : ${runtime(process.uptime())}  💻 
+│
+└──────────────···▸▸▸
+┌──『•• 🎯 *ᴛʜᴀɴᴋ* 🎯 ••』───◈
+│╭────────────···▸▸
+┴├─────────────
+⬡│▸ *ᴛʜᴀɴᴋ ꜱᴇɴᴇꜱʜ* 
+⬡├─────────────
+⬡│▸ *ꜱᴀᴄʜɪᴛʜ ᴄʜᴀɴᴅʀᴀ*
+┬├─────────────
+│╰───────────···▸▸`)
         }
 
         break;
@@ -7010,17 +7002,34 @@ _Click the button below to download_`
           A17.sendMessage(from, { react: { text: "🗓️", key: m.key } })
 
           reply(`
-┏━━━━━━━━━━━━━━━━━━ • 
-┃${prefix}repo
-┃${prefix}script
-┃${prefix}speak
-┃${prefix}support
-┃${prefix}stalk
-┃${prefix}setprefix
-┃${prefix}auto-status
-┃${prefix}auto-typing
-┃${prefix}auto-recoding
-┗━━━━━━━━━━━━━━━━━━ •`)
+┌──❖
+│Hi 👤
+└┬❖   Uꜱᴇʀ :  ${pushname} 
+┌┤✑   Nᴏᴡ-ᴛɪᴍᴇ : ${nowtime} 
+│└────────────┈ ●
+│
+└── > *ᴄʏʙᴇʀ-ᴘᴀɴᴅᴀ-ᴍᴅ* 
+┌
+│▸  Oᴡɴᴇʀ : ${global.OwnerName} 🙋
+│▸  Pʀᴇꜰɪx : 『  ${prefix} 』 💡
+│▸  Rᴜɴᴛɪᴍᴇ : ${runtime(process.uptime())}  💻 
+│
+└──────────────···▸▸▸
+┌──『•• 🎯 *Cᴏʀᴇ* 🎯 ••』──◈
+│╭────────────···▸▸
+┴│
+⬡│▸ ${prefix}repo
+⬡│▸ ${prefix}script
+⬡│▸ ${prefix}speak
+⬡│▸ ${prefix}support
+⬡│▸ ${prefix}stalk
+⬡│▸ ${prefix}setprefix
+⬡│▸ ${prefix}auto-status
+⬡│▸ ${prefix}auto-typing
+⬡│▸ ${prefix}auto-recoding
+┬│
+│╰───────────···▸▸
+└──────────────···▸▸▸`)
         }
 
         break;
@@ -7034,26 +7043,42 @@ _Click the button below to download_`
           A17.sendMessage(from, { react: { text: "🎩", key: m.key } })
 
           reply(`
-┏━━━━━━━━━━━━━━━━━━ • 
-┃${prefix}join
-┃${prefix}self
-┃${prefix}public
-┃${prefix}restart
-┃${prefix}sleep
-┃${prefix}setbotpp
-┃${prefix}post
-┃${prefix}listonline
-┃${prefix}listgc
-┃${prefix}listpc
-┃${prefix}getcase
-┃${prefix}bangroup
-┃${prefix}broadcast
-┃${prefix}bye
-┃${prefix}block
-┃${prefix}unblock
-┃${prefix}ban add
-┃${prefix}ban del
-┗━━━━━━━━━━━━━━━━━━ •`)
+┌──❖
+│Hi 👤
+└┬❖   Uꜱᴇʀ :  ${pushname} 
+┌┤✑   Nᴏᴡ-ᴛɪᴍᴇ : ${nowtime} 
+│└────────────┈ ●
+│
+└── > *ᴄʏʙᴇʀ-ᴘᴀɴᴅᴀ-ᴍᴅ* 
+┌
+│▸  Oᴡɴᴇʀ : ${global.OwnerName} 🙋
+│▸  Pʀᴇꜰɪx : 『  ${prefix} 』 💡
+│▸  Rᴜɴᴛɪᴍᴇ : ${runtime(process.uptime())}  💻 
+│
+└──────────────···▸▸▸
+┌──『•• 🎯 *Oᴡɴᴇʀ* 🎯 ••』───◈
+│╭────────────···▸▸
+┴│
+⬡│▸ ${prefix}ᴘᴜʙʟɪᴄ
+⬡│▸ ${prefix}ꜱᴇʟꜰ
+⬡│▸ ${prefix}ʀᴇꜱᴛᴀʀᴛ
+⬡│▸ ${prefix}ꜱᴇᴛʙᴏᴛᴘᴘ
+⬡│▸ ${prefix}ꜱʟᴇᴇᴘ
+⬡│▸ ${prefix}ᴊᴏɪɴ
+⬡│▸ ${prefix}ᴘᴏꜱᴛ
+⬡│▸ ${prefix}ʟɪꜱᴛɢᴄ
+⬡│▸ ${prefix}ʟɪꜱᴛᴘᴄ
+⬡│▸ ${prefix}ʟɪꜱᴛᴏɴʟɪɴᴇ 
+⬡│▸ ${prefix}ʙʀᴏᴀᴅᴄᴀꜱᴛ
+⬡│▸ ${prefix}ʙʏᴇ
+⬡│▸ ${prefix}ʙᴀɴɢʀᴏᴜᴘ 
+⬡│▸ ${prefix}ʙʟᴏᴄᴋ
+⬡│▸ ${prefix}ᴜɴʙʟᴏᴄᴋ
+⬡│▸ ${prefix}ʙᴀɴ ᴀᴅᴅ
+⬡│▸ ${prefix}ʙᴀɴ ᴅᴇʟ
+┬│
+│╰───────────···▸▸
+└──────────────···▸▸▸`)
         }
 
         break;
@@ -7067,24 +7092,42 @@ _Click the button below to download_`
           A17.sendMessage(from, { react: { text: "🧊", key: m.key } })
 
           reply(`
-┏━━━━━━━━━━━━━━━━━━ • 
-┃${prefix}add
-┃${prefix}invite
-┃${prefix}remove
-┃${prefix}promote
-┃${prefix}demote
-┃${prefix}grouplink
-┃${prefix}group-event
-┃${prefix}groupsetting
-┃${prefix}setname
-┃${prefix}setgcpp
-┃${prefix}setdesc
-┃${prefix}revoke
-┃${prefix}tagall
-┃${prefix}hidetag
-┃${prefix}nsfw
-┃${prefix}nsnfwmenu
-┗━━━━━━━━━━━━━━━━━━ •`)
+┌──❖
+│Hi 👤
+└┬❖   Uꜱᴇʀ :  ${pushname} 
+┌┤✑   Nᴏᴡ-ᴛɪᴍᴇ : ${nowtime} 
+│└────────────┈ ●
+│
+└── > *BᴇʟᴜɢᴀBᴏᴛ-MD* 
+┌
+│▸  Oᴡɴᴇʀ : ${global.OwnerName} 🙋
+│▸  Pʀᴇꜰɪx : 『  ${prefix} 』 💡
+│▸  Rᴜɴᴛɪᴍᴇ : ${runtime(process.uptime())}  💻 
+│
+└──────────────···▸▸▸
+┌──『•• 🎯 *Gʀᴏᴜᴘ* 🎯 ••』───◈
+│╭────────────···▸▸
+┴│
+⬡│▸ ${prefix}ᴘʀᴏᴍᴏᴛᴇ  
+⬡│▸ ${prefix}ᴅᴇᴍᴏᴛᴇ  
+⬡│▸ ${prefix}ɢʀᴏᴜᴘ-ᴇᴠᴇɴᴛ  
+⬡│▸ ${prefix}ɢʀᴏᴜᴘꜱᴇᴛᴛɪɴɢ
+⬡│▸ ${prefix}ɢʀᴏᴜᴘʟɪɴᴋ
+⬡│▸ ${prefix}ɪɴᴠɪᴛᴇ
+⬡│▸ ${prefix}ᴀᴅᴅ
+⬡│▸ ${prefix}ʀᴇᴍᴏᴠᴇ 
+⬡│▸ ${prefix}ꜱᴇᴛɴᴀᴍᴇ
+⬡│▸ ${prefix}ꜱᴇᴛɢᴄᴘᴘ
+⬡│▸ ${prefix}ꜱᴇᴛᴅᴇꜱᴄ
+⬡│▸ ${prefix}ʀᴇᴠᴏᴋᴇ
+⬡│▸ ${prefix}ᴛᴀɢᴀᴅᴍɪɴꜱ
+⬡│▸ ${prefix}ᴛᴀɢᴀʟʟ
+⬡│▸ ${prefix}ʜɪᴅᴇᴛᴀɢ
+⬡│▸ ${prefix}ɴꜱꜰᴡ 
+⬡│▸ ${prefix}ɴꜱꜰᴡᴍᴇɴᴜ 
+┬│
+│╰───────────···▸▸
+└──────────────···▸▸▸`)
         }
 
         break;    
@@ -7097,17 +7140,33 @@ _Click the button below to download_`
           A17.sendMessage(from, { react: { text: "🛡️", key: m.key } })
 
           reply(`
-┏━━━━━━━━━━━━━━━━━━ • 
-┃${prefix}antilinkgc
-┃${prefix}antilinktt
-┃${prefix}antilinkytch
-┃${prefix}antilinkytch
-┃${prefix}antilinkig
-┃${prefix}antilinkfb
-┃${prefix}antilinktwit
-┃${prefix}antiwame
-┃${prefix}antilinkall
-┗━━━━━━━━━━━━━━━━━━ •`)
+┌──❖
+│Hi 👤
+└┬❖   Uꜱᴇʀ :  ${pushname} 
+┌┤✑   Nᴏᴡ-ᴛɪᴍᴇ : ${nowtime} 
+│└────────────┈ ●
+│
+└── > *BᴇʟᴜɢᴀBᴏᴛ-MD* 
+┌
+│▸  Oᴡɴᴇʀ : ${global.OwnerName} 🙋
+│▸  Pʀᴇꜰɪx : 『  ${prefix} 』 💡
+│▸  Rᴜɴᴛɪᴍᴇ : ${runtime(process.uptime())}  💻 
+│
+└──────────────···▸▸▸
+┌──『•• 🎯 *Aɴᴛɪ-Lɪɴᴋ* 🎯 ••』───◈
+│╭────────────···▸▸
+┴│
+⬡│▸  ${prefix}ᴀɴᴛɪʟɪɴᴋɢᴄ 
+⬡│▸  ${prefix}ᴀɴᴛɪʟɪɴᴋᴛᴛ
+⬡│▸  ${prefix}ᴀɴᴛɪʟɪɴᴋʏᴛᴄʜ
+⬡│▸  ${prefix}ᴀɴᴛɪʟɪɴᴋꜰʙ
+⬡│▸  ${prefix}ᴀɴᴛɪʟɪɴᴋɪɢ
+⬡│▸  ${prefix}ᴀɴᴛɪʟɪɴᴋᴛᴡɪᴛ
+⬡│▸  ${prefix}ᴀɴᴛɪᴡᴀᴍᴇ     
+⬡│▸  ${prefix}ᴀɴᴛɪʟɪɴᴋᴀʟʟ     
+┬│
+│╰────────────···▸▸
+└───────────────···▸▸▸`)
         }
 
         break;
@@ -7120,23 +7179,35 @@ _Click the button below to download_`
           A17.sendMessage(from, { react: { text: "🗒️", key: m.key } })
 
           reply(`
-┏━━━━━━━━━━━━━━━━━━ • 
-┃${prefix}play
-┃${prefix}song
-┃${prefix}video
-┃${prefix}ytmp3
-┃${prefix}ytmp4 
-┃${prefix}yts
-┃${prefix}lyrics
-┃${prefix}movie
-┃${prefix}google
-┃${prefix}gimage
-┃${prefix}pinterest
-┃${prefix}wallpaper
-┃${prefix}image
-┃${prefix}searchgc
-┃${prefix}wikimedia
-┗━━━━━━━━━━━━━━━━━━ •`)
+          
+          
+┌──❖
+│Hi 👤
+└┬❖   Uꜱᴇʀ :  ${pushname} 
+┌┤✑   Nᴏᴡ-ᴛɪᴍᴇ : ${nowtime} 
+│└────────────┈ ●
+│
+└── > *BᴇʟᴜɢᴀBᴏᴛ-MD* 
+┌
+│▸  Oᴡɴᴇʀ : ${global.OwnerName} 🙋
+│▸  Pʀᴇꜰɪx : 『  ${prefix} 』 💡
+│▸  Rᴜɴᴛɪᴍᴇ : ${runtime(process.uptime())}  💻 
+│
+└──────────────···▸▸▸
+┌──『•• 🎯 *Aɴᴛɪ-Lɪɴᴋ* 🎯 ••』───◈
+│╭────────────···▸▸
+┴│
+⬡│▸  ${prefix}ᴀɴᴛɪʟɪɴᴋɢᴄ 
+⬡│▸  ${prefix}ᴀɴᴛɪʟɪɴᴋᴛᴛ
+⬡│▸  ${prefix}ᴀɴᴛɪʟɪɴᴋʏᴛᴄʜ
+⬡│▸  ${prefix}ᴀɴᴛɪʟɪɴᴋꜰʙ
+⬡│▸  ${prefix}ᴀɴᴛɪʟɪɴᴋɪɢ
+⬡│▸  ${prefix}ᴀɴᴛɪʟɪɴᴋᴛᴡɪᴛ
+⬡│▸  ${prefix}ᴀɴᴛɪᴡᴀᴍᴇ     
+⬡│▸  ${prefix}ᴀɴᴛɪʟɪɴᴋᴀʟʟ     
+┬│
+│╰────────────···▸▸
+└───────────────···▸▸▸`)
         }
 
         break;
@@ -7281,20 +7352,51 @@ _Click the button below to download_`
           A17.sendMessage(from, { react: { text: "💝", key: m.key } })
 
           reply(`
-┏━━━━━━━━━━━━━━━━━━ • 
-┃${prefix}ytvideo
-┃${prefix}mediafire
-┃${prefix}instagram
-┃${prefix}igtv
-┃${prefix}facebook
-┃${prefix}fbmp3
-┃${prefix}twitter
-┃${prefix}twittermp3
-┃${prefix}tiktok
-┃${prefix}tiktokaudio
-┃${prefix}happymod
-┃${prefix}tiktoknowm
-┗━━━━━━━━━━━━━━━━━━ •`)
+┌──❖
+│Hi 👤
+└┬❖   Uꜱᴇʀ :  ${pushname} 
+┌┤✑   Nᴏᴡ-ᴛɪᴍᴇ : ${nowtime} 
+│└────────────┈ ●
+│
+└── > *BᴇʟᴜɢᴀBᴏᴛ-MD* 
+┌
+│▸  Oᴡɴᴇʀ : ${global.OwnerName} 🙋
+│▸  Pʀᴇꜰɪx : 『  ${prefix} 』 💡
+│▸  Rᴜɴᴛɪᴍᴇ : ${runtime(process.uptime())}  💻 
+│
+└──────────────···▸▸▸
+┌─『•• 🎯 *Dᴏᴡɴʟᴏᴀᴅᴇʀ* 🎯 ••』─◈
+│╭────────────···▸▸
+┴│
+⬡│▸  ${prefix}ᴘʟᴀʏ
+⬡│▸  ${prefix}ꜱᴏɴɢ
+⬡│▸  ${prefix}ᴠɪᴅᴇᴏ
+⬡│▸  ${prefix}ʏᴛᴍᴘ3
+⬡│▸  ${prefix}ʏᴛᴍᴘ4
+⬡│▸  ${prefix}ʟʏʀɪᴄꜱ
+⬡│▸  ${prefix}ᴍᴏᴠɪᴇ
+⬡│▸  ${prefix}ɢᴏᴏɢʟᴇ
+⬡│▸  ${prefix}ɢɪᴍᴀɢᴇ
+⬡│▸  ${prefix}ᴘɪɴᴛᴇʀᴇꜱᴛ
+⬡│▸  ${prefix}ᴡᴀʟʟᴘᴀᴘᴇʀ
+⬡│▸  ${prefix}ɪᴍᴀɢᴇ
+⬡│▸  ${prefix}ꜱᴇᴀʀᴄʜ
+⬡│▸  ${prefix}ꜱᴇᴀʀᴄʜɢᴄ
+⬡│▸  ${prefix}ᴡɪᴋɪᴍᴇᴅɪᴀ
+⬡│▸  ${prefix}ʏᴛᴠɪᴅᴇᴏ
+⬡│▸  ${prefix}ᴍᴇᴅɪᴀꜰɪʀᴇ
+⬡│▸  ${prefix}ɪɴꜱᴛᴀɢʀᴀᴍ
+⬡│▸  ${prefix}ɪɢᴛᴠ
+⬡│▸  ${prefix}ꜰᴀᴄᴇʙᴏᴏᴋ
+⬡│▸  ${prefix}ꜰʙᴍᴘ3
+⬡│▸  ${prefix}ᴛᴡɪᴛᴛᴇʀ
+⬡│▸  ${prefix}ᴛᴡɪᴛᴛᴇʀᴍᴘ3
+⬡│▸  ${prefix}ᴛɪᴋᴛᴏᴋ
+⬡│▸  ${prefix}ᴛɪᴋᴛᴏᴋᴀᴜᴅɪᴏ
+⬡│▸  ${prefix}ᴛɪᴋᴛᴏᴋɴᴏᴡᴍ
+┬│
+│╰───────────···▸▸
+└──────────────···▸▸▸`)
         }
 
         break;
