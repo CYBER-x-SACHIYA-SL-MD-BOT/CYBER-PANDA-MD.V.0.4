@@ -699,7 +699,7 @@ Typed *surrender* to surrender and admited defeat`
 
 
       hello: `Hello ${pushname}, I am ${BotName}. My current prefix is "${prefix}". How can I help you?`,
-      kai: `My Boss is lost in another Multiverse, and I lost connection with him...`,
+      Gn: `Good night💓`,
       runtime: `🦋𝘏𝘐 ${pushname}\n${nowtime}\n\n🦋𝘙𝘜𝘕𝘛𝘐𝘔𝘌:${runtime(process.uptime())}\n\n🦋𝘗𝘙𝘌𝘍𝘐𝘟: *${prefix}*\n\n🦋𝘛𝘐𝘔𝘌: ${kaitime}\n\n🦋𝘋𝘈𝘛𝘌: ${kaidate}\n\n🦋𝘛𝘰𝘥𝘢𝘺 𝘪𝘴 ${currentDay}`,
       konichiwa: `Konichiwa ${pushname}, I am ${BotName}. How can I help you?`,
       alive: '🦋 │𝐂𝐘𝐁𝜩𝐑│𝐏𝜟𝐍𝐃𝐀│𝐌𝐃│𝐕➂ 🦋',
@@ -735,7 +735,17 @@ Typed *surrender* to surrender and admited defeat`
         A17.sendMessage(from, { react: { text: "✅", key: m.key } })
 
         let { data } = await axios.get('https://github.com/CYBER-x-SACHIYA-SL-MD-BOT/CYBER-PANDA-MD.V.0.4');
-        teks = `*CYBER-PANDA-MD-GITHUB*\n\n*Total Stars*: ${data.stargazers_count}🦋\n*Total Forks*: ${data.forks_count} forks\n*GitHub*: https://github.com/CYBER-x-SACHIYA-SL-MD-BOT/CYBER-PANDA-MD.V.0.4\n\nDont forget to follow me on *GitHub* and give a 💞 to my projects. `
+        teks = `
+┌───────────
+│ *CYBER-PANDA-MD-GITHUB*
+├───────────
+│ *Total Stars*: ${data.stargazers_count}🦋
+│ *Total Forks*: ${data.forks_count} 
+│ *forksGitHub*: *https://github.com/CYBER-x-SACHIYA-SL-MD-BOT/CYBER-PANDA-MD.V.0.4*
+│
+│ *Dont forget to follow me on GitHuband give a 💞 to my projects.* 
+│
+└──────────`
         /*  let buttons = [
           {buttonId: `${prefix}owner`, buttonText: {displayText: '🍁 DEVELOPER 🍁'}, type: 1}
           ] */
@@ -878,7 +888,7 @@ Typed *surrender* to surrender and admited defeat`
         if (!isCreator) return reply(mess.botowner)
         A17.sendMessage(from, { react: { text: "🛡️", key: m.key } })
 
-        if (!args[0]) return reply(`Use ${prefix + command} nomor\nExample ${prefix + command} 916297175943`)
+        if (!args[0]) return reply(`Use ${prefix + command} nomor\nExample ${prefix + command} +94767233346`)
         ya = q.split("|")[0].replace(/[^0-9]/g, '')
         unp = Owner.indexOf(ya)
         Owner.splice(unp, 1)
@@ -1111,21 +1121,21 @@ Typed *surrender* to surrender and admited defeat`
         const systemName = os.platform() + ' ' + os.release();
 
         const respon = `
-  🤖 *A17's Server Info* 🤖
+    *CYBER PANDA MD INFO* 
   
-  *System*: ${systemName}
+  *ꜱʏꜱᴛᴇᴍ* ${systemName}
   
-  *RAM*: ${formatp(os.totalmem() - os.freemem())} / ${formatp(os.totalmem())}
+  *ʀᴀᴍ* ${formatp(os.totalmem() - os.freemem())} / ${formatp(os.totalmem())}
   
-  *NodeJS Memory Usage*: ${Object.keys(used).map(key => `${key}: ${formatp(used[key])}`).join(', ')}
+  *ɴᴏʙᴇᴊꜱ ᴍᴇᴍᴏʀʏ ᴜꜱᴀɢᴇ* ${Object.keys(used).map(key => `${key}: ${formatp(used[key])}`).join(', ')}
   
-  *Total CPU Usage*: ${totalCpuUsage}%
+  *ᴛᴏᴛᴀʟ ᴄᴘᴜ ᴜꜱᴀɢᴇ* ${totalCpuUsage}%
   
-  *CPU Model*: ${cpu.model.trim()} (${cpu.speed} MHz)
+  *ᴄᴜᴘ ᴍᴏᴅʟᴇ* ${cpu.model.trim()} (${cpu.speed} MHz)
   
-  *Runtime*: ${runtime(process.uptime())}
+  *ʀᴜɴᴛɪᴍᴇ*: ${runtime(process.uptime())}
   
-  *Response Speed*: ${latensie.toFixed(4)} seconds
+  *ʀᴇꜱᴘᴏɴꜱᴇ ꜱᴘᴇᴇᴅ*: ${latensie.toFixed(4)} ꜱᴇᴄᴏɴᴅꜱ
   `.trim();
 
         m.reply(respon);
@@ -5027,21 +5037,16 @@ _Click the button below to download_`
             image: { url: thumbnailUrl }, // Include the thumbnail image in the response
             caption: `
 ┏━━━━━━━━━━━━━━━━ •          
-│\n📥*𝘋𝘖𝘞𝘕𝘓𝘖𝘈𝘋𝘐𝘕𝘎*📥 
-│━━━━━━━━━━━━━━━━ •          
-│*${anu.title}*
-│━━━━━━━━━━━━━━━━ •            
-│🗓️*𝘋𝘜𝘙𝘈𝘛𝘐𝘖𝘕 :* ${anu.timestamp}
-│━━━━━━━━━━━━━━━━ •
-│🔦*𝘝𝘐𝘌𝘞𝘌𝘙𝘚 :* ${anu.views}
-│━━━━━━━━━━━━━━━━ •
-│📽️*𝘊𝘏𝘈𝘕𝘕𝘌𝘓 :* ${anu.author.name}
-│━━━━━━━━━━━━━━━━ •
-│🎬*𝘝𝘐𝘋𝘌𝘖 𝘜𝘗𝘓𝘖𝘈𝘋𝘌𝘋:* ${anu.ago}
-│━━━━━━━━━━━━━━━━ •
-│📂*𝘜𝘙𝘓 :* ${anu.url}\n
-│━━━━━━━━━━━━━━━━ •          
-│🦋│𝐂𝐘𝐁𝜩𝐑│𝐏𝜟𝐍𝐃𝐀│𝐌𝐃│𝐕➂🦋
+│ *ᴅᴏᴡɴʟᴏᴀᴅɪɴɢ*
+├────────────        
+│ *${anu.title}*
+├────────────
+│ *ᴅᴜʀᴀᴛɪᴏɴ* ${anu.timestamp}
+│ *ᴠɪᴇᴡᴇʀꜱ* ${anu.views}
+│ *ᴄʜᴀɴɴᴇʟ* ${anu.author.name}
+│ *ᴠɪᴅᴇᴏ ᴜᴘʟᴏᴀᴅᴇᴅ* ${anu.ago}
+│ *ᴜʀʟ* ${anu.url}\n
+│ *ᴄʏʙᴇʀ-ᴘᴀɴᴅᴀ-ᴍᴅ*
 ┗━━━━━━━━━━━━━━━━ •`,
 
           },
