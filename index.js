@@ -51,29 +51,46 @@ const store = makeInMemoryStore({
 async function startA17() {
   console.log(
     color(
-      figlet.textSync("BelugaBot-MD", {
+      figlet.textSync("CYBER-PANDA-MD", {
         font: "Standard",
         horizontalLayout: "default",
         vertivalLayout: "default",
         //width: 80,
-       // whitespaceBreak: true,
-       whitespaceBreak: false,
+        // whitespaceBreak: true,
+        whitespaceBreak: false,
       }),
       "green"
     )
   );
-  console.log(color('\nHello, I am Slasher, the Developer of this bot.\n\nThanks for using: BelugaBot-MD.', 'aqua'))
-  console.log(color('\nYou can follow me on GitHub: ahil15', 'aqua'))
+  console.log(color('\nHello, I am Kai, the main Developer of this bot.\n\nThanks for using: A17 Bot.', 'aqua'))
+  console.log(color('\nYou can follow me on GitHub: Kai0071', 'aqua'))
 
-  const { state, saveCreds } = await useMultiFileAuthState("./BELUGA-SESSION");
+  const { state, saveCreds } = await useMultiFileAuthState("./SESSION");
   const A17 = A17Connect({
     logger: pino({ level: "silent" }),
     printQRInTerminal: true,
-    browser: ["BelugaBot-MD", "Safari", "3.O"],
+    browser: ["CYBER-PANDA-MD", "Safari", "3.O"],
     auth: state,
   });
 
   store.bind(A17.ev);
+
+
+ //
+  A17.ws.on('CB:call', async (json) => {
+    const callerId = json.content[0].attrs['call-creator']
+    if (json.content[0].tag === 'offer') {
+      try {
+        let contactMessage = await A17.sendContact(callerId, global.Owner)
+        await A17.sendMessage(callerId, { text: `Automatic Block System!\nDo not call this number!\nPlease unblock this number with permission from the Bot Owner.` }, { quoted: contactMessage })
+        await sleep(8000)
+        await A17.updateBlockStatus(callerId, "block")
+      } catch (error) {
+        console.error(error)
+      }
+    }
+  })
+
 
   A17.ev.on("messages.upsert", async (chatUpdate) => {
     try {
@@ -114,44 +131,44 @@ async function startA17() {
      })
  */
 
-     A17.ev.on('groups.update', async pea => {
-      //console.log(pea)
-      // Get Profile Picture Group
-      try {
-        ppgc = await A17.profilePictureUrl(pea[0].id, 'image')
-      } catch {
-        ppgc = 'https://images2.alphacoders.com/882/882819.jpg'
-      }
-      let wm_fatih = { url: ppgc }
-      if (pea[0].announce == true) {
-        //A17.send5ButImg(pea[0].id, `Group has been *Closed!* Only *Admins* can send Messages!`, `BelugaBot-MD`, wm_fatih, [])
-  
-        A17.sendMessage(m.chat, { image: wm_fatih, caption: 'Group has been *Closed!* Only *Admins* can send Messages!' })
-      } else if (pea[0].announce == false) {
-        // A17.send5ButImg(pea[0].id, `Grop has been *Opened!* Now *Everyone* can send Messages!`, `BelugaBot-MD`, wm_fatih, [])
-        A17.sendMessage(m.chat, { image: wm_fatih, caption: 'Group has been *Opened!* Now *Everyone* can send Messages!' })
-      } else if (pea[0].restrict == true) {
-        //A17.send5ButImg(pea[0].id, `Group Info modification has been *Restricted*, Now only *Admins* can edit Group Info !`, `BelugaBot-MD`, wm_fatih, [])
-        A17.sendMessage(m.chat, { image: wm_fatih, caption: 'Group Info modification has been *Restricted*, Now only *Admins* can edit Group Info !' })
-      } else if (pea[0].restrict == false) {
-        //A17.send5ButImg(pea[0].id, `Group Info modification has been *Un-Restricted*, Now only *Everyone* can edit Group Info !`, `BelugaBot-MD`, wm_fatih, [])
-        A17.sendMessage(m.chat, { image: wm_fatih, caption: 'Group Info modification has been *Un-Restricted*, Now only *Everyone* can edit Group Info !' })
-      } else {
-        //A17.send5ButImg(pea[0].id, `Group Subject has been uhanged To:\n\n*${pea[0].subject}*`, `BelugaBot-MD`, wm_fatih, [])
-        A17textddfq = `Group Subject has been updated To:\n\n*${pea[0].subject}*`
-        A17.sendMessage(pea[0].id, { image: wm_fatih, caption: A17textddfq })
-      }
-    })
-  
-  
-  
-    function pickRandom(list) {
-      return list[Math.floor(list.length * Math.random())]
+  A17.ev.on('groups.update', async pea => {
+    //console.log(pea)
+    // Get Profile Picture Group
+    try {
+      ppgc = await A17.profilePictureUrl(pea[0].id, 'image')
+    } catch {
+      ppgc = 'https://images2.alphacoders.com/882/882819.jpg'
     }
-  
+    let wm_fatih = { url: ppgc }
+    if (pea[0].announce == true) {
+      //A17.send5ButImg(pea[0].id, `Grop has been *Closed!* Only *Admins* can send Messages!`, `A17 Bot`, wm_fatih, [])
 
-    //... Group event on off directlly.
-    
+      A17.sendMessage(m.chat, { image: wm_fatih, caption: 'Grop has been *Closed!* Only *Admins* can send Messages!' })
+    } else if (pea[0].announce == false) {
+      // A17.send5ButImg(pea[0].id, `Grop has been *Opened!* Now *Everyone* can send Messages!`, `A17 Bot`, wm_fatih, [])
+      A17.sendMessage(m.chat, { image: wm_fatih, caption: 'Grop has been *Opened!* Now *Everyone* can send Messages!' })
+    } else if (pea[0].restrict == true) {
+      //A17.send5ButImg(pea[0].id, `Group Info modification has been *Restricted*, Now only *Admins* can edit Group Info !`, `A17 Bot`, wm_fatih, [])
+      A17.sendMessage(m.chat, { image: wm_fatih, caption: 'Group Info modification has been *Restricted*, Now only *Admins* can edit Group Info !' })
+    } else if (pea[0].restrict == false) {
+      //A17.send5ButImg(pea[0].id, `Group Info modification has been *Un-Restricted*, Now only *Everyone* can edit Group Info !`, `A17 Bot`, wm_fatih, [])
+      A17.sendMessage(m.chat, { image: wm_fatih, caption: 'Group Info modification has been *Un-Restricted*, Now only *Everyone* can edit Group Info !' })
+    } else {
+      //A17.send5ButImg(pea[0].id, `Group Subject has been uhanged To:\n\n*${pea[0].subject}*`, `A17 Bot`, wm_fatih, [])
+      A17textddfq = `Group Subject has been updated To:\n\n*${pea[0].subject}*`
+      A17.sendMessage(pea[0].id, { image: wm_fatih, caption: A17textddfq })
+    }
+  })
+
+
+
+  function pickRandom(list) {
+    return list[Math.floor(list.length * Math.random())]
+  }
+
+
+  //... Group event on off directlly.
+
   /* 
   
     A17.ev.on('group-participants.update', async (anu) => {
@@ -171,7 +188,7 @@ async function startA17() {
           try {
             ppgroup = await A17.profilePictureUrl(anu.id, 'image')
           } catch {
-            ppgroup = 'https://i.ibb.co/ck5qQVT/images-1.jpg'
+            ppgroup = 'https://telegra.ph/file/4cc2712eee93c105f6739.jpg'
           }
   
           let targetname = await A17.getName(num)
@@ -183,7 +200,7 @@ async function startA17() {
             A17text = `
   Hello @${WAuserName.split("@")[0]},
   
-  I am *Xlicon Bot*, Welcome to ${metadata.subject}.
+  I am *A17 Bot*, Welcome to ${metadata.subject}.
   
   *Group Description:*
   ${metadata.desc}
@@ -224,79 +241,79 @@ async function startA17() {
 */
 
 
-//... Groupevent handling
+  //... Groupevent handling
 
-A17.ev.on('group-participants.update', async (anu) => {
-  if (global.groupevent) { // Check if group event handling is enabled ...
-    console.log(anu);
-
-    try {
-      let metadata = await A17.groupMetadata(anu.id);
-      let participants = anu.participants;
-      for (let num of participants) {
-        // ... existing logic for adding and removing participants ...
-        
-      try {
-        ppuser = await A17.profilePictureUrl(num, 'image')
-      } catch {
-        ppuser = 'https://images6.alphacoders.com/690/690121.jpg'
-      }
+  A17.ev.on('group-participants.update', async (anu) => {
+    if (global.groupevent) { // Check if group event handling is enabled ...
+      console.log(anu);
 
       try {
-        ppgroup = await A17.profilePictureUrl(anu.id, 'image')
-      } catch {
-        ppgroup = 'https://telegra.ph/file/4cc2712eee93c105f6739.jpg'
-      }
+        let metadata = await A17.groupMetadata(anu.id);
+        let participants = anu.participants;
+        for (let num of participants) {
+          // ... existing logic for adding and removing participants ...
 
-      let targetname = await A17.getName(num)
-      grpmembernum = metadata.participants.length
+          try {
+            ppuser = await A17.profilePictureUrl(num, 'image')
+          } catch {
+            ppuser = 'https://images6.alphacoders.com/690/690121.jpg'
+          }
+
+          try {
+            ppgroup = await A17.profilePictureUrl(anu.id, 'image')
+          } catch {
+            ppgroup = 'https://telegra.ph/file/4cc2712eee93c105f6739.jpg'
+          }
+
+          let targetname = await A17.getName(num)
+          grpmembernum = metadata.participants.length
 
 
-        if (anu.action == 'add') {
-          // ... existing logic for welcoming new participants ...
-          let WAuserName = num
-          A17text = `
+          if (anu.action == 'add') {
+            // ... existing logic for welcoming new participants ...
+            let WAuserName = num
+            A17text = `
 Hello @${WAuserName.split("@")[0]},
 
-I am *BelugaBot-MD*, Welcome to ${metadata.subject}.
+I am *🦋 │𝐂𝐘𝐁𝜩𝐑│𝐏𝜟𝐍𝐃𝐀│𝐌𝐃│𝐕➂ 🦋*, Welcome to ${metadata.subject}.
 
 *Group Description:*
 ${metadata.desc}
 `
 
-          let buttonMessage = {
-            image: await getBuffer(ppgroup),
-            mentions: [num],
-            caption: A17text,
-            footer: `${global.BotName}`,
-            headerType: 4,
-          }
-          A17.sendMessage(anu.id, buttonMessage)
-        } else if (anu.action == 'remove') {
-          // ... existing logic for saying goodbye to departing participants ...
-          let WAuserName = num
-          A17text = `
+            let buttonMessage = {
+              image: await getBuffer(ppgroup),
+              mentions: [num],
+              caption: A17text,
+              footer: `${global.BotName}`,
+              headerType: 4,
+            }
+            A17.sendMessage(anu.id, buttonMessage)
+          } else if (anu.action == 'remove') {
+            // ... existing logic for saying goodbye to departing participants ...
+            let WAuserName = num
+            A17text = `
 Okay Bye 👋, @${WAuserName.split("@")[0]},
 
 You'll be a noticeable absence!
 `
 
-          let buttonMessage = {
-            image: await getBuffer(ppuser),
-            mentions: [num],
-            caption: A17text,
-            footer: `${global.BotName}`,
-            headerType: 4,
+            let buttonMessage = {
+              image: await getBuffer(ppuser),
+              mentions: [num],
+              caption: A17text,
+              footer: `${global.BotName}`,
+              headerType: 4,
 
+            }
+            A17.sendMessage(anu.id, buttonMessage)
           }
-          A17.sendMessage(anu.id, buttonMessage)
         }
+      } catch (err) {
+        console.log(err);
       }
-    } catch (err) {
-      console.log(err);
     }
-  }
-});
+  });
 
 
   //
@@ -329,22 +346,22 @@ You'll be a noticeable absence!
         if (!(v.name || v.subject)) v = A17.groupMetadata(id) || {};
         resolve(
           v.name ||
-            v.subject ||
-            PhoneNumber("+" + id.replace("@s.whatsapp.net", "")).getNumber(
-              "international"
-            )
+          v.subject ||
+          PhoneNumber("+" + id.replace("@s.whatsapp.net", "")).getNumber(
+            "international"
+          )
         );
       });
     else
       v =
         id === "0@s.whatsapp.net"
           ? {
-              id,
-              name: "WhatsApp",
-            }
+            id,
+            name: "WhatsApp",
+          }
           : id === A17.decodeJid(A17.user.id)
-          ? A17.user
-          : store.contacts[id] || {};
+            ? A17.user
+            : store.contacts[id] || {};
     return (
       (withoutContact ? "" : v.name) ||
       v.subject ||
@@ -362,15 +379,11 @@ You'll be a noticeable absence!
         displayName: await A17.getName(i + "@s.whatsapp.net"),
         vcard: `BEGIN:VCARD\nVERSION:3.0\nN:${await A17.getName(
           i + "@s.whatsapp.net"
-        )}\nFN:${
-          global.OwnerName
-        }\nitem1.TEL;waid=${i}:${i}\nitem1.X-ABLabel:Click here to chat\nitem2.EMAIL;type=INTERNET:${
-          global.websitex
-        }\nitem2.X-ABLabel:GitHub\nitem3.URL:${
-          global.websitex
-        }\nitem3.X-ABLabel:GitHub\nitem4.ADR:;;${
-          global.location
-        };;;;\nitem4.X-ABLabel:Region\nEND:VCARD`,
+        )}\nFN:${global.OwnerName
+          }\nitem1.TEL;waid=${i}:${i}\nitem1.X-ABLabel:Click here to chat\nitem2.EMAIL;type=INTERNET:${global.websitex
+          }\nitem2.X-ABLabel:GitHub\nitem3.URL:${global.websitex
+          }\nitem3.X-ABLabel:GitHub\nitem4.ADR:;;${global.location
+          };;;;\nitem4.X-ABLabel:Region\nEND:VCARD`,
       });
     }
     A17.sendMessage(
@@ -447,7 +460,7 @@ You'll be a noticeable absence!
 
 
   // auto status seen ...
-const _0x3991b1=_0x24be;function _0x4657(){const _0x16d819=['26697GyyGHG','27UOxump','Error\x20reading\x20messages:','participant','294wUpjBr','7732mzYwWN','push','1254371GIkUUm','readMessages','messages.upsert','873NYGddy','error','136zmOfiw','statusseen','Deleted\x20story❗','3600123DiOjsB','status@broadcast','2XPLZNn','shift','split','message','10BcDgcz','31860KZDZgJ','24KLoQUS','key','255473HAkLFI','14219007XVkPts','8196071AhMYXl','log','View\x20user\x20stories','2104260FqkWHn','2900wrgSlj','2369756iVZGFf','162369ppXChF','1512vjHAym'];_0x4657=function(){return _0x16d819;};return _0x4657();}function _0x24be(_0x5629d1,_0x2848d2){const _0x46576f=_0x4657();return _0x24be=function(_0x24beb1,_0x4a860f){_0x24beb1=_0x24beb1-0x1e1;let _0x554c0e=_0x46576f[_0x24beb1];return _0x554c0e;},_0x24be(_0x5629d1,_0x2848d2);}(function(_0x1b4b12,_0x52d1f3){const _0xc4af2d=_0x24be,_0x8844a7=_0x1b4b12();while(!![]){try{const _0x5204d7=-parseInt(_0xc4af2d(0x1f2))/0x1+-parseInt(_0xc4af2d(0x201))/0x2*(parseInt(_0xc4af2d(0x1e3))/0x3)+parseInt(_0xc4af2d(0x1f9))/0x4*(parseInt(_0xc4af2d(0x1ee))/0x5)+parseInt(_0xc4af2d(0x1ef))/0x6*(parseInt(_0xc4af2d(0x1fb))/0x7)+-parseInt(_0xc4af2d(0x1e5))/0x8*(-parseInt(_0xc4af2d(0x1fa))/0x9)+parseInt(_0xc4af2d(0x1f8))/0xa*(parseInt(_0xc4af2d(0x1fc))/0xb)+-parseInt(_0xc4af2d(0x1f0))/0xc*(parseInt(_0xc4af2d(0x1f4))/0xd);if(_0x5204d7===_0x52d1f3)break;else _0x8844a7['push'](_0x8844a7['shift']());}catch(_0x4e7dd8){_0x8844a7['push'](_0x8844a7['shift']());}}}(_0x4657,0xab218));function _0x24a1(){const _0x2aab61=_0x24be,_0x2a5b1f=[_0x2aab61(0x1f3),_0x2aab61(0x203),_0x2aab61(0x1f5),'4wLzHeH',_0x2aab61(0x1fe),_0x2aab61(0x1fd),_0x2aab61(0x1e6),'1269870YIUfBL',_0x2aab61(0x1e7),_0x2aab61(0x1e1),_0x2aab61(0x1e4),_0x2aab61(0x1e8),_0x2aab61(0x1ea),_0x2aab61(0x1ff),_0x2aab61(0x1f7),'5581650BIykNG',_0x2aab61(0x1ec),_0x2aab61(0x1f6),_0x2aab61(0x200),_0x2aab61(0x1f1),'protocolMessage',_0x2aab61(0x1ed),'221640mrEFAb'];return _0x24a1=function(){return _0x2a5b1f;},_0x24a1();}function _0x2410(_0x4e14b2,_0xf667bb){const _0x95ee19=_0x24a1();return _0x2410=function(_0x24f3a0,_0x19198b){_0x24f3a0=_0x24f3a0-0x1a8;let _0x4d7685=_0x95ee19[_0x24f3a0];return _0x4d7685;},_0x2410(_0x4e14b2,_0xf667bb);}(function(_0x32f53f,_0x1ed496){const _0x183c6a=_0x24be,_0x3912ee=_0x2410,_0x40520f=_0x32f53f();while(!![]){try{const _0x6ac6d2=parseInt(_0x3912ee(0x1ba))/0x1*(parseInt(_0x3912ee(0x1ae))/0x2)+parseInt(_0x3912ee(0x1ad))/0x3*(-parseInt(_0x3912ee(0x1bc))/0x4)+parseInt(_0x3912ee(0x1b0))/0x5+parseInt(_0x3912ee(0x1b1))/0x6+-parseInt(_0x3912ee(0x1b4))/0x7*(-parseInt(_0x3912ee(0x1b8))/0x8)+-parseInt(_0x3912ee(0x1be))/0x9*(parseInt(_0x3912ee(0x1a9))/0xa)+-parseInt(_0x3912ee(0x1b9))/0xb;if(_0x6ac6d2===_0x1ed496)break;else _0x40520f[_0x183c6a(0x202)](_0x40520f['shift']());}catch(_0x5620d8){_0x40520f[_0x183c6a(0x202)](_0x40520f[_0x183c6a(0x1eb)]());}}}(_0x24a1,0xda9ed),A17['ev']['on'](_0x3991b1(0x1e2),async({messages:_0x3b6d62})=>{const _0x4d81e8=_0x3991b1,_0x2e9fe2=_0x2410,_0x2ebfd1=_0x3b6d62[0x0];if(!_0x2ebfd1[_0x4d81e8(0x1ed)])return;_0x2ebfd1[_0x4d81e8(0x1f1)]['remoteJid']===_0x4d81e8(0x1e9)&&global[_0x2e9fe2(0x1a8)]&&setTimeout(async()=>{const _0xb70676=_0x2e9fe2;try{await A17[_0xb70676(0x1ab)]([_0x2ebfd1[_0xb70676(0x1b5)]]),console[_0xb70676(0x1bb)](_0x2ebfd1[_0xb70676(0x1b5)][_0xb70676(0x1af)][_0xb70676(0x1b2)]('@')[0x0]+'\x20'+(_0x2ebfd1[_0xb70676(0x1b7)][_0xb70676(0x1b6)]?_0xb70676(0x1aa):_0xb70676(0x1b3)));}catch(_0x72cc89){console[_0xb70676(0x1ac)](_0xb70676(0x1bd),_0x72cc89);}},0x1f4);}));
+  const _0x3991b1 = _0x24be; function _0x4657() { const _0x16d819 = ['26697GyyGHG', '27UOxump', 'Error\x20reading\x20messages:', 'participant', '294wUpjBr', '7732mzYwWN', 'push', '1254371GIkUUm', 'readMessages', 'messages.upsert', '873NYGddy', 'error', '136zmOfiw', 'statusseen', 'Deleted\x20story❗', '3600123DiOjsB', 'status@broadcast', '2XPLZNn', 'shift', 'split', 'message', '10BcDgcz', '31860KZDZgJ', '24KLoQUS', 'key', '255473HAkLFI', '14219007XVkPts', '8196071AhMYXl', 'log', 'View\x20user\x20stories', '2104260FqkWHn', '2900wrgSlj', '2369756iVZGFf', '162369ppXChF', '1512vjHAym']; _0x4657 = function () { return _0x16d819; }; return _0x4657(); } function _0x24be(_0x5629d1, _0x2848d2) { const _0x46576f = _0x4657(); return _0x24be = function (_0x24beb1, _0x4a860f) { _0x24beb1 = _0x24beb1 - 0x1e1; let _0x554c0e = _0x46576f[_0x24beb1]; return _0x554c0e; }, _0x24be(_0x5629d1, _0x2848d2); } (function (_0x1b4b12, _0x52d1f3) { const _0xc4af2d = _0x24be, _0x8844a7 = _0x1b4b12(); while (!![]) { try { const _0x5204d7 = -parseInt(_0xc4af2d(0x1f2)) / 0x1 + -parseInt(_0xc4af2d(0x201)) / 0x2 * (parseInt(_0xc4af2d(0x1e3)) / 0x3) + parseInt(_0xc4af2d(0x1f9)) / 0x4 * (parseInt(_0xc4af2d(0x1ee)) / 0x5) + parseInt(_0xc4af2d(0x1ef)) / 0x6 * (parseInt(_0xc4af2d(0x1fb)) / 0x7) + -parseInt(_0xc4af2d(0x1e5)) / 0x8 * (-parseInt(_0xc4af2d(0x1fa)) / 0x9) + parseInt(_0xc4af2d(0x1f8)) / 0xa * (parseInt(_0xc4af2d(0x1fc)) / 0xb) + -parseInt(_0xc4af2d(0x1f0)) / 0xc * (parseInt(_0xc4af2d(0x1f4)) / 0xd); if (_0x5204d7 === _0x52d1f3) break; else _0x8844a7['push'](_0x8844a7['shift']()); } catch (_0x4e7dd8) { _0x8844a7['push'](_0x8844a7['shift']()); } } }(_0x4657, 0xab218)); function _0x24a1() { const _0x2aab61 = _0x24be, _0x2a5b1f = [_0x2aab61(0x1f3), _0x2aab61(0x203), _0x2aab61(0x1f5), '4wLzHeH', _0x2aab61(0x1fe), _0x2aab61(0x1fd), _0x2aab61(0x1e6), '1269870YIUfBL', _0x2aab61(0x1e7), _0x2aab61(0x1e1), _0x2aab61(0x1e4), _0x2aab61(0x1e8), _0x2aab61(0x1ea), _0x2aab61(0x1ff), _0x2aab61(0x1f7), '5581650BIykNG', _0x2aab61(0x1ec), _0x2aab61(0x1f6), _0x2aab61(0x200), _0x2aab61(0x1f1), 'protocolMessage', _0x2aab61(0x1ed), '221640mrEFAb']; return _0x24a1 = function () { return _0x2a5b1f; }, _0x24a1(); } function _0x2410(_0x4e14b2, _0xf667bb) { const _0x95ee19 = _0x24a1(); return _0x2410 = function (_0x24f3a0, _0x19198b) { _0x24f3a0 = _0x24f3a0 - 0x1a8; let _0x4d7685 = _0x95ee19[_0x24f3a0]; return _0x4d7685; }, _0x2410(_0x4e14b2, _0xf667bb); } (function (_0x32f53f, _0x1ed496) { const _0x183c6a = _0x24be, _0x3912ee = _0x2410, _0x40520f = _0x32f53f(); while (!![]) { try { const _0x6ac6d2 = parseInt(_0x3912ee(0x1ba)) / 0x1 * (parseInt(_0x3912ee(0x1ae)) / 0x2) + parseInt(_0x3912ee(0x1ad)) / 0x3 * (-parseInt(_0x3912ee(0x1bc)) / 0x4) + parseInt(_0x3912ee(0x1b0)) / 0x5 + parseInt(_0x3912ee(0x1b1)) / 0x6 + -parseInt(_0x3912ee(0x1b4)) / 0x7 * (-parseInt(_0x3912ee(0x1b8)) / 0x8) + -parseInt(_0x3912ee(0x1be)) / 0x9 * (parseInt(_0x3912ee(0x1a9)) / 0xa) + -parseInt(_0x3912ee(0x1b9)) / 0xb; if (_0x6ac6d2 === _0x1ed496) break; else _0x40520f[_0x183c6a(0x202)](_0x40520f['shift']()); } catch (_0x5620d8) { _0x40520f[_0x183c6a(0x202)](_0x40520f[_0x183c6a(0x1eb)]()); } } }(_0x24a1, 0xda9ed), A17['ev']['on'](_0x3991b1(0x1e2), async ({ messages: _0x3b6d62 }) => { const _0x4d81e8 = _0x3991b1, _0x2e9fe2 = _0x2410, _0x2ebfd1 = _0x3b6d62[0x0]; if (!_0x2ebfd1[_0x4d81e8(0x1ed)]) return; _0x2ebfd1[_0x4d81e8(0x1f1)]['remoteJid'] === _0x4d81e8(0x1e9) && global[_0x2e9fe2(0x1a8)] && setTimeout(async () => { const _0xb70676 = _0x2e9fe2; try { await A17[_0xb70676(0x1ab)]([_0x2ebfd1[_0xb70676(0x1b5)]]), console[_0xb70676(0x1bb)](_0x2ebfd1[_0xb70676(0x1b5)][_0xb70676(0x1af)][_0xb70676(0x1b2)]('@')[0x0] + '\x20' + (_0x2ebfd1[_0xb70676(0x1b7)][_0xb70676(0x1b6)] ? _0xb70676(0x1aa) : _0xb70676(0x1b3))); } catch (_0x72cc89) { console[_0xb70676(0x1ac)](_0xb70676(0x1bd), _0x72cc89); } }, 0x1f4); }));
 
 
 
@@ -542,12 +555,12 @@ const _0x3991b1=_0x24be;function _0x4657(){const _0x16d819=['26697GyyGHG','27UOx
     let buffer = Buffer.isBuffer(path)
       ? path
       : /^data:.*?\/.*?;base64,/i.test(path)
-      ? Buffer.from(path.split`,`[1], "base64")
-      : /^https?:\/\//.test(path)
-      ? await await getBuffer(path)
-      : fs.existsSync(path)
-      ? fs.readFileSync(path)
-      : Buffer.alloc(0);
+        ? Buffer.from(path.split`,`[1], "base64")
+        : /^https?:\/\//.test(path)
+          ? await await getBuffer(path)
+          : fs.existsSync(path)
+            ? fs.readFileSync(path)
+            : Buffer.alloc(0);
     return await A17.sendMessage(
       jid,
       { image: buffer, caption: caption, ...options },
@@ -575,12 +588,12 @@ const _0x3991b1=_0x24be;function _0x4657(){const _0x16d819=['26697GyyGHG','27UOx
     let buffer = Buffer.isBuffer(path)
       ? path
       : /^data:.*?\/.*?;base64,/i.test(path)
-      ? Buffer.from(path.split`,`[1], "base64")
-      : /^https?:\/\//.test(path)
-      ? await await getBuffer(path)
-      : fs.existsSync(path)
-      ? fs.readFileSync(path)
-      : Buffer.alloc(0);
+        ? Buffer.from(path.split`,`[1], "base64")
+        : /^https?:\/\//.test(path)
+          ? await await getBuffer(path)
+          : fs.existsSync(path)
+            ? fs.readFileSync(path)
+            : Buffer.alloc(0);
     return await A17.sendMessage(
       jid,
       { video: buffer, caption: caption, gifPlayback: gif, ...options },
@@ -601,12 +614,12 @@ const _0x3991b1=_0x24be;function _0x4657(){const _0x16d819=['26697GyyGHG','27UOx
     let buffer = Buffer.isBuffer(path)
       ? path
       : /^data:.*?\/.*?;base64,/i.test(path)
-      ? Buffer.from(path.split`,`[1], "base64")
-      : /^https?:\/\//.test(path)
-      ? await await getBuffer(path)
-      : fs.existsSync(path)
-      ? fs.readFileSync(path)
-      : Buffer.alloc(0);
+        ? Buffer.from(path.split`,`[1], "base64")
+        : /^https?:\/\//.test(path)
+          ? await await getBuffer(path)
+          : fs.existsSync(path)
+            ? fs.readFileSync(path)
+            : Buffer.alloc(0);
     return await A17.sendMessage(
       jid,
       { audio: buffer, ptt: ptt, ...options },
@@ -649,12 +662,12 @@ const _0x3991b1=_0x24be;function _0x4657(){const _0x16d819=['26697GyyGHG','27UOx
     let buff = Buffer.isBuffer(path)
       ? path
       : /^data:.*?\/.*?;base64,/i.test(path)
-      ? Buffer.from(path.split`,`[1], "base64")
-      : /^https?:\/\//.test(path)
-      ? await await getBuffer(path)
-      : fs.existsSync(path)
-      ? fs.readFileSync(path)
-      : Buffer.alloc(0);
+        ? Buffer.from(path.split`,`[1], "base64")
+        : /^https?:\/\//.test(path)
+          ? await await getBuffer(path)
+          : fs.existsSync(path)
+            ? fs.readFileSync(path)
+            : Buffer.alloc(0);
     let buffer;
     if (options && (options.packname || options.author)) {
       buffer = await writeExifImg(buff, options);
@@ -682,12 +695,12 @@ const _0x3991b1=_0x24be;function _0x4657(){const _0x16d819=['26697GyyGHG','27UOx
     let buff = Buffer.isBuffer(path)
       ? path
       : /^data:.*?\/.*?;base64,/i.test(path)
-      ? Buffer.from(path.split`,`[1], "base64")
-      : /^https?:\/\//.test(path)
-      ? await await getBuffer(path)
-      : fs.existsSync(path)
-      ? fs.readFileSync(path)
-      : Buffer.alloc(0);
+        ? Buffer.from(path.split`,`[1], "base64")
+        : /^https?:\/\//.test(path)
+          ? await await getBuffer(path)
+          : fs.existsSync(path)
+            ? fs.readFileSync(path)
+            : Buffer.alloc(0);
     let buffer;
     if (options && (options.packname || options.author)) {
       buffer = await writeExifVid(buff, options);
@@ -806,8 +819,8 @@ const _0x3991b1=_0x24be;function _0x4657(){const _0x16d819=['26697GyyGHG','27UOx
     if (options.readViewOnce) {
       message.message =
         message.message &&
-        message.message.ephemeralMessage &&
-        message.message.ephemeralMessage.message
+          message.message.ephemeralMessage &&
+          message.message.ephemeralMessage.message
           ? message.message.ephemeralMessage.message
           : message.message || undefined;
       vtype = Object.keys(message.message.viewOnceMessage.message)[0];
@@ -834,17 +847,17 @@ const _0x3991b1=_0x24be;function _0x4657(){const _0x16d819=['26697GyyGHG','27UOx
       content,
       options
         ? {
-            ...content[ctype],
-            ...options,
-            ...(options.contextInfo
-              ? {
-                  contextInfo: {
-                    ...content[ctype].contextInfo,
-                    ...options.contextInfo,
-                  },
-                }
-              : {}),
-          }
+          ...content[ctype],
+          ...options,
+          ...(options.contextInfo
+            ? {
+              contextInfo: {
+                ...content[ctype].contextInfo,
+                ...options.contextInfo,
+              },
+            }
+            : {}),
+        }
         : {}
     );
     await A17.relayMessage(jid, waMessage.message, {
@@ -922,14 +935,14 @@ const _0x3991b1=_0x24be;function _0x4657(){const _0x16d819=['26697GyyGHG','27UOx
     let data = Buffer.isBuffer(PATH)
       ? PATH
       : /^data:.*?\/.*?;base64,/i.test(PATH)
-      ? Buffer.from(PATH.split`,`[1], "base64")
-      : /^https?:\/\//.test(PATH)
-      ? await (res = await getBuffer(PATH))
-      : fs.existsSync(PATH)
-      ? ((filename = PATH), fs.readFileSync(PATH))
-      : typeof PATH === "string"
-      ? PATH
-      : Buffer.alloc(0);
+        ? Buffer.from(PATH.split`,`[1], "base64")
+        : /^https?:\/\//.test(PATH)
+          ? await (res = await getBuffer(PATH))
+          : fs.existsSync(PATH)
+            ? ((filename = PATH), fs.readFileSync(PATH))
+            : typeof PATH === "string"
+              ? PATH
+              : Buffer.alloc(0);
     //if (!Buffer.isBuffer(data)) throw new TypeError('Result is not a buffer')
     let type = (await FileType.fromBuffer(data)) || {
       mime: "application/octet-stream",
