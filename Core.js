@@ -734,7 +734,18 @@ Typed *surrender* to surrender and admited defeat`
         A17.sendMessage(from, { react: { text: "✅", key: m.key } })
 
         let { data } = await axios.get('https://github.com/CYBER-x-SACHIYA-SL-MD-BOT/CYBER-PANDA-MD.V.0.4');
-        teks = `*CYBER-PANDA-MD-GITHUB*\n\n*Total Stars*: ${data.stargazers_count}🦋\n*Total Forks*: ${data.forks_count} forks\n*GitHub*: https://github.com/CYBER-x-SACHIYA-SL-MD-BOT/CYBER-PANDA-MD.V.0.4\n\nDont forget to follow me on *GitHub* and give a 💞 to my projects. `
+        teks = `
+┌───────────────       
+│ *®-ᴄʏʙᴇʀ-ᴘᴀɴᴅᴀ-ᴍᴅ*
+├───────────────
+│ *Total Stars* ${data.stargazers_count}
+├───────────────
+│ *Total Forks* ${data.forks_count} forks
+├───────────────
+│ *GitHub* https://github.com/CYBER-x-SACHIYA-SL-MD-BOT/CYBER-PANDA-MD.V.0.4
+├───────────────
+│ *ꜱᴀᴄʜɪᴛʜ ᴄʜᴀɴᴅʀᴀ*
+└────────────────`
         /*  let buttons = [
           {buttonId: `${prefix}owner`, buttonText: {displayText: '🍁 DEVELOPER 🍁'}, type: 1}
           ] */
@@ -1989,7 +2000,7 @@ Typed *surrender* to surrender and admited defeat`
         const randomEmoji = manyemojis[Math.floor(Math.random() * manyemojis.length)];
         A17.sendMessage(from, { react: { text: randomEmoji, key: m.key } });
 
-        if (!q) return reply(`Please provide a text query. Example: ${prefix + command} Hello, ChatGPT!`);
+        if (!q) return reply(`Please provide a text query. Example: ${prefix + command} Hello, *ChatGPT*`);
 
         try {
           const apiUrl1 = `https://vihangayt.me/tools/chatgpt2?q=${encodeURIComponent(q)}`;
@@ -2016,7 +2027,7 @@ Typed *surrender* to surrender and admited defeat`
         break;
 
 
-      case 'dalle': case 'imgai': {
+      case 'img': case 'imgai': {
         if (isBan) return reply(mess.banned);
         if (isBanChat) return reply(mess.bangc);
 
@@ -3795,7 +3806,7 @@ Typed *surrender* to surrender and admited defeat`
         break;
 
 
-      case 'remove': {
+      case 'kick': {
         if (isBan) return reply(mess.banned);
         if (isBanChat) return reply(mess.bangc);
         if (!m.isGroup) return reply(mess.grouponly);
@@ -4196,7 +4207,7 @@ Typed *surrender* to surrender and admited defeat`
       // break;
 
 
-      case "tourl": case 'tolink':
+      case "url": case 'tolink':
         if (isBan) return reply(mess.banned);
         if (isBanChat) return reply(mess.bangc);
 
@@ -4437,9 +4448,9 @@ Typed *surrender* to surrender and admited defeat`
         google({ 'query': args.join(" ") }).then(res => {
           let teks = `「 *Google Search Engine* 」\n\n*Search term:* ${text}\n\n\n`
           for (let g of res) {
-            teks += `*Title* : ${g.title}\n\n`
-            teks += `*Description* : ${g.snippet}\n\n`
-            teks += `*Link* : ${g.link}\n\n\n        -----------------------------------------------------------------------------\n\n`
+            teks += `*ᴛɪᴛʟᴇ* : ${g.title}\n\n`
+            teks += `*ᴅᴄꜱᴄʀɪᴘᴛɪᴏɴ* : ${g.snippet}\n\n`
+            teks += `*ʟɪɴᴋ* : ${g.link}\n\n\n        -----------------------------------------------------------------------------\n\n`
           }
           reply(teks)
         })
@@ -4500,7 +4511,7 @@ Typed *surrender* to surrender and admited defeat`
 
         const c = await covid()
         var { cases, death, healed } = c[0]
-        A17.sendMessage(from, { text: `\nCovid India \n\nCase : ${cases}\n\nDead : ${death}\n\nHealed : ${healed}\n` }, m)
+        A17.sendMessage(from, { text: `\nCovid Sri lanka \n\nCase : ${cases}\n\nDead : ${death}\n\nHealed : ${healed}\n` }, m)
         break;
 
 
@@ -4930,10 +4941,10 @@ _Click the button below to download_`
         if (!args.join(" ")) return reply(`Example : -yts Cyber panda md 2023`)
         let yts = require("youtube-yts")
         let search = await yts(args.join(" "))
-        let teks = '```「 YouTube search Engine 」```\n\n Search Term: ' + text + '\n\n'
+        let teks = '```「 ʏᴏᴜᴛᴜʙᴇ ꜱᴇᴀʀᴄʜ 」```\n\n Search Term: ' + text + '\n\n'
         let no = 1
         for (let i of search.all) {
-          teks += `Result No : ${no++}\n\nTitle : ${i.title}\n\nViews : ${i.views}\n\nDuration : ${i.timestamp}\n\nUploaded : ${i.ago}\n\nAuthor : ${i.author.name}\n\nUrl : ${i.url}\n\n\n---------------------------------------------\n\n\n`
+          teks += `*ʀᴇꜱᴜʟᴛ ɴᴏ* : ${no++}\n\n*ᴛɪᴛʟᴇ* : ${i.title}\n\n*ᴠɪᴇᴡᴇ* : ${i.views}\n\n*ᴅᴜʀᴀᴛɪᴏɴ* : ${i.timestamp}\n\n*ᴜᴘʟᴏᴀᴅᴇᴅ* : ${i.ago}\n\n*ᴀᴜᴛʜᴏʀ* : ${i.author.name}\n\n*ᴜʀʟ* : ${i.url}\n\n\n---------------------------------------------\n\n\n`
         }
         A17.sendMessage(m.chat, { image: { url: search.all[0].thumbnail }, caption: teks }, { quoted: m })
       }
@@ -5025,16 +5036,15 @@ _Click the button below to download_`
           {
             image: { url: thumbnailUrl }, // Include the thumbnail image in the response
             caption: `\n*ᴅᴏᴡɴʟᴏᴀᴅɪɴɢ* *${anu.title}*
-            
-  *ᴅᴜʀᴀᴛɪᴏɴ* ${anu.timestamp}
-
-  *ᴠɪᴇᴡᴇʀꜱ* ${anu.views}
-
-  *ᴄʜᴀɴɴᴇʟ* ${anu.author.name}
-
-  *Video ᴜᴘʟᴏᴀᴅᴇᴅ* ${anu.ago}
-
-  *ᴜʀʟ* ${anu.url}\n`,
+┌─────────────           
+│ *ᴅᴜʀᴀᴛɪᴏɴ* ${anu.timestamp}
+│ *ᴠɪᴇᴡᴇʀꜱ* ${anu.views}
+│ *ᴄʜᴀɴɴᴇʟ* ${anu.author.name}
+│ *Video ᴜᴘʟᴏᴀᴅᴇᴅ* ${anu.ago}
+│ *ᴜʀʟ* ${anu.url}
+│
+│
+└─────────────`,
 
           },
           { quoted: m }
@@ -7155,7 +7165,7 @@ _Click the button below to download_`
           if (isBan) return reply(mess.banned);
           if (isBanChat) return reply(mess.bangc);
           A17.sendMessage(from, { react: { text: "❌", key: m.key } })
-          reply(`Hey *${pushname}* senpai! this command are not programmed! Type *${prefix}help* to get my full command list!`)
+          reply(`Hey *${pushname}* මෙවනි විදානයක් මා සතුව නැත..*${prefix}menu* ලෙස ටයිප් කරන්න..`)
 
         }
 
