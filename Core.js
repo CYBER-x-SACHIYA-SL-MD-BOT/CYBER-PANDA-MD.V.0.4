@@ -5008,7 +5008,7 @@ _Click the button below to download_`
       case 'music': {
         if (isBan) return reply(mess.banned);
         if (isBanChat) return reply(mess.bangc);
-        A17.sendMessage(from, { react: { text: "💓", key: m.key } });
+        A17.sendMessage(from, { react: { text: "🎵", key: m.key } });
 
         const YT = require('./lib/ytdl-core');
         const yts = require('youtube-yts');
@@ -5025,17 +5025,17 @@ _Click the button below to download_`
           from,
           {
             image: { url: thumbnailUrl }, // Include the thumbnail image in the response
-            caption: `\n*Downloading:* *${anu.title}*
+            caption: `\n*ᴅᴏᴡɴʟᴏᴀᴅɪɴɢ* *${anu.title}*
             
-  ⚬ *Duration :* ${anu.timestamp}
+  *ᴅᴜʀᴀᴛɪᴏɴ* ${anu.timestamp}
 
-  📈 *Viewers :* ${anu.views}
+  *ᴠɪᴇᴡᴇʀꜱ* ${anu.views}
 
-  🎐 *Channel :* ${anu.author.name}
+  *ᴄʜᴀɴɴᴇʟ* ${anu.author.name}
 
-  🔰 *Video Uploaded:* ${anu.ago}
+  *Video ᴜᴘʟᴏᴀᴅᴇᴅ* ${anu.ago}
 
-  🔗 *Url :* ${anu.url}\n`,
+  *ᴜʀʟ* ${anu.url}\n`,
 
           },
           { quoted: m }
@@ -5093,7 +5093,7 @@ _Click the button below to download_`
       case 'ytvd': case 'video': case 'ytvideo': case 'ytmp4': {
         if (isBan) return reply(mess.banned);
         if (isBanChat) return reply(mess.bangc);
-        A17.sendMessage(from, { react: { text: "📂", key: m.key } })
+        A17.sendMessage(from, { react: { text: "🎬", key: m.key } })
         const YT = require('./lib/ytdl-core')
         let yts = require("youtube-yts")
         let search = await yts(text)
@@ -6701,14 +6701,14 @@ _Click the button below to download_`
 ┌──『•• 🎭 *ᴀʟʟᴍᴇɴᴜ* 🎭 ••』──◈
 │╭────────────···▸▸
 ┴│
-❒│▸ *1.1*  *ʙᴏᴛᴍᴇɴᴜ*
-❒│▸ *1.2*  *ᴏᴡɴᴇʀᴍᴇɴᴜ*
-❒│▸ *1.3*  *ɢʀᴏᴜᴘᴍᴇɴᴜ*
-❒│▸ *1.4*  *ᴀɴᴛɪʟɪɴᴋ*
-❒│▸ *1.5*  *searchmenu*
-❒│▸ *1.6*  *ᴄᴏɴᴠᴇʀᴛ*
-❒│▸ *1.7*  *ᴅᴏᴡɴʟᴏᴀᴅᴇʀ*
-❒│▸ *1.8*  *ɢᴀᴍᴇ-ᴍᴇɴᴜ*
+❒│▸ *${prefix}1.1*  *ʙᴏᴛᴍᴇɴᴜ*
+❒│▸ *${prefix}1.2*  *ᴏᴡɴᴇʀᴍᴇɴᴜ*
+❒│▸ *${prefix}1.3*  *ɢʀᴏᴜᴘᴍᴇɴᴜ*
+❒│▸ *${prefix}1.4*  *ᴀɴᴛɪʟɪɴᴋ*
+❒│▸ *${prefix}1.5*  *searchmenu*
+❒│▸ *${prefix}1.6*  *ᴄᴏɴᴠᴇʀᴛ*
+❒│▸ *${prefix}1.7*  *ᴅᴏᴡɴʟᴏᴀᴅᴇʀ*
+❒│▸ *${prefix}1.8*  *ɢᴀᴍᴇ-ᴍᴇɴᴜ*
 ┬│
 │╰───────────···▸▸
 └──────────────···▸▸▸`
@@ -6758,19 +6758,6 @@ _Click the button below to download_`
           A17.sendMessage(from, { react: { text: "🗓️", key: m.key } })
 
           reply(`
-┌──❖
-│Hi 👤
-└┬❖   Uꜱᴇʀ :  ${pushname} 
-┌┤✑   Nᴏᴡ-ᴛɪᴍᴇ : ${nowtime} 
-│└────────────┈ ●
-│
-└── > *Cʏʙᴇʀ-Pᴀɴᴅᴀ-MD* 
-┌
-│▸  Oᴡɴᴇʀ : ${global.OwnerName} 🙋
-│▸  Pʀᴇꜰɪx : 『  ${prefix} 』 💡
-│▸  Rᴜɴᴛɪᴍᴇ : ${runtime(process.uptime())}  💻 
-│
-└──────────────···▸▸▸
 ┌──『•• 🎯 *Cᴏʀᴇ* 🎯 ••』──◈
 │╭────────────···▸▸
 ┴│
@@ -6801,19 +6788,6 @@ _Click the button below to download_`
           A17.sendMessage(from, { react: { text: "🎩", key: m.key } })
 
           reply(`
-┌──❖
-│Hi 👤
-└┬❖   Uꜱᴇʀ :  ${pushname} 
-┌┤✑   Nᴏᴡ-ᴛɪᴍᴇ : ${nowtime} 
-│└────────────┈ ●
-│
-└── > *Cʏʙᴇʀ-Pᴀɴᴅᴀ-MD* 
-┌
-│▸  Oᴡɴᴇʀ : ${global.OwnerName} 🙋
-│▸  Pʀᴇꜰɪx : 『  ${prefix} 』 💡
-│▸  Rᴜɴᴛɪᴍᴇ : ${runtime(process.uptime())}  💻 
-│
-└──────────────···▸▸▸
 ┌──『•• 🎯 *Oᴡɴᴇʀ* 🎯 ••』───◈
 │╭────────────···▸▸
 ┴│
@@ -6850,19 +6824,6 @@ _Click the button below to download_`
           A17.sendMessage(from, { react: { text: "🧊", key: m.key } })
 
           reply(`
-┌──❖
-│Hi 👤
-└┬❖   Uꜱᴇʀ :  ${pushname} 
-┌┤✑   Nᴏᴡ-ᴛɪᴍᴇ : ${nowtime} 
-│└────────────┈ ●
-│
-└── > *Cʏʙᴇʀ-Pᴀɴᴅᴀ-MD* 
-┌
-│▸  Oᴡɴᴇʀ : ${global.OwnerName} 🙋
-│▸  Pʀᴇꜰɪx : 『  ${prefix} 』 💡
-│▸  Rᴜɴᴛɪᴍᴇ : ${runtime(process.uptime())}  💻 
-│
-└──────────────···▸▸▸
 ┌──『•• 🎯 *Gʀᴏᴜᴘ* 🎯 ••』───◈
 │╭────────────···▸▸
 ┴│
@@ -6898,19 +6859,6 @@ _Click the button below to download_`
           A17.sendMessage(from, { react: { text: "🛡️", key: m.key } })
 
           reply(`
-┌──❖
-│Hi 👤
-└┬❖   Uꜱᴇʀ :  ${pushname} 
-┌┤✑   Nᴏᴡ-ᴛɪᴍᴇ : ${nowtime} 
-│└────────────┈ ●
-│
-└── > *Cʏʙᴇʀ-Pᴀɴᴅᴀ-MD* 
-┌
-│▸  Oᴡɴᴇʀ : ${global.OwnerName} 🙋
-│▸  Pʀᴇꜰɪx : 『  ${prefix} 』 💡
-│▸  Rᴜɴᴛɪᴍᴇ : ${runtime(process.uptime())}  💻 
-│
-└──────────────···▸▸▸
 ┌──『•• 🎯 *Aɴᴛɪ-Lɪɴᴋ* 🎯 ••』───◈
 │╭────────────···▸▸
 ┴│
@@ -6937,19 +6885,6 @@ _Click the button below to download_`
           A17.sendMessage(from, { react: { text: "🗒️", key: m.key } })
 
           reply(`
-┌──❖
-│Hi 👤
-└┬❖   Uꜱᴇʀ :  ${pushname} 
-┌┤✑   Nᴏᴡ-ᴛɪᴍᴇ : ${nowtime} 
-│└────────────┈ ●
-│
-└── > *Cʏʙᴇʀ-Pᴀɴᴅᴀ-MD* 
-┌
-│▸  Oᴡɴᴇʀ : ${global.OwnerName} 🙋
-│▸  Pʀᴇꜰɪx : 『  ${prefix} 』 💡
-│▸  Rᴜɴᴛɪᴍᴇ : ${runtime(process.uptime())}  💻 
-│
-└──────────────···▸▸▸
 ┌──『•• 🎯 *Eᴄᴏɴᴏᴍʏ* 🎯 ••』───◈
 │╭───────────···▸▸
 ┴│
@@ -6989,19 +6924,6 @@ _Click the button below to download_`
           A17.sendMessage(from, { react: { text: "🧿", key: m.key } })
 
           reply(`
-┌──❖
-│Hi 👤
-└┬❖   Uꜱᴇʀ :  ${pushname} 
-┌┤✑   Nᴏᴡ-ᴛɪᴍᴇ : ${nowtime} 
-│└────────────┈ ●
-│
-└── > *Cʏʙᴇʀ-Pᴀɴᴅᴀ-MD* 
-┌
-│▸  Oᴡɴᴇʀ : ${global.OwnerName} 🙋
-│▸  Pʀᴇꜰɪx : 『  ${prefix} 』 💡
-│▸  Rᴜɴᴛɪᴍᴇ : ${runtime(process.uptime())}  💻 
-│
-└──────────────···▸▸▸
 ┌──『•• 🎯 *ɢᴀᴍᴇꜱ* 🎯 ••』───◈
 │╭────────────···▸▸
 ┴│
@@ -7024,19 +6946,6 @@ _Click the button below to download_`
           A17.sendMessage(from, { react: { text: "🥰", key: m.key } })
 
           reply(`
-┌──❖
-│Hi 👤
-└┬❖   Uꜱᴇʀ :  ${pushname} 
-┌┤✑   Nᴏᴡ-ᴛɪᴍᴇ : ${nowtime} 
-│└────────────┈ ●
-│
-└── > *Cʏʙᴇʀ-Pᴀɴᴅᴀ-MD* 
-┌
-│▸  Oᴡɴᴇʀ : ${global.OwnerName} 🙋
-│▸  Pʀᴇꜰɪx : 『  ${prefix} 』 💡
-│▸  Rᴜɴᴛɪᴍᴇ : ${runtime(process.uptime())}  💻 
-│
-└──────────────···▸▸▸
 ┌──『•• 🎯 *Cᴏɴᴠᴇʀᴛ* 🎯 ••』───◈
 │╭─────────────···▸▸
 ┴│
@@ -7086,19 +6995,6 @@ _Click the button below to download_`
           A17.sendMessage(from, { react: { text: "💝", key: m.key } })
 
           reply(`
-┌──❖
-│Hi 👤
-└┬❖   Uꜱᴇʀ :  ${pushname} 
-┌┤✑   Nᴏᴡ-ᴛɪᴍᴇ : ${nowtime} 
-│└────────────┈ ●
-│
-└── > *Cʏʙᴇʀ-Pᴀɴᴅᴀ-MD* 
-┌
-│▸  Oᴡɴᴇʀ : ${global.OwnerName} 🙋
-│▸  Pʀᴇꜰɪx : 『  ${prefix} 』 💡
-│▸  Rᴜɴᴛɪᴍᴇ : ${runtime(process.uptime())}  💻 
-│
-└──────────────···▸▸▸
 ┌─『•• 🎯 *Dᴏᴡɴʟᴏᴀᴅᴇʀ* 🎯 ••』─◈
 │╭────────────···▸▸
 ┴│
