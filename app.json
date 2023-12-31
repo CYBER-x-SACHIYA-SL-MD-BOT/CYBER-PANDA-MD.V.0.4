@@ -1,8 +1,8 @@
 {
-  "name": "CYNER-PANDA-MD",
+  "name": "CYBER-PANDA-MD",
   "description": "whatsapp md bot build with nodejs",
-  "repository": "https://github.com/DGXeon/CheemsBot-MD8",
-  "logo": "https://wa.me/p/7180302138679960/94704274987",
+  "repository": "https://github.com/CYBER-x-SACHIYA-SL-MD-BOT/CYBER-PANDA-MD.V.0.4",
+  "logo": "https://ibb.co/bzPkhzv",
   "keywords": ["nodejs", "bot", "whatsapp bot", "whatsapp automation", "multi device"],
   "buildpacks": [
     {
