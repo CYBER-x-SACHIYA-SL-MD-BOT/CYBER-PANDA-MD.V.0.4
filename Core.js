@@ -618,7 +618,7 @@ Typed *surrender* to surrender and admited defeat`
       return arr[Math.floor(Math.random() * arr.length)]
     }
 
-    
+    /*
   let smallinput = budy.toLowerCase()
   if (smallinput.includes('hello')) {
     reply (`*හලො ඉතින් කොහොමද...*, 
@@ -691,9 +691,9 @@ Typed *surrender* to surrender and admited defeat`
   if (smallinput.includes('arigato')|| smallinput.includes('arigatou') || smallinput.includes('thank')) {
     reply (`Mention not ${pushname} 😇. I am a bot afterall.`);
   }
-  
+  */
 
-/*
+
     const responses = {
 
 
@@ -715,10 +715,7 @@ Typed *surrender* to surrender and admited defeat`
 
     if (responses.hasOwnProperty(smallinput)) {
       reply(responses[smallinput]);
-    } 
-    
-    
-    */
+    }
 
 
 
@@ -3548,7 +3545,7 @@ Typed *surrender* to surrender and admited defeat`
         break;
 
 
-      case 'hidetag': case 'tag': case 'ping': {
+      case 'hidetag': case 'tag': case 'ooo': {
         if (isBan) return reply(mess.banned);
         if (isBanChat) return reply(mess.bangc);
         if (!m.isGroup) return reply(mess.grouponly);
@@ -6695,7 +6692,7 @@ _Click the button below to download_`
       if (isBanChat) return reply(mess.bangc);
   A17.sendMessage(from, { react: { text: "📲" , key: m.key }})      
   const helpmenu = ` 
-┌──『•• 🎭 *ᴀʟʟᴍᴇɴᴜ* 🎭 ••』──◈
+┌──『•• 🎯 *ᴀʟʟᴍᴇɴᴜ* 🎯 ••』──◈
 │╭────────────···▸▸
 ┴│
 ❒│▸  *Uꜱᴇʀ :  ${pushname}* !!! ✅
@@ -6710,7 +6707,7 @@ _Click the button below to download_`
 ┬│   *ᴄʏʙᴇʀ-ᴘᴀɴᴅᴀ-ᴍᴅ*
 │╰───────────···▸▸
 └──────────────···▸▸▸
-┌──『•• 🎭 *ᴀʟʟᴍᴇɴᴜ* 🎭 ••』──◈
+┌──『•• 🎯 *ᴀʟʟᴍᴇɴᴜ* 🎯 ••』──◈
 │╭────────────···▸▸
 ┴│
 ❒│▸ *${prefix}1.1*  *ʙᴏᴛᴍᴇɴᴜ*
@@ -6725,7 +6722,7 @@ _Click the button below to download_`
 │╰───────────···▸▸
 └──────────────···▸▸▸`
         let buttonMessage = {
-          video: fs.readFileSync('./system/panda.jpg'), gifPlayback: true,
+          video: fs.readFileSync('./system/A17_3.mp4'), gifPlayback: true,
           caption: helpmenu,
 
           headerType: 4
@@ -6743,7 +6740,7 @@ _Click the button below to download_`
           A17.sendMessage(from, { react: { text: "🗓️", key: m.key } })
 
           reply(`
-┌──『•• 🎭 *ᴀʟʟᴍᴇɴᴜ* 🎭 ••』──◈
+┌──『•• 🎯 *ᴀʟɪᴠᴇ* 🎯 ••』──◈
 │╭────────────···▸▸
 ┴│
 ❒│▸  *Uꜱᴇʀ :  ${pushname}* !!! ✅
@@ -6751,7 +6748,7 @@ _Click the button below to download_`
 ❒│▸  *Tɪᴍᴇ : ${kaitime}* ⌚
 ❒│▸  *Dᴀᴛᴇ : ${kaidate}* 📆
 ❒│▸  *Oᴡɴᴇʀ : ${global.OwnerName}* 🙋
-❒│▸  *Pʟᴜɢɪɴꜱ : 『 350 』*✨
+❒│▸  *Pʟᴜɢɪɴꜱ : 『 01 』*✨
 ❒│▸  *Pʀᴇꜰɪx : 『  ${prefix} 』*  💡
 ❒│▸  *Rᴜɴᴛɪᴍᴇ : ${runtime(process.uptime())}* 💻
 ❒│▸  *Dᴇᴠᴇʟᴏᴘᴇᴅ ʙʏ Mʀ Sᴀᴄʜɪᴛʜ* 
@@ -6770,7 +6767,7 @@ _Click the button below to download_`
           A17.sendMessage(from, { react: { text: "🗓️", key: m.key } })
 
           reply(`
-┌──『•• 🎯 *Cᴏʀᴇ* 🎯 ••』──◈
+┌──『•• 🎯 *Bᴏᴛ-Mᴇɴᴜ* 🎯 ••』──◈
 │╭────────────···▸▸
 ┴│
 ⬡│▸ ${prefix}ʀᴇᴘᴏ 
@@ -7004,10 +7001,10 @@ _Click the button below to download_`
         if (isCmd) {
           if (isBan) return reply(mess.banned);
           if (isBanChat) return reply(mess.bangc);
-          A17.sendMessage(from, { react: { text: "💝", key: m.key } })
+          A17.sendMessage(from, { react: { text: "🧊", key: m.key } })
 
           reply(`
-┌─『•• 🛡️ *Dᴏᴡɴʟᴏᴀᴅᴇʀ* 🛡️ ••』─◈
+┌─『•• 📥 *Dᴏᴡɴʟᴏᴀᴅᴇʀ* 📥 ••』─◈
 │╭────────────···▸▸
 ⬡│▸  ${prefix}ᴘʟᴀʏ
 ⬡│▸  ${prefix}ꜱᴏɴɢ
@@ -7056,13 +7053,13 @@ _Click the button below to download_`
         break;
         
         
-        case '':
+        case 'ping':
         if (isCmd) {
           if (isBan) return reply(mess.banned);
           if (isBanChat) return reply(mess.bangc);
-          A17.sendMessage(from, { react: { text: "✨", key: m.key } })
+          A17.sendMessage(from, { react: { text: "🪀", key: m.key } })
 
-          reply(`Do you need any help ${pushname} ? Type *${prefix}help* to get my full command list.`)
+          reply(`*Hi🎯${pushname}*,  *Pong*  *${latensie.toFixed(4)}* *ms*`)
         }
 
         break;
@@ -7168,7 +7165,7 @@ _Click the button below to download_`
           if (isBan) return reply(mess.banned);
           if (isBanChat) return reply(mess.bangc);
           A17.sendMessage(from, { react: { text: "❌", key: m.key } })
-          reply(`Hey *${pushname}* මෙවනි විදානයක් මා සතුව නැත..*${prefix}menu* ලෙස ටයිප් කරන්න..`)
+          reply(`Hey *${pushname}* *මෙවනි විදානයක් මා සතුව නැත..*${prefix}menu* *ලෙස ටයිප් කරන්න.*.`)
 
         }
 
