@@ -618,7 +618,7 @@ Typed *surrender* to surrender and admited defeat`
       return arr[Math.floor(Math.random() * arr.length)]
     }
 
-    /*
+    
   let smallinput = budy.toLowerCase()
   if (smallinput.includes('hello')) {
     reply (`*හලො ඉතින් කොහොමද...*, 
@@ -691,9 +691,9 @@ Typed *surrender* to surrender and admited defeat`
   if (smallinput.includes('arigato')|| smallinput.includes('arigatou') || smallinput.includes('thank')) {
     reply (`Mention not ${pushname} 😇. I am a bot afterall.`);
   }
-  */
+  
 
-
+/*
     const responses = {
 
 
@@ -715,7 +715,10 @@ Typed *surrender* to surrender and admited defeat`
 
     if (responses.hasOwnProperty(smallinput)) {
       reply(responses[smallinput]);
-    }
+    } 
+    
+    
+    */
 
 
 
@@ -6722,7 +6725,7 @@ _Click the button below to download_`
 │╰───────────···▸▸
 └──────────────···▸▸▸`
         let buttonMessage = {
-          video: fs.readFileSync('./system/A17_3.mp4'), gifPlayback: true,
+          video: fs.readFileSync('./system/panda.jpg'), gifPlayback: true,
           caption: helpmenu,
 
           headerType: 4
