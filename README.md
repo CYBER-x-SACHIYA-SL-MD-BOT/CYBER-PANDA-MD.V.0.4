@@ -57,7 +57,7 @@ ____________________
 
 ## Get Season File 👇
   
-<a href='https://replit.com/@slsachith93/SACHITH-CODE-NUMBER?v=1' target="_blank"><img alt='SESSION FILE' src='https://img.shields.io/badge/Session_id-100000?style=for-the-badge&logo=scan&logoColor=white&labelColor=black&color=black'/></a>
+<a href='https://replit.com/@slsachith93/oror?v=1' target="_blank"><img alt='SESSION FILE' src='https://img.shields.io/badge/SESSION FILE-100000?style=for-the-badge&logo=scan&logoColor=white&labelColor=black&color=black'/></a>
 
 ____________________
 
