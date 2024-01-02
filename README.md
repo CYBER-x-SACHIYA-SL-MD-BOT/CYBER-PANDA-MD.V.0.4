@@ -6,13 +6,15 @@ ____________________
 
 ➀. Fork This Repository 
 
-➁. Update [config.js]()
+➁. Uplod File SESSION [creds.json]()
 
-➂. Make acount on your host
+➂. Update [config.js]()
 
-➃. Connect Your Repository to your web host site
+➃. Make acount on your host
 
-➄. [Watch Videos](https://youtu.be/amorCyDpKIo?si=BR2yG4lG4RCHSWRs)
+➄. Connect Your Repository to your web host site
+
+➅. [Watch Videos](https://youtu.be/amorCyDpKIo?si=BR2yG4lG4RCHSWRs)
 
 <p align="center"> 
 <u>🦋 │𝐂𝐘𝐁𝜩𝐑│𝐏𝜟𝐍𝐃𝐀│𝐌𝐃│𝐕➂ 🦋</u>
