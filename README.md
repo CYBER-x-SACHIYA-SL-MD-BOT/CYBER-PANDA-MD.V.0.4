@@ -17,7 +17,7 @@ ____________________
 ➅. [Watch Videos](https://youtu.be/amorCyDpKIo?si=BR2yG4lG4RCHSWRs)
 
 <p align="center"> 
-<u>🦋 │𝐂𝐘𝐁𝜩𝐑│𝐏𝜟𝐍𝐃𝐀│𝐌𝐃│𝐕➂ 🦋</u>
+<u>🎯 ＣＹＢＥＲ-ＰＡＮＤＡ-ＭＤ 🎯</u>
 </p>
 <p align="center">
 <img src="https://github.com/CYBER-x-SACHIYA-SL-MD-BOT/CYBER-PANDA-MD.V.0.3/assets/133668461/1f9ce998-691d-4394-ae3e-be7f3f51d4c6" width="300" height="300"/>
@@ -32,7 +32,7 @@ ____________________
 <a href="#"><img title="bot-Creator" src="https://img.shields.io/badge/Creator-Sachith.Chandra-red.svg?style=for-the-badge&logo=github"></a>
 </p>
 <p align="center"> 
-<u>🦋 │𝐂𝐘𝐁𝜩𝐑│𝐏𝜟𝐍𝐃𝐀│𝐌𝐃│𝐕➂ 🦋</u>
+<u>🎯 ＣＹＢＥＲ-ＰＡＮＤＡ-ＭＤ 🎯</u>
 </p>
 
 [🐼𝘠𝘖𝘜-𝘛𝘜𝘉𝘌-𝘝𝘐𝘋𝘌𝘖🐼](https://youtu.be/amorCyDpKIo?si=VebhbHXCe53xct3X)
