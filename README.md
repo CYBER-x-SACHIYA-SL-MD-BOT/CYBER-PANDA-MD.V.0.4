@@ -1,17 +1,4 @@
-<html>
-    <head>
-        <meta name='viewport' content='width=device-width, initial-scale=1'>
-        <title>html Editor</title>
-    </head>
-    <body>
-        <div class='logo'>
-            <b>
-                <span class='brackets left'><</span>
-                <span>html</span>
-                <span class='brackets right'>></span>
-            </b>
-            Editor
-        </div>
+
 
 		
 		
