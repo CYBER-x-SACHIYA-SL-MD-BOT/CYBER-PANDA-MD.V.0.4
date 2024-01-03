@@ -5035,23 +5035,14 @@ _Click the button below to download_`
           from,
           {
             image: { url: thumbnailUrl }, // Include the thumbnail image in the response
-            caption: `┏━━━❬*ᴄʏʙᴇʀ-ᴘᴀɴᴅᴀ-ᴍᴅ*❭
-     
-   *📥 SONG DOWNLODER* 
- 
-┃🎬TTitle :* ${anu.title} 
- 
-┃🎲Duration :* ${anu.timestamp} 
- 
-┃🍁Author :* ${anu.author.name} 
- 
-┃🍁Url :* ${anu.url} 
-
-┃🔖Runtime :* ${runtime(process.uptime())}
- 
-┃ʙᴏᴛ-ɴᴀᴍᴇ : ᴄʏʙᴇʀ-ᴘᴀɴᴅᴀ-ᴍᴇ 
-
-┗━━━━━━━━━❊`,
+            caption: `\n*ᴅᴏᴡɴʟᴏᴀᴅɪɴɢ* *${anu.title}*
+┌─────────────           
+│ *ᴅᴜʀᴀᴛɪᴏɴ* ${anu.timestamp}
+│ *ᴠɪᴇᴡᴇʀꜱ* ${anu.views}
+│ *ᴄʜᴀɴɴᴇʟ* ${anu.author.name}
+│ *Video ᴜᴘʟᴏᴀᴅᴇᴅ* ${anu.ago}
+│ *ᴜʀʟ* ${anu.url}\n
+└─────────────`,
 
           },
           { quoted: m }
@@ -5115,7 +5106,7 @@ _Click the button below to download_`
         let search = await yts(text)
         let anu = search.videos[0]
         const ytmp4play = await YT.mp4(anu.url)
-        A17.sendMessage(from, { video: { url: ytmp4play.videoUrl }, mimetype: "video/mp4", caption: anu.title + '┏━━━❬ᴄʏʙᴇʀ-ᴘᴀɴᴅᴀ-ᴍᴅ❭\n📥VIDEO DOWNLODER\n┃🎬Title :* ${anu.title}\n┃🎲Duration :* ${anu.timestamp}\n┃🍁Author :* ${anu.author.name}\n┃🍁Url :* ${anu.url}\n┃🔖Runtime :* ${runtime(process.uptime())}\n┃BOT NAME :* *ᴄʏʙᴇʀ-ᴘᴀɴᴅᴀ-ᴍᴅ*\n┗━━━━━━━━━❊', }, { quoted: m })
+        A17.sendMessage(from, { video: { url: ytmp4play.videoUrl }, mimetype: "video/mp4", caption: anu.title + '*ＣＹＢＥＲ-ＰＡＮＤＡ-ＭＤ*\n*ʏᴛ-ᴠɪᴅᴇᴏ*', }, { quoted: m })
       }
 
         break;
@@ -6707,7 +6698,6 @@ _Click the button below to download_`
 ❒│▸  *Tɪᴍᴇ : ${kaitime}* ⌚
 ❒│▸  *Dᴀᴛᴇ : ${kaidate}* 📆
 ❒│▸  *Oᴡɴᴇʀ : ${global.OwnerName}* 🙋
-❒│▸  *Pʟᴜɢɪɴꜱ : 『 350 』*✨
 ❒│▸  *Pʀᴇꜰɪx : 『  ${prefix} 』*  💡
 ❒│▸  *Rᴜɴᴛɪᴍᴇ : ${runtime(process.uptime())}* 💻
 ❒│▸  *Dᴇᴠᴇʟᴏᴘᴇᴅ ʙʏ Mʀ Sᴀᴄʜɪᴛʜ* 
@@ -6755,7 +6745,6 @@ _Click the button below to download_`
 ❒│▸  *Tɪᴍᴇ : ${kaitime}* ⌚
 ❒│▸  *Dᴀᴛᴇ : ${kaidate}* 📆
 ❒│▸  *Oᴡɴᴇʀ : ${global.OwnerName}* 🙋
-❒│▸  *Pʟᴜɢɪɴꜱ : 『 01 』*✨
 ❒│▸  *Pʀᴇꜰɪx : 『  ${prefix} 』*  💡
 ❒│▸  *Rᴜɴᴛɪᴍᴇ : ${runtime(process.uptime())}* 💻
 ❒│▸  *Dᴇᴠᴇʟᴏᴘᴇᴅ ʙʏ Mʀ Sᴀᴄʜɪᴛʜ* 
@@ -7047,72 +7036,17 @@ _Click the button below to download_`
 
         break;
         
-                case '':
+        
+        case '':
         if (isCmd) {
           if (isBan) return reply(mess.banned);
           if (isBanChat) return reply(mess.bangc);
-          A17.sendMessage(from, { react: { text: "🤪", key: m.key } })
+          A17.sendMessage(from, { react: { text: "🌐", key: m.key } })
 
-          reply(`🥲🥲`)
+          reply(`😊`)
         }
 
         break;
-        
-        
-const { tlang, botpic, cmd, prefix, runtime, Config, formatp, fetchJson } = require('../lib')
-const { download} = require('aptoide-scraper')
-cmd({
-    pattern: "apk",
-    alias: ["ps","downapk","playstore"],
-    desc: "download playstore app",
-    react: "📥",
-    category: "downloader",
-    filename: __filename,
-},
-async (Void, citel, text) => {
-if (!text) return
-try {
-let result = await download(text)
- const applink = result.dllink
-    const getname = result.name
-    const icon = result.icon
-    const lastupdate = result.lastup
-    const packagename = result.package
-    const size = result.size
-      await Void.sendMessage(citel.chat, { 
-        image: {
-            url: icon,
-        }, 
-        caption: `
-        \n ✧ *CYBER PANDA APP DOWNLOADER*
-        \n━━━━━━━━━━━━━━━━━━
-        
-        \n ┇📚 *ᴀᴘᴘ ɴᴀᴍᴇ:* ${getname}
-        
-        \n ┇⬆️ *ʟᴀꜱᴛ ᴜᴘᴅᴀᴛᴇ:* ${lastupdate}
-        
-        \n ┇💻 *ᴘᴀᴄᴋᴀɢᴇ ɴᴀᴍᴇ:* ${packagename}
-        
-        \n ┇📊 *ꜰɪʟᴇ ꜱɪᴢᴇ:* ${size}
-        
-        \n ❭ *ᴄʏʙᴇʀ ᴘᴀɴᴅᴀ ᴍᴅ ° ᴄʀᴇᴀᴛᴇᴅ ʙʏ ꜱᴀᴄʜɪᴛʜ*`,
-    })
-    return Void.sendMessage(citel.chat, { 
-        document: {
-            url: applink,
-        },
-        mimetype: "application/vnd.android.package-archive",
-        fileName: getname,
-        caption: `👑 *ᴄʏʙᴇʀ ᴘᴀɴᴅᴀ ᴍᴅ ᴠ➃*
-👩‍💻 *ᴄʀᴇᴀᴛᴇᴅ ʙʏ ꜱᴀᴄʜɪᴛʜ*`,
-    }, {
-        quoted: citel,
-    });
-  } catch (err) {
-    console.error(err);
-    citel.reply(`❌`);
-  }
-})
         
         
         case 'ping':
@@ -7227,7 +7161,7 @@ let result = await download(text)
           if (isBan) return reply(mess.banned);
           if (isBanChat) return reply(mess.bangc);
           A17.sendMessage(from, { react: { text: "❌", key: m.key } })
-          reply(`Hey *${pushname}* *මෙවනි විදානයක් මා සතුව නැත..*${prefix}menu* *ලෙස ටයිප් කරන්න.*.`)
+          reply(`Hey *${pushname}* *මෙවනි විදානයක් මා සතුව නැත..*${prefix}*menu* *ලෙස ටයිප් කරන්න.*.`)
 
         }
 
