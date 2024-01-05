@@ -1,0 +1,4 @@
+language = "nodejs"
+run = "npm i -g forever && forever start index.js"
+entrypoint = "index.js"
+echo = "Starting the A17..."
