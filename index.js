@@ -62,8 +62,8 @@ async function startA17() {
       "green"
     )
   );
-  console.log(color('\nHello, I am Kai, the main Developer of this bot.\n\nThanks for using: A17 Bot.', 'aqua'))
-  console.log(color('\nYou can follow me on GitHub: Kai0071', 'aqua'))
+  console.log(color('\nHi, Im CYBER PANDA MD V4 MAIN DEVELOPER OF THIS\n\nTHANKS FOR USER : CYBER PANDA MD V4.', 'aqua'))
+  console.log(color('\nYou can follow me on GitHub: Sachith', 'aqua'))
 
   const { state, saveCreds } = await useMultiFileAuthState("./SESSION");
   const A17 = A17Connect({
