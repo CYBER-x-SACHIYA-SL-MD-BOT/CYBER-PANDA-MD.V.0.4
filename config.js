@@ -21,9 +21,9 @@ global.prefa = ["."];                                    //Default prefix here. 
 
 
 //
-global.Owner = ["+94702782946", "+94702782946"];         //If you want singal number so global.Owner = ['916297175943'] Change into your number.
-global.OwnerNumber = ["+94702782946", "+94702782946"];   //If you want singal number so global.Owner = ['916297175943'] Change into your number.
-global.ownertag = ["+94702782946"];
+global.Owner = ["+923010405688", "+923010405688"];         //If you want singal number so global.Owner = ['916297175943'] Change into your number.
+global.OwnerNumber = ["+923010405688", "+923010405688"];   //If you want singal number so global.Owner = ['916297175943'] Change into your number.
+global.ownertag = ["+923010405688"];
 global.OwnerName = "SACHITH";
 global.BotName = "SACHITH";
 global.packname = "🦋 │𝐂𝐘𝐁𝜩𝐑│𝐏𝜟𝐍𝐃𝐀│𝐌𝐃│𝐕➂ 🦋";                             //Do not change.
@@ -33,7 +33,7 @@ global.SupportGroupLink = "https://chat.whatsapp.com/GhRGdwfaMVDCoeAdzILfl";
 
 
 //
-global.sessionName = "session";                          //Do not change.
+global.sessionName = "CYPHER-X:~UEsDBBQAAAgIAGWEtlrpXTZL0wQAAJwIAAAKAAAAY3JlZHMuanNvbq1Vy47iRhT9l9qCpv3GhdRS*ALM24BtmiiLwi4*wC*KZYwZscpHZJFVPiP5mkjJh0SG7sxImcx0pHhVvi7fOufec259BFkel3iCG9D*CAoSnxHF7ZI2BQZ9oFZBgAnoAh9RBPrAHdqzXr61Uu04g+jQyUP55GqKsa+vhw709lPzODyNcColzDO4dUFR7ZPY+0rC5ZLI4YqdWXlmMY4KJ5NCPgqrBhf8joPhvlrrjXOxTrZxfAa3NiOKSZyFRhHhFBOUTHCzRDF5H*zhdJtEh60mCpcwYuF2J3SCQzHcaFkunE9RwKe5BNP5QXLL98HXjM3WmAp40OEag31ZRJXtDCeH62qchsYkWAVOM9vZF1pdvQf8Mg4z7Js+zmhMm3fXvR6NCmUzlDeMGHcko0GTBRm7tWZKrr46jbUdqUQU8Jo7yt8H3Jq6kufvHS2dRPCwP*Wal+owOrD1VbdkS9RhJNUaeVk5ivw58CV508rxv9S9nI4oz7iR*7T0s2lOLVfqebrFh*YVGgumJ0iXzlyc6Yptvg8+ZaAx4nvq1h5rBzY+DiyzyezM7HG7wxyp*uZgsLk16I1WzCf4iFbkqyg3zA51SMANhC3bMHwnil3T4au5jJTp2dho9rHarIzIW*B4m9SqaW1fdvZC94bnHG+nPNSnsw2jqWi8alxzvLhKqaUrz3dGR9yYPuizty4gOIxLShCN86yNcQLsAuSf19gjmN7LC8xBKajrSM*jQQdXkki8JjEUGcXoLIcrTtf2a6Qe4wQv5GfQBQXJPVyW2B*FJc1JM8NliUJcgv739061pAlOc4rHsQ*6AHI8wzICI0qy*F35oY4QLVFRfMgwBV0QkDydYdCnpMJd8PhhoKgsZBlVVhWoSaLCK7LOsozaU8UB5GFLMX0cuolTXFKUFqDP9oQe5NkeI9+6*w8OQ2Q0RWN4CBVWgCzDilDXe7AnsEJPVXnpGzjg7YcuyPCFPnTcVp9nuyCISUntrCqSHPlvIn*7iDwvrzK6bjJPaxeYgP5nYUxpnIVly6zKEPGi+Iy1lgfoBygp8d8NxwT7b1xeh5iW+60ORXezk7biGrTY20T*qE0ffqE8yX0bD0VelDgJyqIAYbuxjXdBhtpc4M*fflJcxVz**uvPM2VqTv748Ze2Rq*o28N8TFGclO0wm4+KSylrxqQ6nj1jOFSMUNFCBXxi++aih0rhBVrLdFWftsc6YmQvKU*7yLGCxf4kb3ARzs*Okzzgtj4XPn8hCeiD9Y6KC+RzRTSn8xdzNt6gI4qd3ONkHI6LJ8+WdtvOcS2Z06dpfXGHcr5QmbUk6TPT8mbGfOicF0rQ9F7mqMYCcgcL4265LvDxOfbw54c5Ky7evDjjQluFO24*0Wgwvdjish5ITxvTMYOhVGadDq0vPunIg*1+u0TJSlqmOWcv6r1ao2pcX93gxF1W5Mwb+cCJtFd*3+dL8jrX41fnxffXIMb3MfnakW*29QG8lR9z636W43Xw*svwUgMvsHXx6E0ScWb6y9F4P0kFxx5dU+ls8KcXfc8GT6qf8H4Obq0PigTRICcp6AOU+SS*y4bkVatnMwvyr117qmkq4YN5gkqqfPLIl2wnPnYtSV6MUBm11757FNVW741SFGuK6JvjgNI+kzMLbn8BUEsBAhQDFAAACAgAZYS2WuldNkvTBAAAnAgAAAoAAAAAAAAAAAAAAICBAAAAAGNyZWRzLmpzb25QSwUGAAAAAAEAAQA4AAAA+wQAAAAA";                          //Do not change.
 
 
 //
